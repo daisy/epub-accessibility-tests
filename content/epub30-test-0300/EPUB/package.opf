@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0300</dc:identifier>
+        <dc:description>Tests for Accessibility [UNDER CONSTRUCTION]</dc:description>
+        <dc:title id="title">EPUBTEST 0300 - Accessible Content Tests</dc:title>
+        <meta refines="title" property="title-type">main</meta>
+        <!-- repeat creator element for all contributors -->
+        <dc:creator id="creator1">Marisa DeMeglio</dc:creator>
+        <meta refines="#creator1" property="role" scheme="marc:relators">aut</meta>
+        <meta refines="#creator1" property="file-as">DeMeglio, Marisa</meta>
+        <dc:language>en</dc:language>
+        <meta property="dcterms:modified">2014-02-14T13:00:00Z</meta>
+    </metadata>
+    <manifest>
+        <!-- css -->
+        <item href="css/base.css" media-type="text/css" id="css"/>
+        <!-- images -->
+        <item href="images/mobydick.jpg" media-type="image/jpeg" id="moby"/>
+
+        <!-- frontmatter -->
+        <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
+        <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+        <!-- bodymatter -->
+        <!-- xhtml -->
+        <item href="xhtml/file-management-tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
+        <item href="xhtml/reading-tests.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
+        <item href="xhtml/visual-adjustment-tests.xhtml" id="xhtml-003" media-type="application/xhtml+xml"/>
+        <item href="xhtml/navigation-tests.xhtml" id="xhtml-004" media-type="application/xhtml+xml"/>
+        <item href="xhtml/annotation-tests.xhtml" id="xhtml-005" media-type="application/xhtml+xml"/>
+
+        <item href="xhtml/supplement.xhtml" id="xhtml-010" media-type="application/xhtml+xml"/>
+    </manifest>
+    <spine>
+        <itemref idref="front"/>
+        <itemref idref="nav" linear="no"/>
+        <itemref idref="xhtml-001"/>
+        <itemref idref="xhtml-002"/>
+        <itemref idref="xhtml-003"/>
+        <itemref idref="xhtml-004"/>
+        <itemref idref="xhtml-005"/>
+        <itemref idref="xhtml-010"/>
+    </spine>
+</package>
