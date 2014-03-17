@@ -14,21 +14,27 @@
     <section id="read-from-here">
         <h2>Initiating "read from here"</h2>
 
-        <section class="ftest" id="reading-010">
+        <section id="reading-010" class="ftest keyboard">
             <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-010</span> </h3>
             <p class="desc">Initiate “read from here” (read from last read or focus location) using the keyboard. </p>
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
 
-        <section class="ftest" id="reading-020">
+        <section id="reading-020" class="ftest mouse">
             <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-020</span> </h3>
             <p class="desc">Initiate “read from here” (read from last read or focus location) using the mouse.  </p>
             <p class="eval">Indicate Pass or Fail. </p>
         </section>
 
-        <section class="ftest" id="reading-030">
+        <section id="reading-030" class="ftest touch">
             <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-030</span> </h3>
             <p class="desc">Initiate “read from here” (read from last read or focus location) using touch/gestures. </p>
+            <p class="eval">Indicate Pass or Fail. </p>
+        </section>
+
+        <section id="reading-040" class="ftest screenreader">
+            <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-040</span> </h3>
+            <p class="desc">Initiate “read from here” (read from last read or focus location) using a screenreader. </p>
             <p class="eval">Indicate Pass or Fail. </p>
         </section>
     </section>
@@ -36,21 +42,27 @@
     <section id="suspend-and-resume">
         <h2>Suspend and Resume reading</h2>
 
-        <section class="ftest" id="reading-110">
+        <section id="reading-110" class="ftest keyboard">
             <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-110</span> </h3>
             <p class="desc">Start and stop reading at the same reading location using the keyboard.</p>
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
 
-        <section class="ftest" id="reading-120">
+        <section id="reading-120" class="ftest mouse">
             <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-120</span> </h3>
             <p class="desc">Start and stop reading at the same reading location using the mouse.</p>
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
 
-        <section class="ftest" id="reading-130">
+        <section id="reading-130" class="ftest touch">
             <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-130</span> </h3>
             <p class="desc">Start and stop reading at the same reading location using touch/gestures.</p>
+            <p class="eval">Indicate Pass or Fail.</p>
+        </section>
+
+        <section id="reading-140" class="ftest screenreader">
+            <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-140</span> </h3>
+            <p class="desc">Start and stop reading at the same reading location using a screenreader.</p>
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
 
@@ -59,7 +71,7 @@
     <section id="reading-order">
         <h2>Reading Order</h2>
 
-        <section class="ftest" id="reading-210">
+        <section id="reading-210" class="ftest keyboard">
             <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-210</span> </h3>
             <p class="desc">All text should be read in the proper order.</p>
             <p class="eval">Indicate Pass or Fail.</p></section>
@@ -67,7 +79,7 @@
 
         <section id="alt-text">
             <h2>Reading image alt text</h2>
-            <section class="ftest" id="reading-310">
+            <section id="reading-310" class="ftest keyboard">
                 <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-310</span> </h3>
                 <p><img src="../images/mobydick.jpg"  id="img267" alt="Moby Dick with a sailor in his mouth and several with harpoons hanging on him and their ship in the background" /></p>
                 <p class="desc">Alt text for the above image is available.</p>
@@ -75,24 +87,34 @@
             </section>
         </section>
 
+        <!-- TODO how to categorize the two tests above to get an accurate score? they aren't necessarily keyboard tests. 
+            same for test 610 below.
+        -->
+
         <section id="reading-speed">
             <h2>Change reading speed</h2>
-            <section class="ftest" id="reading-410">
+            <section id="reading-410" class="ftest keyboard">
                 <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-410</span> </h3>
                 <p class="desc">Change reading speed using the keyboard.</p>
                 <p class="eval">Indicate Pass or Fail.</p>
             </section>
 
 
-            <section class="ftest" id="reading-420">
+            <section id="reading-420" class="ftest mouse">
                 <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-420</span> </h3>
                 <p class="desc">Change reading speed using the mouse.</p>
                 <p class="eval">Indicate Pass or Fail.</p>
             </section>
 
-            <section class="ftest" id="reading-430">
+            <section id="reading-430" class="ftest touch">
                 <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-430</span> </h3>
                 <p class="desc">Change reading speed using touch/gestures.</p>
+                <p class="eval">Indicate Pass or Fail.</p>
+            </section>
+
+            <section id="reading-440" class="ftest screenreader">
+                <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-440</span> </h3>
+                <p class="desc">Change reading speed using a screenreader.</p>
                 <p class="eval">Indicate Pass or Fail.</p>
             </section>
 
@@ -100,29 +122,36 @@
 
         <section id="reading-volume">
             <h2>Change Reading Volume</h2>
-            <section class="ftest" id="reading-510">
+            <section id="reading-510" class="ftest keyboard">
                 <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-510</span> </h3>
                 <p class="desc">Change reading volume through the application or the operating system using the keyboard.  </p>
                 <p class="eval">Indicate Pass or Fail. </p>
             </section> 
 
-            <section class="ftest" id="reading-520">
+            <section id="reading-520" class="ftest mouse">
                 <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-520</span> </h3>
                 <p class="desc">Change reading volume through the application or the operating system using the mouse.  </p>
                 <p class="eval">Indicate Pass or Fail.</p>
             </section>
 
-            <section class="ftest" id="reading-530">
+            <section id="reading-530" class="ftest touch">
                 <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-530</span> </h3>
                 <p class="desc">Change reading volume through the application or the operating system using touch/gestures.  </p>
                 <p class="eval">Indicate Pass or Fail. </p>
                 </section>
 
+            <section id="reading-540" class="ftest screenreader">
+                <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-540</span> </h3>
+                <p class="desc">Change reading volume through the application or the operating system using a screenreader.  </p>
+                <p class="eval">Indicate Pass or Fail. </p>
+            </section>
+
+
             </section>
 
             <section id="TTS">
                 <h2>TTS allows pause for indicating headings, paragraphs, list items, etc.</h2>
-                <section class="ftest" id="reading-610">
+                <section id="reading-610" class="ftest keyboard">
                     <h3><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">reading-610</span> </h3>
                     <p class="desc">TTS allows pause for indicating headings, paragraphs, list items, etc.</p>
                     <p class="eval">Indicate Pass or Fail.</p>
