@@ -18,6 +18,12 @@
         <!-- images -->
         <item href="images/mobydick.jpg" media-type="image/jpeg" id="moby"/>
 
+        <item href="images/img01.jpg" media-type="image/jpeg" id="img01y"/>
+
+        <item href="images/img02.jpg" media-type="image/jpeg" id="img02"/>
+
+
+
         <!-- frontmatter -->
         <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
         <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
