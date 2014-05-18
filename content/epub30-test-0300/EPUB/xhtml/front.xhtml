@@ -9,7 +9,7 @@
     <body>
 
     	<section>
-    		<h1>Accessible EPUB 3 Conformance Test Document: 0300</h1>
+    		<h1>Accessible EPUB 3 Conformance Test Document: Fundamental Tests 0300</h1>
 
     		<section>
 	    		<h2>Status of this Document</h2>
@@ -23,23 +23,21 @@
 	    			verify that they have the latest release by checking the current release version and date of
 	    			the test suite at <a href="http://idpf.org/">TBD</a></p>
 
-	    		<p>This publication is one of several that currently comprise the EPUB 3 conformance test suite
-	    			for reflowable content. The complete test suite includes all of the following publications:</p>
-
-	    		<ol class="reflow-doc-list">
-	    			<li>.</li>
-	    		</ol>
+	    		<p>This publication is one of several that currently comprise the EPUB 3 Accessibility Test Suite for reflowable content. 
+</p>
     		</section>
 
     		<section>
     			<h2>About this Document</h2>
+<p>This document contains tests which are fundamental to accessibility of the Reading System for users with disabilities. The advanced tests are contained in a separate document. </p>
+<p>The basic assumption of accessibility evaluation is that all Reading System should support reading by eyes, ears or fingers. It should be possible for users to read the content of this document by:</p>
+<ul><li> 
+adjusting the display such as adjusting font size and colour combination, </li>
+<li>reading the text with screen readers or TTS and 
+</li><li>reading the text in a refreshable Braille display.</li></ul>
 
-	    		<p>This document focuses on human-evaluated binary (pass/fail) tests in a
-	    			reflowable context. Tests for fixed-layout content and other individual tests that
-	    			require a dedicated epub file are available in additional sibling documents; refer to
-	    			the <a href="https://github.com/mgylling/epub-testsuite/wiki/Overview">test suite
-	    				wiki</a> (<code>https://github.com/mgylling/epub-testsuite/wiki/Overview</code>) for additional
-	    			information.</p>
+<p>The Reading Systems should be evaluated using different combinations of assistive technology and all the tests given in this book should be performed. It is expected that an accessible Reading System will pass all the tests given in this book regardless of the input and output mediums used in testing. Testers may perform the tests given in this book using keyboard, mouse or touch/gestures as input and screen reader/self voicing, visual adjustments or Braille as output.</p>
+
     		</section>
 
 
@@ -47,29 +45,18 @@
     			<h2>Conventions</h2>
     			<p>The following conventions are used throughout the document:</p>
 
-    			<dl class="info">
-    				<dt>1. Locating a test</dt>
-    				<dd>
-    					<div class="ctest">
-    						<p>Tests for <em>required</em> Reading System functionality are
-    							preceded by the label: <span class="nature"
-    								style="display: inline; font-size: 100%">[REQUIRED]</span></p>
-    					</div>
-    					<div class="otest">
-    						<p>Tests for <em>optional</em> Reading System functionality are
-    							preceded by the label: <span class="nature"
-    								style="display: inline; font-size: 100%">[OPTIONAL]</span></p>
-    					</div>
-    				</dd>
-    				<dt>2. Performing the test</dt>
-    				<dd>Each test includes a description of its purpose followed by the actual <strong>test statement,
-    					which can always be evaluated to true or false</strong>. These statements typically have the form:
-    					"If [some condition], the test passes".</dd>
+<p>All tests in this document are preceded by the label [FUNDAMENTAL] indicating that the test is fundamental to establish accessibility of the Reading System.</p>
 
-    				<dt>3. Scoring in the results form</dt>
-    				<dd>@@@TODO provide info on where to get the results form</dd>
-    			</dl>
+<p>The test labels are followed by ID such as file--010. These test IDs correspond to the entries in the form on www.epubtest.org for accessibility evaluation. </p>
+
     		</section>
+<section>
+<h2>Performing the tests </h2>
+
+
+<p>Each test includes a description of its purpose followed by the actual test statement, which can generally be evaluated to true or false. Some of the tests given in this book may not be applicable to the all Reading System and assistive technology configuration and in such cases the evaluation statement reads "Indicate Pass or Fail or Not Applicable".</p>
+<p>The result of each test in this book should be recorded in the corresponding field in the form on the website and comments if any should be noted in the space provided in the online form. </p>
+</section>
     	</section>
 
     </body>
