@@ -140,6 +140,16 @@ aside[epub|type~="sidebar"]
    border: 0.5px solid gray;
 }
 
+p.sidebartype 
+{   padding: 0.5em;
+   margin-left: 1em;
+   margin-right: 1em;
+   width: 30%;
+   background-color: rgb(240,240,240);
+   float:left; 
+
+}
+
 aside[epub|type~="footnote"] 
 {  
    font-size: 80%;
