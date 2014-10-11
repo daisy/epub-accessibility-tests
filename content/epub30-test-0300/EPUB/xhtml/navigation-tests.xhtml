@@ -7,6 +7,7 @@
     </head>
 
     <body>
+<p><span epub:type="pagebreak" id="page1">1</span></p>
         <h1>Navigation Tests</h1>
         
         <section id="nav-010" class="ftest">
@@ -15,20 +16,21 @@
 <p>Navigate to chapters through the Table of Contents. </p>
 </div>
 <ol><li>Access the Table of content (TOC) of this book in the Reading System </li>
-<li>Select the Chapter "Annotation Tests" in the TOC</li>
-<li>Check if the focus has now moved to the desired section of the book e.g. Annotation Tests. Use the TOC again to return to this chapter that is "Navigation Tests"</li>
+<li>Select the sub-section "Reading image alt text" inside the Chapter "Reading Tests" in the TOC</li>
+<li>Check if the focus has now moved to the desired section of the book i.e. "Reading image alt text". Use the TOC again to return to this chapter that is "Navigation Tests"</li>
 </ol>
 
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
 
-<p><span epub:type="pagebreak" id="page1">1</span></p>
+
 
         <section id="nav-110" class="ftest">
             <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-110</span> </h2>
             <div class="desc">
 <p>Navigate content by pages. </p>
 <p>use the "Next/Previous Page" or "Go to Page" or the "Page List" feature in the Reading system and check if you are able to navigate to different pages. </p> 
+<p>This EPUB file contains 10 hard coded page breaks. Note that these page breaks are different from the reflowed page numbers.  </p>
 </div>
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
@@ -36,15 +38,11 @@
 <p><span epub:type="pagebreak" id="page2">2</span></p>
 
         <section id="nav-210" class="ftest">
-            <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-210</span> </h2>
-            <div class="desc">
-<p>Navigate between the tables. </p>
-</div>
-<p>Check if you can move directly to the two tables in this chapter using any Table list or command available in the Reading System. </p> 
-
+            <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-210</span></h2>
+            <p class="desc">Navigate by reflowed page number.</p>
+<p>This Navigation Test section of the book has 10 page breaks coded into it. However, other sections of this book do not have any page numbering and will flow into many pages on the reading system. Check if you can navigate to the different reflowed pages.</p> 
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
-
 <p><span epub:type="pagebreak" id="page3">3</span></p>
 
 
@@ -55,7 +53,6 @@
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
 
-<p><span epub:type="pagebreak" id="page4">4</span></p>
 
         <section id="table-example">
             <table>
@@ -104,17 +101,48 @@
 
         </section>
 
-<p><span epub:type="pagebreak" id="page5">5</span></p>
+<p><span epub:type="pagebreak" id="page4">4</span></p>
+
 
         <section id="nav-410" class="ftest">
             <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-410</span> </h2>
-            <p class="desc">Navigate page elements - lists, figures, sidebars, etc.. </p>
+            <div class="desc">
+<p>Test navigation between internal hyperlinks. </p> 
+</div>
+                <ol>
+                    <li>Navigate to and select the internal hyperlink.</li>
+                    <li>Verify that focus has moved to new location.</li>
+                    <li>Navigate to and select the Back hyperlink.</li>
+                    <li>Verify that focus is returned to original location.  </li>
+                </ol>
 
-<p>Given on the next page are several examples of elements using random text. Check if you can navigate to the diferent elements. The page elements have been labelled to help you identify them easily. There are 2 figures with image and captions, 1 sidebar consisting of one heading and two paragraphs, 1 footnote, 1 bulleted list and 5 paragraphs in the main flow. </p>
-<p>The sample text starts on page 6 below. </p>
-<p class="eval">Indicate Pass or Fail.</p>
+            <p class="eval">If you can navigate from this paragraph to the link target by selecting <a href="supplement.xhtml#link-target-1">this link</a>, and if the link on the destination page returns you to the paragraph below, then the test passes.</p>
+            <p id="link-target-1a">You will be returned to this location by following the link back.</p>
         </section>
+
+<p><span epub:type="pagebreak" id="page5">5</span></p>
+
+        <section id="nav-510" class="ftest">
+            <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-510</span> </h2>
+            <p class="desc">Read navigation information.</p>
+            <p>Use the "Where am I?" or any other similar command available in the reading system and check if you can get information about current position in the book. The minimum information expected is current section and current page number. Percentage read, book title, author etc.  can be additional useful information. It should be possible to resume reading from the last read position after using this command. </p>
+
+            <p class="eval">Indicate Pass or Fail.</p>
+        </section>
+
+        <section id="nav-610" class="ftest">
+            <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-610</span> </h2>
+            <div class="desc">
+<p>Move to the next block item </p>
+<p>Check if you can move to the next available page element e.g. paragraph, image or table by using a common key/gesture like swipe right, down arrow etc.  
+</p>
+<p>Sample text has been provided on page 6 below to perform this test. If on using the "next item" gesture/command the focus moves to the next block element on this page e.g. paragraph, figures, footnote etc. then this test passes. </p>
+</div>
+            <p class="eval">Indicate Pass or Fail.</p>
+        </section>
+
 <p><span epub:type="pagebreak" id="page6">6</span></p>
+
 <section class="sample-text">
 <figure class="image">
   <img src="../images/img01.jpg" alt="Figure"/>
@@ -150,66 +178,47 @@
 </section>
 <p><span epub:type="pagebreak" id="page7">7</span></p>
 
-
-        <section id="nav-510" class="ftest">
-            <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-510</span></h2>
-            <p class="desc">Navigate by reflowed page number.</p>
-<p>This Navigation Test section of the book has 10 page breaks coded into it. However, other sections of this book do not have any page numbering and will flow into many pages on the reading system. Check if you can navigate to the different reflowed pages.</p> 
-            <p class="eval">Indicate Pass or Fail.</p>
-        </section>
-<p><span epub:type="pagebreak" id="page8">8</span></p>
-        <section id="nav-610" class="ftest">
-            <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-610</span> </h2>
-            <div class="desc">
-<p>Test navigation between internal hyperlinks. </p> 
-</div>
-                <ol>
-                    <li>Navigate to and select the internal hyperlink.</li>
-                    <li>Verify that focus has moved to new location.</li>
-                    <li>Navigate to and select the Back hyperlink.</li>
-                    <li>Verify that focus is returned to original location.  </li>
-                </ol>
-
-            <p class="eval">If you can navigation from this paragraph to the link target by selecting <a href="supplement.xhtml#link-target-1">this link</a>, and if the link on the destination page returns you to the paragraph below, then the test passes.</p>
-            <p id="link-target-1a">You will be returned to this location by following the link back.</p>
-        </section>
-
-
-
-        <section id="nav-810" class="ftest">
-            <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-810</span> </h2>
-            <p class="desc">Read navigation information (e.g., page number, current structural hierarchy and/or headings).</p>
-            <p>Use the "Where am I?" or any other similar command available in the reading system and check if you can get enough information about current position in the book e.g. current section name, page number, percentage content read, time elapsed etc. </p>
-
-            <p class="eval">Indicate Pass or Fail.</p>
-        </section>
-
-        <section id="nav-910" class="ftest">
-            <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-910</span> </h2>
-            <div class="desc">
-<p>Move to the next item during reading. </p>
-<p>Check if you can move to the next available page element e.g. paragraph, image or table during reading. 
-</p>
-</div>
-            <p class="eval">Indicate Pass or Fail.</p>
-        </section>
-
-<p><span epub:type="pagebreak" id="page9">9</span></p>
-
-        <section id="nav-1010" class="ftest">
-            <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-1010</span> </h2>
+        <section id="nav-710" class="ftest">
+            <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-710</span> </h2>
             <div class="desc">
 <p id="link-target-2a">Perform a search, review the search results and navigate to the selected search result in the content.</p>
 </div>
 <ol><li>Search for the term "Taj Mahal" without the quotation marks in this book.</li>
-<li>Review the search results. This phrase appears only once in this book.</li>
-<li>Navigate to the searched phrase. Use the link available there to return to this test.</li></ol>
-
+<li>Review the search results. This phrase appears only twice in this book.</li>
+<li>Navigate to the second search resuls. Use the link available there to return to this test.</li></ol>
  
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
 
-<p><span epub:type="pagebreak" id="page10">10</span></p>
+<p><span epub:type="pagebreak" id="page8">8</span></p>
+
+    <section id="nav-810" class="ftest">
+        <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-810</span> </h2>
+        <p class="desc">Navigate by characters</p>
+<p>Check if it is possible to navigate to next and previous character in the book text by way of any command or gesture.</p>
+
+        <p class="eval">Indicate Pass or Fail.</p>
+    </section>
+
+    <section id="nav-910" class="ftest">
+        <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-910</span> </h2>
+        <p class="desc">Navigate by words</p>
+<p>Check if it is possible to navigate to next and previous word in the book text by way of any command or gesture.</p>
+
+        <p class="eval">Indicate Pass or Fail.</p>
+    </section>
+
+    <section id="nav-1010" class="ftest">
+        <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-1010</span> </h2>
+        <p class="desc">Navigate by lines</p>
+<p>Check if it is possible to navigate to next and previous line in the book text by way of any command or gesture.</p>
+
+        <p class="eval">Indicate Pass or Fail.</p>
+    </section>
+
+
+
+<p><span epub:type="pagebreak" id="page9">9</span></p>
 
         <section id="nav-1110" class="ftest">
             <h2><span class="nature">[FUNDAMENTAL]</span> <span class="test-id">nav-1110</span> </h2>
@@ -218,7 +227,8 @@
 <p>Check if you can move to the next and previous headings in this book without using the Table of Contents.</p>
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
- 
+
+<p><span epub:type="pagebreak" id="page10">10</span></p> 
 <section id="table-example2">
 <h2>Sample table 2</h2>
 <p>The following table is an excerpt from Basic Microeconomics by R. Larry Reynolds. This table is inserted here for the purpose of testing navigation between and within tables. </p>
