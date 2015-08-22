@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<smil
+	version="3.0" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/ns/SMIL">
+	<body
+		epub:textref="more_navigation_tests.xhtml">
+		<par
+			epub:type="pagebreak">
+			<text
+				src="more_navigation_tests.xhtml#page4" />
+			<audio
+				src="more_navigation_tests.mp3"
+				clipBegin="00:00:00"
+				clipEnd="00:00:00.7865760" />
+		</par>
+		<par>
+			<text
+				src="more_navigation_tests.xhtml#MOA-1" />
+			<audio
+				src="more_navigation_tests.mp3"
+				clipBegin="00:00:00.7865760"
+				clipEnd="00:00:02.6790023" />
+		</par>
+		<seq
+			epub:textref="more_navigation_tests.xhtml#section-navigation-part-2">
+			<par>
+				<text
+					src="more_navigation_tests.xhtml#MOA-2" />
+				<audio
+					src="more_navigation_tests.mp3"
+					clipBegin="00:00:02.6790023"
+					clipEnd="00:00:05.2876871" />
+			</par>
+			<par>
+				<text
+					src="more_navigation_tests.xhtml#MOA-3" />
+				<audio
+					src="more_navigation_tests.mp3"
+					clipBegin="00:00:05.2876871"
+					clipEnd="00:00:23.4128572" />
+			</par>
+		</seq>
+		<seq
+			epub:textref="more_navigation_tests.xhtml#MOA-NAV-100">
+			<par>
+				<text
+					src="more_navigation_tests.xhtml#tobi_h_53" />
+				<audio
+					src="more_navigation_tests.mp3"
+					clipBegin="00:00:23.4128572"
+					clipEnd="00:00:24.5081633" />
+			</par>
+			<par>
+				<text
+					src="more_navigation_tests.xhtml#tobi_h_54" />
+				<audio
+					src="more_navigation_tests.mp3"
+					clipBegin="00:00:24.5081633"
+					clipEnd="00:00:26.6829025" />
+			</par>
+			<par>
+				<text
+					src="more_navigation_tests.xhtml#MOA-4" />
+				<audio
+					src="more_navigation_tests.mp3"
+					clipBegin="00:00:26.6829025"
+					clipEnd="00:00:29.9686395" />
+			</par>
+			<par>
+				<text
+					src="more_navigation_tests.xhtml#MOA-1-86" />
+				<audio
+					src="more_navigation_tests.mp3"
+					clipBegin="00:00:29.9686395"
+					clipEnd="00:00:34.8793651" />
+			</par>
+			<par>
+				<text
+					src="more_navigation_tests.xhtml#MOA-5" />
+				<audio
+					src="more_navigation_tests.mp3"
+					clipBegin="00:00:34.8793651"
+					clipEnd="00:00:40.1837642" />
+			</par>
+			<par>
+				<text
+					src="more_navigation_tests.xhtml#MOA-6" />
+				<audio
+					src="more_navigation_tests.mp3"
+					clipBegin="00:00:40.1837642"
+					clipEnd="00:00:50.8620182" />
+			</par>
+			<par>
+				<text
+					src="more_navigation_tests.xhtml#MOA-2-68" />
+				<audio
+					src="more_navigation_tests.mp3"
+					clipBegin="00:00:50.8620182"
+					clipEnd="00:01:01.5613606" />
+			</par>
+			<seq
+				epub:textref="more_navigation_tests.xhtml#mobyexcerpt">
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01w00001" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:01:01.5613606"
+						clipEnd="00:01:02.3799320" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01w00002" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:01:02.3799320"
+						clipEnd="00:01:03.3757823" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01w00003" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:01:03.3757823"
+						clipEnd="00:01:04.4914739" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01s0002" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:01:04.4914739"
+						clipEnd="00:01:16.1285487" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01s0003" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:01:16.1285487"
+						clipEnd="00:01:20.4343083" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01s0004" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:01:20.4343083"
+						clipEnd="00:01:48.5416326" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01s0005" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:01:48.5416326"
+						clipEnd="00:01:51.3280952" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01s0006" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:01:51.3280952"
+						clipEnd="00:01:57.0854648" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01s0007" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:01:57.0854648"
+						clipEnd="00:01:59.4589795" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01s0008" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:01:59.4589795"
+						clipEnd="00:02:08.0531745" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0002" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:02:08.0531745"
+						clipEnd="00:02:31.6458049" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0003" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:02:31.6458049"
+						clipEnd="00:03:14.9555101" />
+				</par>
+				<par
+					epub:type="pagebreak">
+					<text
+						src="more_navigation_tests.xhtml#page5" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:03:14.9555101"
+						clipEnd="00:03:15.8972788" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0004" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:03:15.8972788"
+						clipEnd="00:03:53.9646938" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0005" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:03:53.9646938"
+						clipEnd="00:04:33.8958729" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0006" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:04:33.8958729"
+						clipEnd="00:06:32.3181178" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0007" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:06:32.3181178"
+						clipEnd="00:08:00.8927890" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0008" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:08:00.8927890"
+						clipEnd="00:08:53.2668253" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0009" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:08:53.2668253"
+						clipEnd="00:09:40.3040362" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0010" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:09:40.3040362"
+						clipEnd="00:10:21.9692970" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0011" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:10:21.9692970"
+						clipEnd="00:11:30.9065532" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0012" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:11:30.9065532"
+						clipEnd="00:11:34.8828571" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0013" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:11:34.8828571"
+						clipEnd="00:11:37.3892517" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0014" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:11:37.3892517"
+						clipEnd="00:11:39.5757823" />
+				</par>
+				<par
+					epub:type="pagebreak">
+					<text
+						src="more_navigation_tests.xhtml#page6" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:11:39.5757823"
+						clipEnd="00:11:40.4555329" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0015" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:11:40.4555329"
+						clipEnd="00:12:19.7167347" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0016" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:12:19.7167347"
+						clipEnd="00:13:05.5597959" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#c01p0017" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:13:05.5597959"
+						clipEnd="00:13:26.0726757" />
+				</par>
+				<par>
+					<text
+						src="more_navigation_tests.xhtml#tobi_h_55" />
+					<audio
+						src="more_navigation_tests.mp3"
+						clipBegin="00:13:26.0726757"
+						clipEnd="00:13:27.4688662" />
+				</par>
+			</seq>
+		</seq>
+	</body>
+</smil>
