@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<smil
+	version="3.0" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/ns/SMIL">
+	<body
+		epub:textref="basic_tests.xhtml">
+		<par>
+			<text
+				src="basic_tests.xhtml#MOA-1" />
+			<audio
+				src="basic_tests.mp3"
+				clipBegin="00:00:00"
+				clipEnd="00:00:01.5067574" />
+		</par>
+		<seq
+			epub:textref="basic_tests.xhtml#MOA-BASIC-010">
+			<par>
+				<text
+					src="basic_tests.xhtml#tobi_h_14" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:01.5067574"
+					clipEnd="00:00:02.6020635" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#tobi_h_15" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:02.6020635"
+					clipEnd="00:00:04.8261225" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#MOA-2-1" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:04.8261225"
+					clipEnd="00:00:06.8824037" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#MOA-1-67" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:06.8824037"
+					clipEnd="00:00:10.6366667" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#MOA-3" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:10.6366667"
+					clipEnd="00:00:21.2616554" />
+			</par>
+		</seq>
+		<seq
+			epub:textref="basic_tests.xhtml#MOA-BASIC-020">
+			<par>
+				<text
+					src="basic_tests.xhtml#tobi_h_16" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:21.2616554"
+					clipEnd="00:00:22.3569615" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#tobi_h_17" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:22.3569615"
+					clipEnd="00:00:24.3715193" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#MOA-4" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:24.3715193"
+					clipEnd="00:00:28.6019275" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#MOA-6-41-3" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:28.6019275"
+					clipEnd="00:00:33.6761679" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#MOA-15-2" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:33.6761679"
+					clipEnd="00:00:43.9481634" />
+			</par>
+		</seq>
+		<seq
+			epub:textref="basic_tests.xhtml#MOA-BASIC-030">
+			<par>
+				<text
+					src="basic_tests.xhtml#tobi_h_18" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:43.9481634"
+					clipEnd="00:00:45.0434695" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#tobi_h_19" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:45.0434695"
+					clipEnd="00:00:47.2367121" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#MOA-14" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:47.2367121"
+					clipEnd="00:00:50.7648980" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#MOA-6-41-1" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:50.7648980"
+					clipEnd="00:00:55.5191157" />
+			</par>
+			<par>
+				<text
+					src="basic_tests.xhtml#MOA-15-1" />
+				<audio
+					src="basic_tests.mp3"
+					clipBegin="00:00:55.5191157"
+					clipEnd="00:01:09.8423130" />
+			</par>
+		</seq>
+	</body>
+</smil>

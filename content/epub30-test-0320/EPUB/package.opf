@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package
+	version="3.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	unique-identifier="uid" xmlns="http://www.idpf.org/2007/opf">
+	<metadata>
+		<meta
+			property="title-type"
+			refines="title">main</meta>
+		<meta
+			property="dcterms:license">https://creativecommons.org/licenses/by/4.0/</meta>
+		<meta
+			property="role"
+			refines="#creator1"
+			scheme="marc:relators">aut</meta>
+		<meta
+			property="file-as"
+			refines="#creator1">Consortium, DAISY</meta>
+		<meta
+			property="dcterms:modified">2015-15-08T13:00:00Z</meta>
+		<meta
+			property="media:active-class">-epub-media-overlay-active</meta>
+		<meta
+			property="media:playback-active-class">-epub-media-overlay-playback-active</meta>
+		<dc:description>Accessibility tests for Media Overlays in a reflowable context</dc:description>
+		<dc:title
+			id="title">EPUBTEST 0320 - Media Overlays Fundamental Accessibility Tests</dc:title>
+		<dc:rights>Copyright © 2015 DAISY Consortium</dc:rights>
+		<dc:creator
+			id="creator1">DAISY Consortium</dc:creator>
+		<dc:language>en</dc:language>
+		<dc:identifier
+			id="uid">com.github.epub-testsuite.epub30-test-0320</dc:identifier>
+		<meta
+			property="media:duration"
+			refines="#tobi_spine_3_smil">00:01:09.8423130</meta>
+		<meta
+			property="media:duration"
+			refines="#tobi_spine_4_smil">00:05:15.2119953</meta>
+		<meta
+			property="media:duration"
+			refines="#tobi_spine_5_smil">00:13:27.4688662</meta>
+		<meta
+			property="media:duration">00:19:52.5231745</meta>
+		<meta
+			name="generator"
+			content="Tobi, authoring tool for DAISY and EPUB talking books" />
+	</metadata>
+	<manifest>
+		<item
+			id="tobi_spine_1"
+			media-type="application/xhtml+xml"
+			href="xhtml/front.xhtml" />
+		<item
+			id="tobi_item_1"
+			media-type="text/css"
+			href="css/base.css" />
+		<item
+			id="tobi_spine_2"
+			media-type="application/xhtml+xml"
+			href="xhtml/nav.xhtml"
+			properties="nav" />
+		<item
+			id="tobi_spine_3"
+			media-type="application/xhtml+xml"
+			href="xhtml/basic_tests.xhtml"
+			media-overlay="tobi_spine_3_smil" />
+		<item
+			id="tobi_spine_3_smil"
+			media-type="application/smil+xml"
+			href="xhtml/basic_tests.smil" />
+		<item
+			id="tobi_spine_3_audio"
+			media-type="audio/mpeg"
+			href="xhtml/basic_tests.mp3" />
+		<item
+			id="tobi_spine_4"
+			media-type="application/xhtml+xml"
+			href="xhtml/navigation_tests.xhtml"
+			media-overlay="tobi_spine_4_smil" />
+		<item
+			id="tobi_spine_4_smil"
+			media-type="application/smil+xml"
+			href="xhtml/navigation_tests.smil" />
+		<item
+			id="tobi_spine_4_audio"
+			media-type="audio/mpeg"
+			href="xhtml/navigation_tests.mp3" />
+		<item
+			id="tobi_spine_5"
+			media-type="application/xhtml+xml"
+			href="xhtml/more_navigation_tests.xhtml"
+			media-overlay="tobi_spine_5_smil" />
+		<item
+			id="tobi_spine_5_smil"
+			media-type="application/smil+xml"
+			href="xhtml/more_navigation_tests.smil" />
+		<item
+			id="tobi_spine_5_audio"
+			media-type="audio/mpeg"
+			href="xhtml/more_navigation_tests.mp3" />
+	</manifest>
+	<spine>
+		<itemref
+			idref="tobi_spine_1" />
+		<itemref
+			idref="tobi_spine_2"
+			linear="no" />
+		<itemref
+			idref="tobi_spine_3" />
+		<itemref
+			idref="tobi_spine_4" />
+		<itemref
+			idref="tobi_spine_5" />
+	</spine>
+</package>
