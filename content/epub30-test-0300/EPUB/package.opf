@@ -6,7 +6,7 @@
         <dc:title id="title">EPUBTEST 0300 - Fundamental Accessible Reading System Tests</dc:title>
         <meta refines="title" property="title-type">main</meta>
         <!-- repeat creator element for all contributors -->
-        <dc:creator id="creator1">Marisa DeMeglio</dc:creator>
+        <dc:creator id="creator1">DAISY Consortium</dc:creator>
         <meta refines="#creator1" property="role" scheme="marc:relators">aut</meta>
         <meta refines="#creator1" property="file-as">DeMeglio, Marisa</meta>
         <dc:language>en</dc:language>
@@ -22,20 +22,19 @@
 
         <item href="images/img02.jpg" media-type="image/jpeg" id="img02"/>
 
-
+        <item href="images/circle.svg" media-type="image/svg+xml" id="img03"/>
 
         <!-- frontmatter -->
         <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
         <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
         <!-- bodymatter -->
         <!-- xhtml -->
-        <item href="xhtml/file-management-tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
-        <item href="xhtml/reading-tests.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
-        <item href="xhtml/visual-adjustment-tests.xhtml" id="xhtml-003" media-type="application/xhtml+xml"/>
-        <item href="xhtml/navigation-tests.xhtml" id="xhtml-004" media-type="application/xhtml+xml"/>
-        <item href="xhtml/annotation-tests.xhtml" id="xhtml-005" media-type="application/xhtml+xml"/>
+        <item href="xhtml/Basic-functionality-tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
+        <item href="xhtml/Non_Visual_Reading_Tests.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
+        <item href="xhtml/visual-adjustment-tests.xhtml" id="xhtml-003" media-type="application/xhtml+xml" properties="svg"/>
+        <item href="xhtml/Read_aloud_tests.xhtml" id="xhtml-004" media-type="application/xhtml+xml"/>
 
-        <item href="xhtml/supplement.xhtml" id="xhtml-010" media-type="application/xhtml+xml"/>
+        <item href="xhtml/supplement.xhtml" id="xhtml-005" media-type="application/xhtml+xml"/>
     </manifest>
     <spine>
         <itemref idref="front"/>
@@ -45,6 +44,6 @@
         <itemref idref="xhtml-003"/>
         <itemref idref="xhtml-004"/>
         <itemref idref="xhtml-005"/>
-        <itemref idref="xhtml-010"/>
+
     </spine>
 </package>

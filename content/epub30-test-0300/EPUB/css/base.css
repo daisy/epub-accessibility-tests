@@ -11,6 +11,15 @@ h4 { font-size: 120%; }
 	color: rgb(0,0,0);
 }
 
+/* accessibility classes */
+/* ftest: fundamental accessibility test */
+/* atest: advanced accessibility test */
+.ftest h2, .ftest h3, .ftest h4, .ftest h5, .atest h2, .atest h3, .atest h4, .atest h5 {
+    font-size: 120%;
+    color: rgb(0,0,0);
+}
+
+
 body {
     font-family: arial, helvetica, sans-serif;
     color: black;
@@ -30,6 +39,13 @@ body {
     padding-left: 1em;
 }
 
+/* accessibility classes */
+.ftest, .atest {
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+
 .ctest {
     border: 1px solid gray;
     margin-bottom: 1em;
@@ -41,6 +57,20 @@ body {
     margin-bottom: 1em;
     padding-left: 1em;
 }
+
+/* accessibility class */
+.ftest {
+    border: 1px solid gray;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+/* accessibility class */
+.atest {
+    border: 1px dotted gray;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
 
 .nature {
 	display: block;
@@ -56,6 +86,16 @@ body {
 .otest .nature {
 	color: rgb(0,0,255);
 }
+
+/* accessibility class */
+.ftest .nature {
+    color: rgb(255,0,0);
+}
+/* accessibility class */
+.atest .nature {
+    color: rgb(0,0,255);
+}
+
 
 dl.info dt {
     font-weight: bold;

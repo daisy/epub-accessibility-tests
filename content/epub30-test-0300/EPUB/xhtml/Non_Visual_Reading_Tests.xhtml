@@ -1,58 +1,97 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:epub="http://www.idpf.org/2007/ops">
-    <head>
-        <meta charset="utf-8" />
-        <link href="../css/base.css" type="text/css" rel="stylesheet" /> 
-        <title>Navigation Tests</title>
-    </head>
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:epub="http://www.idpf.org/2007/ops"
+      epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/#"
+      xmlns:ssml="http://www.w3.org/2001/10/synthesis"
+      ssml:alphabet="ipa"
+      xml:lang="en-US" lang="en-US">
+   
 
-    <body>
-<p><span epub:type="pagebreak" id="page1">1</span></p>
-        <h1>Navigation Tests</h1>
-        
-        <section id="nav-010" class="ctest">
-            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-010</span> </h2>
-            <div class="desc">
-<p>Navigate to chapters through the Table of Contents. </p>
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+</head>
+<body>
+    <h1>Non Visual Reading Tests</h1>
+    <p>The tests given below are for evaluating the reading experience with the chosen assistive technology tool such as the Screen Reader or Refreshable Braille Display. Do not perform the tests given in this chapter using the Read Aloud feature of the Reading System. </p> 
+
+
+    <section id="reading-010" class="ftest">
+        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-010</span> </h2>
+        <div class="desc">
+<p>Initiate “read from here”</p>
+<p>Focus on the beginning of a paragraph or a sentence and initiate reading. Reading should continue until interrupted by the user or at the end of the current document, e.g. current chapter. </p>
+<p>The text being read should preferably remain in view, but this is not a requirement to pass the test.</p>
 </div>
-<ol><li>Access the Table of content (TOC) of this book in the Reading System </li>
-<li>Select the sub-section "Reading image alt text" inside the Chapter "Reading Tests" in the TOC</li>
-<li>Check if the focus has now moved to the desired section of the book i.e. "Reading image alt text". Use the TOC again to return to this chapter that is "Navigation Tests"</li>
-</ol>
+        <p class="eval">Indicate Pass or Fail.</p>
+    </section>
 
-            <p class="eval">Indicate Pass or Fail.</p>
-        </section>
-
-
-
-        <section id="nav-110" class="ctest">
-            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-110</span> </h2>
-            <div class="desc">
-<p>Navigate content by pages. </p>
-<p>use the "Next/Previous Page" or "Go to Page" or the "Page List" feature in the Reading system and check if you are able to navigate to different pages. </p> 
-<p>This EPUB file contains 10 hard coded page breaks. Note that these page breaks are different from the reflowed page numbers.  </p>
+    <section id="reading-110" class="ftest">
+        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-110</span> </h2>
+        <div class="desc">
+<p>Stop and resume reading at the same reading location. </p>
+<ol><li>Initiate reading from any point in the book. </li>
+<li>Stop reading and note the last read position. </li>
+<li>Initiate reading again and check if reading starts at the last read location. </li></ol>
 </div>
-            <p class="eval">Indicate Pass or Fail.</p>
-        </section>
-
-<p><span epub:type="pagebreak" id="page2">2</span></p>
-
-        <section id="nav-210" class="ctest">
-            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-210</span></h2>
-            <p class="desc">Navigate by reflowed page number.</p>
-<p>This Navigation Test section of the book has 10 page breaks coded into it. However, other sections of this book do not have any page numbering and will flow into many pages depending upon the screen size, selected font, line spacing etc. Check if you can navigate to the different reflowed pages using any available command. </p> 
-            <p class="eval">Indicate Pass or Fail.</p>
-        </section>
-<p><span epub:type="pagebreak" id="page3">3</span></p>
+        <p class="eval">Indicate Pass or Fail.</p>
+    </section>
 
 
-        <section id="nav-310" class="ctest">
-            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-310</span> </h2>
+    <section id="reading-210" class="ftest">
+        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-210</span> </h2>
+        <div class="desc">
+<p>All text should be read in the proper order. </p>
+<p>Sample text has been provided to test the reading order. The Paragraph 2 should be read after Paragraph 1. Note that visually Paragraph 2 is placed to the left of Paragraph 1 but it is second in the reading order. </p>
+</div>
+<p class="eval">Indicate Pass or Fail.</p>
+<section class="sample-text">
+<p class="sample">
+Paragraph 1: Mother's Day is a celebration honoring mothers and motherhood, maternal bonds, and the influence of mothers in society. It is celebrated on various days in many parts of the world, most commonly in the months of March or May. It complements similar celebrations honoring family members, such as Father's Day and Siblings Day.
+</p>
+
+<p class="sidebartype">
+Paragraph 2: Mothers's Day in Israel: The Jewish population celebrates Mother's Day on Shevat 30 of the Jewish calendar, which falls between 30 January and 1 March. The celebration was set as the same date that Henrietta Szold died. 
+</p>
+
+</section> 
+    </section>
+
+
+    <section id="reading-310" class="ftest">
+        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-310</span> </h2>
+        <p><img src="../images/mobydick.jpg"  id="img267" alt="Moby Dick with a sailor in his mouth and several with harpoons hanging on him and their ship in the background" /></p>
+        <p class="desc">Ensure that the alternate text for the image is available. </p>
+        <p class="eval">If you can access the alternate text of the image above, which reads "Moby Dick with a sailor in his mouth and several with harpoons hanging on him and their ship in the background.", then the test passes.</p>
+    </section>
+
+    <section id="reading-410" class="ftest">
+        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-410</span> </h2>
+        <p class="desc">Change reading speed.</p>
+
+<p>It should be possible to adjust (increase/decrease) the speed of reading. This test should be performed using the Assistive Technology being used for accessibility evaluation.</p>
+<p>If you are testing with refreshable Braille, you should have the option of continuous reading, i.e. to auto-advance the refreshable Braille device. The reading system should also support adjustment of rreading speed (refresh rate) of the Braille device. </p>
+
+
+	<p class="eval">Indicate Pass or Fail.</p>
+</section> 
+
+    <section id="reading-510" class="ftest">
+        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-510</span> </h2>
+        <p class="desc">TTS allows pause for indicating headings, paragraphs, list items, etc.</p>
+<p>The user should be able to discern the difference between content items such as headings, paragraphs or list items by sufficient pauses in the TTS reading or appropriate formatting in the Braille device.</p>
+
+	<p class="eval">Indicate Pass or Fail.</p>
+    </section>
+
+
+        <section id="reading-610" class="ftest">
+            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-610</span> </h2>
             <p class="desc">Navigate between the cells, rows and columns in the table.</p>
 <p>Sample table is given below. </p>
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
-
 
         <section id="table-example">
             <table>
@@ -101,11 +140,9 @@
 
         </section>
 
-<p><span epub:type="pagebreak" id="page4">4</span></p>
 
-
-        <section id="nav-410" class="ctest">
-            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-410</span> </h2>
+        <section id="reading-710" class="ftest">
+            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-710</span> </h2>
             <div class="desc">
 <p>Test navigation between internal hyperlinks. </p> 
 </div>
@@ -120,30 +157,19 @@
             <p id="link-target-1a">You will be returned to this location by following the link back.</p>
         </section>
 
-<p><span epub:type="pagebreak" id="page5">5</span></p>
-
-        <section id="nav-510" class="ctest">
-            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-510</span> </h2>
-            <p class="desc">Read navigation information.</p>
-            <p>Use the "Where am I?" or any other similar command available in the reading system and check if you can get information about current position in the book. The minimum information expected is current section and current page number. Percentage read, book title, author etc.  can be additional useful information. It should be possible to resume reading from the last read position after using this command. </p>
-
-            <p class="eval">Indicate Pass or Fail.</p>
-        </section>
-
-        <section id="nav-610" class="ctest">
-            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-610</span> </h2>
+        <section id="reading-810" class="ftest">
+            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-810</span> </h2>
             <div class="desc">
 <p>Move to the next block item </p>
 <p>Check if you can move to the next available page element e.g. paragraph, image or table by using a common key/gesture like swipe right, down arrow etc.  
 </p>
-<p>Sample text has been provided on page 6 below to perform this test. If on using the "next item" gesture/command the focus moves to the next block element on this page e.g. paragraph, figures, footnote etc. then this test passes. </p>
+<p>Sample text has been provided below to perform this test. If on using the "next item" gesture/command the focus moves to the next block element on this page e.g. paragraph, figures, footnote etc. then this test passes. </p>
 </div>
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
 
-<p><span epub:type="pagebreak" id="page6">6</span></p>
 
-<section class="sample-text">
+<section class="sample-text" id="sample-text">
 <figure class="image">
   <img src="../images/img01.jpg" alt="Figure"/>
    <figcaption>Figure 2.2 caption: Neurons transmit information to other neurons. Information passes from the axon of the presynaptic neuron to the dendrites of the postsynaptic neuron. </figcaption>
@@ -176,60 +202,51 @@
 <aside id="fn03" epub:type="footnote">
 <p>Footnote 3: Kandel, E. R. 1991. Nerve cells and behavior. In E.R. Kandel, J.H. Schwartz, and T.M. Jessell (Eds.), Principles of Neural Science, 3rd edition (pp. 18-32). </p></aside> 
 </section>
-<p><span epub:type="pagebreak" id="page7">7</span></p>
 
-        <section id="nav-710" class="ctest">
-            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-710</span> </h2>
-            <div class="desc">
-<p id="link-target-2a">Perform a search, review the search results and navigate to the selected search result in the content.</p>
-</div>
-<ol><li>Search for the term "Taj Mahal" without the quotation marks in this book.</li>
-<li>Review the search results. This phrase appears only twice in this book.</li>
-<li>Navigate to the second search resuls. Use the link available there to return to this test.</li></ol>
- 
-            <p class="eval">Indicate Pass or Fail.</p>
-        </section>
 
-<p><span epub:type="pagebreak" id="page8">8</span></p>
 
-    <section id="nav-810" class="ctest">
-        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-810</span> </h2>
+    <section id="reading-910" class="ftest">
+        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-910</span> </h2>
         <p class="desc">Navigate by characters</p>
 <p>Check if it is possible to navigate to next and previous character in the book text by way of any command or gesture.</p>
 
         <p class="eval">Indicate Pass or Fail.</p>
     </section>
 
-    <section id="nav-910" class="ctest">
-        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-910</span> </h2>
+
+    <section id="reading-1010" class="ftest">
+        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-1010</span> </h2>
         <p class="desc">Navigate by words</p>
 <p>Check if it is possible to navigate to next and previous word in the book text by way of any command or gesture.</p>
 
         <p class="eval">Indicate Pass or Fail.</p>
     </section>
 
-    <section id="nav-1010" class="ctest">
-        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-1010</span> </h2>
+
+
+    <section id="reading-1110" class="ftest">
+        <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-1110</span> </h2>
         <p class="desc">Navigate by lines</p>
 <p>Check if it is possible to navigate to next and previous line in the book text by way of any command or gesture.</p>
 
         <p class="eval">Indicate Pass or Fail.</p>
     </section>
 
-
-
-<p><span epub:type="pagebreak" id="page9">9</span></p>
-
-        <section id="nav-1110" class="ctest">
-            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">nav-1110</span> </h2>
+        <section id="reading-1210" class="ftest">
+            <h2><span class="nature">[REQUIRED]</span> <span class="test-id">reading-1210</span> </h2>
             <p class="desc">Navigate the content by headings. </p>
 
 <p>Check if you can move to the next and previous headings in this book without using the Table of Contents.</p>
             <p class="eval">Indicate Pass or Fail.</p>
         </section>
 
-<p><span epub:type="pagebreak" id="page10">10</span></p> 
 
-    
-    </body>
+
+
+
+
+
+
+
+</body>
 </html>
