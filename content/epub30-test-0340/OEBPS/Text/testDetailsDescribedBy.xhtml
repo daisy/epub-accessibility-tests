@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
+
+<head>
+    <title>Extended Descriptions using ARIA described-by Visually Hidden Aside</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="charset" content="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+    <link href="../Styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Extended Descriptions using ARIA described-by pointing to a Visually Hidden Aside</h1>
+
+<p>In the following examples the aria-describedby is used to expose the extended image description which is in an aside.</p>
+    <p><b>Note 1:</b> Since aria-describedby will flatten all the extended image description text, we believe  the table within the extended image description will not be navigable using AT.</p>
+    <p><b>Note 2:</b> Since the description is hidden visually this solution is not recommended for universal accessibility because the description will not be available to low vision and people with learning disabilities.</p>
+
+    <hr />
+    <h2>Example 7: Bar Chart</h2>
+
+    <section id="extdesc-100" class="ftest">
+      <h2><span class="test-id">extdesc-100</span></h2>
+      <p class="desc">Support for describedby aside placed inside figcaption.</p>
+      <p>The test passes if you are able to read/hear the following text when the focus is on the image:<br/>
+      "The chart shows the website hits for the first quarter of 2014. It shows that Site 1 has more visitors than
+                          either of the other sites, but the number of visitors is decreasing. Site 2 has a fairly constant number
+                          of visitors, while for Site 3 page hits are increasing month on month."<br/>
+      Note: there may be a lot more text read that is in a table.</p>
+
+      <p class="eval">Indicate Pass or Fail</p>
+
+
+    <figure>
+        <img src="../Images/chart-ebcaadfb.png" alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"
+            aria-describedby="image1-extended-desc" />
+        <figcaption>
+            Example.com Site visitors Jan to March 2014
+            <aside class="extendedDescription" id="image1-extended-desc" >
+                <h3>Extended Description Overview</h3>
+                <p>The chart shows the website hits for the first quarter of 2014. It shows that Site 1 has more visitors than
+                    either of the other sites, but the number of visitors is decreasing. Site 2 has a fairly constant number
+                    of visitors, while for Site 3 page hits are increasing month on month.</p>
+                <h3>Data</h3>
+                <table>
+                    <tr>
+                        <th>Period</th>
+                        <th>Site 1</th>
+                        <th>Site 2</th>
+                        <th>Site 3</th>
+                    </tr>
+                    <tr>
+                        <td>Jan</td>
+                        <td>135</td>
+                        <td>112</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <td>Feb</td>
+                        <td>117</td>
+                        <td>114</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <td>Mar</td>
+                        <td>96</td>
+                        <td>111</td>
+                        <td>126</td>
+                    </tr>
+                    <tr>
+                        <td>Qtr Total</td>
+                        <td>348</td>
+                        <td>337</td>
+                        <td>308</td>
+                    </tr>
+                </table>
+                <h3>Presentation</h3>
+                <p>The bar chart represents both the number of visitors per month for each website, and the total number of
+                    visitors per website for the entire quarter. Website visitors for each month are represented using columns
+                    lined up horizontally, with heights indicating the number of visitors. A fourth column is provided for
+                    each website with the accumulated site visitors for the quarter.</p>
+            </aside>
+        </figcaption>
+    </figure>
+</section>
+
+
+    <h2>Example 8: Peacock Detailed Description of Image</h2>
+    <p>In this example, the head of the peacock is described using a paragraph of text that is in an aside on the web page.</p>
+
+    <section id="extdesc-110" class="ftest">
+      <h2><span class="test-id">extdesc-110</span></h2>
+      <p class="desc">Support for describedby aside placed inside figcaption.</p>
+      <p class="eval">Indicate Pass or Fail</p>
+<p>The test passes if you are able to read/hear the following text when the focus is on the image:<br/>
+"The male is metallic blue on the crown, the feathers of the head being short and curled. The fan-shaped crest on the head
+            is made of feathers with bare black shafts and tipped with blush-green webbing. A white stripe above the eye
+            and a crescent shaped white patch below the eye are formed by bare white skin. The sides of the head have iridescent
+            greenish blue feathers. The back has scaly bronze-green feathers with black and copper markings."</p>
+
+
+    <img src="../Images/peafowl-998cf337.jpg" alt="Male peacock head" aria-describedby="image2-extended-desc" />
+  </section>
+<hr/>
+<h3>Filler simulating aside at the end of the chapter</h3>
+
+
+    <aside class="extendedDescription" id="image2-extended-desc">
+        <p>
+            Extended Description: The male is metallic blue on the crown, the feathers of the head being short and curled. The fan-shaped crest on the head
+            is made of feathers with bare black shafts and tipped with blush-green webbing. A white stripe above the eye
+            and a crescent shaped white patch below the eye are formed by bare white skin. The sides of the head have iridescent
+            greenish blue feathers. The back has scaly bronze-green feathers with black and copper markings.
+        </p>
+    </aside>
+</body>
+
+</html>

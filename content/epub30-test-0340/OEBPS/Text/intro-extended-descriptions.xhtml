@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
+
+<head>
+    <title>Introduction to Extended Description Testing </title>
+    <meta name="charset" content="utf-8" />
+    <link href="../Styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Introduction to Extended Descriptions</h1>
+
+<p> Many types of constructs in HTML require additional information to be used effectively by persons with disabilities. The term commonly used is "extended descriptions." Images are most frequently identified as needing extended descriptions, but other constructs may also use this technique.</p>
+
+<p>Images fall into several categories, those that are merely decorative and do not need to be presented to the user who is blind. Some images are adequately described in the surrounding text or in a caption and require no alternative (alt) text. Other images can briefly be described and "alt text" is normally used. However, some images that convey a great deal of information require extended descriptions.</p>
+
+<p>In this Extended Description Test EPUB, we will look at a range of techniques to present extended descriptions. We believe that the results from these tests will be
+very helpful to publishers and others producing content, and to developers of reading Apps who want to create a great reading experience. Over the years features have
+ been added to HTML and to ARIA (Accessible Rich Internet Applications) to  provide this functionality. Some of the HTML constructs ar new and our ongoing testing will show their adoption in reading Apps and with assistive technology. In HTML, the introduction of the "details" element with its "summary element allows more information to be added. The summary provides a short description and this can be expanded. Normally the expanded feature is shown with a button that expands and collapses. A new ARIA attribute introduced in ARIA 1.1 is "aria-details," which Assistive Technology  will eventially recognize and provide an easy way to get to the extended description.
+However, currently aria-details is not supported properly, consequently we  will also test a fall back mechanism of normal linking to get to the extended description.</p>
+<p>It is important to point out that publishers may choose not to clutter the page with extended descriptions. This is why we will test mechanisms to  expand descriptions or to move them to the end of a chapter, and provide a way to get back to the correct reading position in the content. This EPUB test title will provide several chapters and each with a specific technique we want to test.</p>
+
+<p>This testing will help us identify the extended description techniques that are supported most widely in reading Apps and assistive technology combinations. With this information, we will develop best practices with publishers and also provide feedback to reading App developers for improving accessibility of their products. We will also provide this information to Assistive Technology developers.</p>
+
+
+
+<h2>Thank you to the Web Accessibility Initiative for images we will use</h2>
+
+    <p>The content of these examples come from
+        <a href="https://www.w3.org/WAI/tutorials/images/complex/">Web Accessibility Tutorials</a>
+    </p>
+
+<h2> What is in this EPUB?</h2>
+
+<p>There are five more chapters that contain a total of twelve examples. Each example has one or two tests for evaluation and comment. The tests are numbered and correspond to the numbers in the evaluation form.</p>
+
+
+</body>
+</html>

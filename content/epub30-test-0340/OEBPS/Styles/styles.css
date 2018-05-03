@@ -1,0 +1,85 @@
+body {
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 10em;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 1em;
+}
+
+thead td {
+    font-weight: bold;
+}
+
+caption, .caption, figcaption {
+    font-size: 80%;
+    caption-side: top;
+    text-align: left;
+}
+
+a:focus, a:active, a:hover, details > summary:focus {
+  outline-width: 1px;
+  outline-style: dashed;
+  outline-color: red;
+  outline-offset: 0.1em;
+}
+
+:target {
+  /* border: 2px solid black; */
+
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: black;
+  outline-offset: 0.2em;
+}
+
+details {
+    padding: 1em;
+}
+
+details > summary {
+    border: 1px solid silver;
+    padding: 0.3em;
+}
+
+details > div {
+    padding: 1em;
+}
+
+details[open] {
+    /* border: 2px solid black; */
+  
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: black;
+    outline-offset: -.3em;
+}
+
+aside.extendedDescription  {
+/*  position: absolute; */
+    height: 1px;
+    width: 1px;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px,1px,1px,1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+    -webkit-clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+    overflow: hidden!important;
+}
+
+.endDesc {
+    padding: 1em;
+}
+
+
+.listhead{
+    font-size: 150%;
+    font-weight: bold;  
+    padding: 0em;
+}

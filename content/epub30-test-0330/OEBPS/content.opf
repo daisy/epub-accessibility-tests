@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0"
+  unique-identifier="com.github.epub-testsuite.epub30-test-0330">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:language>en</dc:language>
+    <dc:publisher>DIAGRAM Center</dc:publisher>
+    <dc:title>Math in EPUB Advanced Testbook</dc:title>
+    <dc:creator id="creator01">DIAGRAM Center</dc:creator>
+        <meta property="role" refines="#creator01">aut</meta>
+        <meta property="file-as" refines="#creator01">DIAGRAM Center</meta>
+    <dc:contributor>Charles LaPierre</dc:contributor>
+    <dc:contributor>Neil Soiffer</dc:contributor>
+    <dc:contributor>Sina Bahram</dc:contributor>
+    <dc:contributor>Jason White</dc:contributor>
+    <dc:contributor>George Kerscher</dc:contributor>
+    <dc:contributor>Avneesh Singh</dc:contributor>
+    <dc:identifier id="com.github.epub-testsuite.epub30-test-0330">com.github.epub-testsuite.epub30-test-0330</dc:identifier>
+    <dc:date>2018-05-01</dc:date>
+    <meta property="dcterms:modified">2018-05-01T08:00:00Z</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">MathML</meta>
+    <meta property="schema:accessibilityFeature">describedMath</meta>
+    <meta property="schema:accessibilityHazard">none</meta>
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessModeSufficient">textual,visual</meta>
+    <meta property="schema:accessModeSufficient">visual</meta>
+    <meta property="schema:accessibilityAPI">ARIA</meta>
+    <meta property="schema:accessibilitySummary">This EPUB is just for testing purposes as the intent is to test reading systems for math accessibility with the embedded math.</meta>
+
+  </metadata>
+  <manifest>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="a11yMath.js" href="Misc/a11yMath.js" media-type="application/javascript"/>
+    <item id="a11yMath.css" href="Styles/a11yMath.css" media-type="text/css"/>
+    <item id="base.css" href="Styles/base.css" media-type="text/css"/>
+    <item id="epub-image-math.xhtml" href="Text/epub-image-math.xhtml"
+      media-type="application/xhtml+xml"/>
+    <item id="epub-image-math-examples.xhtml" href="Text/epub-image-math-examples.xhtml"
+      media-type="application/xhtml+xml" properties="scripted mathml svg"/>
+    <item href="Text/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="epub-image-2pointform.svg" href="Images/epub-image-2pointform.svg" media-type="image/svg+xml"/>
+   <item id="epub-image-x1y1.svg" href="Images/epub-image-x1y1.svg" media-type="image/svg+xml"/>
+   <item id="epub-image-x2nex1.svg" href="Images/epub-image-x2nex1.svg" media-type="image/svg+xml"/>
+   <item id="epub-image-x2y2.svg" href="Images/epub-image-x2y2.svg" media-type="image/svg+xml"/>
+   </manifest>
+  <spine toc="ncx">
+    <itemref idref="nav"/>
+    <itemref idref="epub-image-math.xhtml"/>
+    <itemref idref="epub-image-math-examples.xhtml"/>
+  </spine>
+</package>

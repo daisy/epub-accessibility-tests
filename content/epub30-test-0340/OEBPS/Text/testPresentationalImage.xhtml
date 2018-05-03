@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
+
+<head>
+    <title>Presentational image: impact of alt=&quot;&quot; and role=&quot;presentation&quot;</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="charset" content="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+    <link href="../Styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Impact of alt=quote endquote (empty alt) and role= quote presentation endquote</h1>
+
+<p>Many times decorative images are used on pages, sometimes called "eye candy." For persons using Assistive Technology  this can be destractive and annoying. To suppress having anything spoken, like the file name of the image, two techniques are recommended to be used on the same image. Use alt="", i.e. the alt is empty. plus use role=presentation".  When both are present, the person using AT should hear nothing. However, when only alt="" (empty alt) is used, the reader should be alerted that there is a graphic present and they should understand that the graphic was adequately described in the fig caption or the surrounding text.</p>
+
+<h2>Example 9: block level Alt is empty and Without role=&quot;presentation&quot;</h2>
+<section id="extdesc-120" class="ftest">
+
+  <p>You should find out that there is a graphic there.</p>
+
+  <h2><span class="test-id">extdesc-120</span></h2>
+  <p class="desc">The test passes if assistive technology is able to detect that there is a graphic or image between the two lines of text.</p>
+
+  <p>This text is before the image </p>
+  <img src="../Images/more_info.jpeg" alt="" />
+  <p>and this text is after the image.</p>
+
+  <p class="eval">Indicate Pass or Fail</p>
+</section>
+
+<h2>Example 10: Inline graphic Alt is empty and Without role=&quot;presentation&quot;</h2>
+
+<section id="extdesc-130" class="ftest">
+
+  <p>You should find out that there is a graphic  in the middle of the paragraph.</p>
+
+  <h2><span class="test-id">extdesc-130</span></h2>
+  <p class="desc">The test passes if assistive technology is able to detect that there is a graphic or image between the two sentences in the paragraph.</p>
+
+  <p>This text is before the image. <img src="../Images/more_info.jpeg" alt="" />  And this text is after the image.</p>
+
+  <hr/>
+
+  <p class="eval">Indicate Pass or Fail</p>
+</section>
+
+
+<h2>Example 11: Block level With role=&quot;presentation&quot; and empty alt text</h2>
+
+<section id="extdesc-140" class="ftest">
+
+  <h2><span class="test-id">extdesc-140</span></h2>
+  <p class="desc">The test passes if assistive technology is <b>&quot;not&quot;</b> able to detect graphic or image between the following two lines of text.</p>
+
+  <p>This text is before the image </p>
+  <img src="../Images/more_info.jpeg" alt="" role="presentation" />
+  <p> and this text is after the image.</p>
+
+  <p class="eval">Indicate Pass or Fail</p>
+
+</section>
+
+<h2>Example 12: Inline graphic With role=&quot;presentation&quot; and empty alt text</h2>
+
+<section id="extdesc-150" class="ftest">
+  <h2><span class="test-id">extdesc-150</span></h2>
+  <p class="desc">The test passes if assistive technology is <b>&quot;not&quot;</b> able to detect graphic or image in the middle of the paragraph.</p>
+  <p>This sentence is before the image. <img src="../Images/more_info.jpeg" alt="" role="presentation" /> This sentence is after the image.</p>
+  <p class="eval">Indicate Pass or Fail</p>
+</section>
+</body>
+</html>

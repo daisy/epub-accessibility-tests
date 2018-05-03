@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="uid" prefix="cc: http://creativecommons.org/ns#">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">Extended Descriptions Sample Book</dc:title>
+    <dc:creator>DIAGRAM Center</dc:creator>
+    <dc:identifier id="uid">extended-descriptions-experiments</dc:identifier>
+    <dc:language>en-US</dc:language>
+    <dc:publisher>DIAGRAM Center</dc:publisher>
+    <dc:contributor>Charles LaPierre</dc:contributor>
+    <dc:contributor>George Kerscher</dc:contributor>
+    <dc:contributor>Daniel Weck</dc:contributor>
+    <dc:description>Tests for extended descriptions of images</dc:description>
+    <dc:rights>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike (CC BY-NC-SA) license.</dc:rights>
+    <dc:date>2018-05-02</dc:date>
+    <meta property="dcterms:modified">2018-05-02T10:00:00Z</meta>
+    <meta property="schema:accessibilityHazard">none</meta>
+    <meta property="schema:accessibilityFeature">alternativeText</meta>
+    <meta property="schema:accessibilityFeature">index</meta>
+    <meta property="schema:accessibilityFeature">longDescription</meta>
+    <meta property="schema:accessibilityFeature">readingOrder</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessModeSufficient">visual</meta>
+    <meta property="schema:accessModeSufficient">textual,visual</meta>
+    <meta property="schema:accessibilitySummary">This EPUB is just for testing purposes as the intent is to test reading systems on accessibility for extended descriptions with the descriptions.</meta>
+    </metadata>
+  <manifest>
+
+    <item id="styles" href="Styles/styles.css" media-type="text/css" />
+    <item id="basestyles" href="Styles/base.css" media-type="text/css" />
+    <item id="toc" href="Text/index.xhtml" media-type="application/xhtml+xml" properties="nav" />
+
+    <item id="i0" href="Text/intro-extended-descriptions.xhtml" media-type="application/xhtml+xml" />
+     <item id="i1" href="Text/testDetailsUnderImage.xhtml" media-type="application/xhtml+xml" />
+    <item id="i2" href="Text/testDetailsEndOfChapter.xhtml" media-type="application/xhtml+xml"  />
+    <item id="i3" href="Text/testDetailsEndOfChapterWithFootnoteSemantics.xhtml" media-type="application/xhtml+xml"  />
+    <item id="i4" href="Text/testDetailsDescribedBy.xhtml" media-type="application/xhtml+xml" />
+    <item id="i5" href="Text/testPresentationalImage.xhtml" media-type="application/xhtml+xml" />
+   <item id="i6" href="Text/testDetailsExpanding.xhtml" media-type="application/xhtml+xml" />
+  <item id="i7" href="Text/testDetailsCollapsing.xhtml" media-type="application/xhtml+xml" />
+
+    <item id="img_more_info" href="Images/more_info.jpeg" media-type="image/jpeg"/>
+    <item id="img_chart" href="Images/chart-ebcaadfb.png" media-type="image/png"/>
+    <item id="img_peafowl" href="Images/peafowl-998cf337.jpg" media-type="image/jpeg"/>
+  </manifest>
+  <spine>
+    <itemref idref="toc"/>
+    <itemref idref="i0"/>
+    <itemref idref="i1"/>
+    <itemref idref="i2"/>
+    <itemref idref="i3"/>
+    <itemref idref="i4"/>
+    <itemref idref="i5"/>
+    <itemref idref="i6"/>
+    <itemref idref="i7"/>
+  </spine>
+</package>

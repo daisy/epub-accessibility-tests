@@ -1,0 +1,58 @@
+.MathMLNoDisplay {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+/* turn off MathML display on kindles */
+
+body {
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 10em;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 1em;
+}
+
+:target {
+    border: 1px dotted blue;
+}
+
+
+summary {
+    border: 1px solid silver;
+}
+
+caption, .caption, figcaption {
+    font-size: 80%;
+    caption-side: top;
+    text-align: left;
+}
+
+thead td {
+    font-weight: bold;
+}
+
+a:focus, a:active, a:hover {
+  outline-width: 1px;
+  outline-style: dashed;
+  outline-color: red;
+}
+
+:target {
+  border: 2px solid black;
+}
+
+details[open] {
+    border: 2px solid black;
+}

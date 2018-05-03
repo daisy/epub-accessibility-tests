@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>Math in EPUB Advanced Testbook</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/a11yMath.css"/>
+  </head>
+
+  <body role="main">
+    <h1>Introduction</h1>
+
+    <p>Reading mathematics has always been a problem for persons who are blind, because math is not represented as static text. MathML is a way to encode math for machine processing and presentation, and it has been a W3C Standard for more than 20 years. However, the browsers have only implemented limited support.</p>
+
+    <p>Publishers use MathML in their production workflows to generate an image of the math expression. Assistive technology has started to implement support for MathML by converting the expressions to textual representations. Building on this combination of factors, we have developed some techniques that bring together SVG images of math with JavaScript and MathML to present math that utilizes the features of assistive technology.</p>
+
+    <h2> Image Math Description</h2>
+
+    <p>This testing will help us identify the techniques for math that are supported most widely in reading apps and assistive technology combinations. With this information, we will develop best practices with publishers and also provide feedback to reading app developers for improving the accessibility of their products. We will also provide this information to Assistive Technology developers.</p>
+    <p>The objective of the test book is to identify the reading systems and assistive technologies that support the technique explained as follows:</p>
+
+    <ol>
+        <li>If reading system supports JavaScript then it places MathML in the DOM, which means that reading systems that use both JavaScript and MathML will provide access to MathML.</li>
+        <li>If reading system does not support JavaScript then the Image of MathML with alttext is shown. This acts as a fallback mechanism.</li>
+    </ol>
+    <p>To avoid reading duplicate expressions, the JavaScript ensures that only one of the above two mechanisms is presented by hiding the alternative.</p>
+
+  </body>
+</html>

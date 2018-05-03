@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
+
+<head>
+    <title>Extended Descriptions At end of the Page/Chapter, with footnote semantics</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="charset" content="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+    <link href="../Styles/styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <h1>Image descriptions using Links to End of Chapter, with footnote semantics</h1>
+
+
+<p>Example 5 and 6 use the semantics of EPUB footnotes. Some reading systems have special ways of showing footnotes. For example, when activated, a box  pops up with the content of the footnote. The viewport may have different characteristics from the normal reading pane. We need to make sure if a window does pop up that  it can be read properly and that it is possible to escape from the pop up window and return to the place you left off reading. There is a wide variety in how footnotes are implemented in reading Apps. While extended descriptions are not footnotes, we believe that some publishers may want to use this technique to show extended descriptions.</p>
+
+<p>We believe that we will need to capture information about your experience, not just a pass or fail. Some reading Apps may have special behaviors they employ for footnotes, and others will ignore the footnote semantics and treat it like a normal link. For this reason, we ask that you tell us about your experience in the notes field of the evaluation.</p>
+
+<h2>Example 5: Bar Chart</h2>
+<p>This test uses footnote semantics in the text link and in the target aside.</p>
+
+<section id="extdesc-080" class="ftest">
+  <h2><span class="test-id">extdesc-080</span></h2>
+  <p class="desc">Support for text hyperlinking mechanism where the link is a footnote reference.</p>
+  <p>Test passes if all the following steps are successful:</p>
+  <ul>
+    <li>The link "Follow for extended description" is reported, and on activating, it takes the focus to extended description at end of this document. The extended
+  description is placed under the heading "Example 5: Description of Bar Chart" </li>
+    <li>You can read the extended description using normal table commands, e.g. the viewport does not creat problems.</li>
+    <li>you can escape from the footnote construct and return to the image</li>
+    <li>or On activating the link "Navigate back to Example 3: Bar Chart image" below the extended description, it takes the focus back to original position in the image.</li>
+  </ul>
+  <p><b>Note:</b> Please describe your experience in the notes field of the evaluation.</p>
+  <p class="eval">Indicate Pass or Fail</p>
+
+
+    <figure id="image1">
+        <img src="../Images/chart-ebcaadfb.png" alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"
+            aria-details="#image1-extended-desc" />
+        <figcaption>Example.com Site visitors Jan to March 2014</figcaption>
+    </figure>
+    <a epub:type="noteref" role="doc-noteref" id="image1-link" href="#image1-extended-desc" title="Follow link for extended description at end of chapter">Follow for extended description</a>
+</section>
+
+
+    <h2>Example 6: Peacock Detailed Description of Image</h2>
+
+    <p>In this example, the head of the peacock is described using a paragraph of text that is on the web page.</p>
+<p>This test uses footnote semantics in the image link and in the target aside.</p>
+
+<section id="extdesc-090" class="ftest">
+  <h2><span class="test-id">extdesc-090</span></h2>
+  <p class="desc">Support for image hyperlinking mechanism where the link is a footnote reference</p>
+  <p>Test passes if all the following steps are successful:</p>
+    <ul>
+      <li>The link "Follow for extended description" is reported, and on activating, it takes the focus to extended description at end of this document. The extended
+  description is placed under the heading "Example 6: Description of peacock" </li>
+      <li>You can read the extended description using normal text navigation commands, e.g. the viewport does not creat problems.</li>
+      <li>you can escape from the footnote construct and return to the image</li>
+      <li>or On activating the link "Navigate back to Example 3: Bar Chart image" below the extended description, it takes the focus back to original position in the image.</li>
+    </ul>
+  <p><b>Note:</b> Please describe your experience in the notes field of the evaluation.</p>
+  <p class="eval">Indicate Pass or Fail</p>
+
+    <img id="image2" src="../Images/peafowl-998cf337.jpg" alt="Male peacock head" aria-details="#image2-extended-desc" />
+    <a epub:type="noteref" role="doc-noteref" id="image2-link" href="#image2-extended-desc" title="Follow link for extended description ">
+        <img src="../Images/more_info.jpeg" alt=" follow for description" />
+    </a>
+
+</section>
+
+    <h2>Complex Images (provided as filler)</h2>
+
+<p>We want to simulate that there is a lot of material between the images and the end of the chapter where the extended descriptions are placed. This provides that filler.</p>
+
+<p>        Complex images contain substantial information; more  details than can be conveyed in a short phrase or sentence. These are typically:
+    </p>
+    <ul>
+        <li>graphs and charts, including flow charts and organizational charts;</li>
+        <li>diagrams and illustrations where the page text relies on the user being able to understand the image;</li>
+        <li>maps showing locations or other information such as weather systems.</li>
+    </ul>
+
+    <hr />
+
+    <h2>End of chapter:Extended Descriptions using EPUB footnote semantics</h2>
+
+<hr/>
+
+<h3>Example 5 extended description using footnote semantics</h3>
+
+    <aside epub:type="footnote" role="doc-footnote" id="image1-extended-desc" class="endDesc">
+        <h3>Example 5: Description of Bar Chart</h3>
+        <div>
+            <h4>Overview</h4>
+            <p>The chart shows the website hits for the first quarter of 2014. It shows that Site 1 has more visitors than either
+                of the other sites, but the number of visitors is decreasing. Site 2 has a fairly constant number of visitors,
+                while for Site 3 page hits are increasing month on month.</p>
+            <h4>Data</h4>
+            <table>
+                <tr>
+                    <th>Period</th>
+                    <th>Site 1</th>
+                    <th>Site 2</th>
+                    <th>Site 3</th>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>135</td>
+                    <td>112</td>
+                    <td>92</td>
+                </tr>
+                <tr>
+                    <td>Feb</td>
+                    <td>117</td>
+                    <td>114</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>Mar</td>
+                    <td>96</td>
+                    <td>111</td>
+                    <td>126</td>
+                </tr>
+                <tr>
+                    <td>Qtr Total</td>
+                    <td>348</td>
+                    <td>337</td>
+                    <td>308</td>
+                </tr>
+            </table>
+            <h4>Presentation</h4>
+            <p>The bar chart represents both the number of visitors per month for each website, and the total number of visitors
+                per website for the entire quarter. Website visitors for each month are represented using columns lined up
+                horizontally, with heights indicating the number of visitors. A fourth column is provided for each website
+                with the accumulated site visitors for the quarter.</p>
+            <p>
+                <a epub:type="backlink" role="doc-backlink" href="#image1-link">Navigate back to description link of Example 5: Bar Chart image.</a>
+            </p>
+        </div>
+    </aside>
+<h3>Example 6 using aside and epub footnote semantics</h3>
+
+
+    <aside epub:type="footnote" role="doc-footnote" id="image2-extended-desc" class="endDesc">
+        <h3>Example 6: Description of Peacock</h3>
+        <div>
+            <p>
+                The male peacock is metallic blue on the crown, the feathers of the head being short and curled. The fan-shaped crest on
+                the head is made of feathers with bare black shafts and tipped with blush-green webbing. A white stripe above
+                the eye and a crescent shaped white patch below the eye are formed by bare white skin. The sides of the head
+                have iridescent greenish blue feathers. The back has scaly bronze-green feathers with black and copper markings.
+            </p>
+            <p>
+                <a epub:type="backlink" role="doc-backlink" href="#image2-link">Navigate back to description link of Example 6: Peacock image.</a>
+            </p>
+        </div>
+    </aside>
+
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
+
+<head>
+    <title>Extended Descriptions At end of the Page/Chapter</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="charset" content="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+    <link href="../Styles/styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <h1>Image descriptions using Links to End of Chapter</h1>
+
+    <p>In this chapter there are two examples. (Example 3 and 4) The extended descriptions are placed at the end of the chapter. It is expected that this approach will appeal to publishers that do not want the descriptions to  impact the appearance of the content. The approaches have the lowest impact on the visual layout. . They both use Aria-details which point to an "div" at the end of the chapter which eventually will be picked up by assistive technologies and reading systems to make navigation to the description a seamless experience. However, until aria-details is widely adopted, a traditional link is placed below the image that points to the same location at the end of the chapter . Example 3 has a text link and example 4 has an image as a link. A link back to the image is provided to take the reader back to the same location where they left off reading in the primary flow of content. </p>
+
+    <p> In summary, the three techniques we are testing are:</p>
+    <ul>
+      <li>aria-details attribute.</li>
+      <li>text Hyper link to act as fall back if aria-details is not supported.</li>
+      <li>Image hyper link  to act as fall back if aria-details is not supported.</li>
+    </ul>
+
+    <h2>Example 3: Bar Chart</h2>
+    <p>This example has aria-details attribute and a simple text link using standard HTML linking to an internal reference at the end  of this document/chapter. </p>
+
+    <section id="extdesc-050" class="ftest">
+      <h2><span class="test-id">extdesc-050</span></h2>
+      <p class="desc">Support for aria-details</p>
+      <p>This test passes if aria-details is reported on the image and the UI or AT provides the functionality which takes you to the extended description at end of this document. The extended description is placed under the heading "Example 3: Description of Bar Chart".</p>
+      <p class="eval">Indicate Pass or Fail</p>
+    </section>
+
+    <section id="extdesc-060" class="ftest">
+      <h2><span class="test-id">extdesc-060</span></h2>
+      <p class="desc">Support for text hyperlinking mechanism</p>
+      <p>This test passes if all the following steps are successful:</p>
+      <ul>
+        <li>The link "Follow for extended description" is reported, and on activating, it takes the focus to extended description at end of this document. The extended
+        description is placed under the heading "Example 3: Description of Bar Chart" </li>
+        <li>You can read the extended description</li>
+        <li>On activating the link "Navigate back to Example 3: Bar Chart image" below the extended description, it takes the focus back to original position in the image.</li>
+      </ul>
+      <p class="eval">Indicate Pass or Fail</p>
+
+
+
+<figure id="image1">
+        <img src="../Images/chart-ebcaadfb.png" alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"
+            aria-details="#image1-extended-desc" />
+        <figcaption>Example.com Site visitors Jan to March 2014</figcaption>
+    </figure>
+    <a id="image1-link" href="#image1-extended-desc" title="Follow link for extended description at end of chapter">Follow for extended description</a>
+
+    </section>
+
+    <h2>Example 4: Peacock Detailed Description of Image</h2>
+
+    <p>In this example, the head of the peacock is described using a paragraph of text that is on the web page.</p>
+<p>This example has a clickable image directly after the image which links to the end of this document /chapter for its description.</p>
+
+<section id="extdesc-070" class="ftest">
+  <h2><span class="test-id">extdesc-070</span></h2>
+  <p class="desc">Support for hyperlink placed on clickable image.</p>
+  <p>Test passes if following steps are successful:</p>
+  <ul>
+    <li>The link "Follow link for extended description at end of chapter" is reported, and on clicking it takes the focus to extended description at end of this
+  document. The extended description is placed under the heading "Example 4: Description of Peacock"</li>
+    <li>You can read the extended description</li>
+    <li>On activating the link "Navigate back to Example 4: Peacock image" below the extended description, it takes the focus back to original position in the image.</li>
+  </ul>
+  <p class="eval">Indicate Pass or Fail</p>
+
+    <img id="image2" src="../Images/peafowl-998cf337.jpg" alt="Male peacock head" aria-details="#image2-extended-desc" />
+    <a id="image2-link" href="#image2-extended-desc" title="Follow link for extended description at end of chapter">
+        <img src="../Images/more_info.jpeg" alt=""  /></a>
+
+</section>
+
+    <h2>Complex Images (provided as filler)</h2>
+
+<p>We want to simulate that there is a lot of material between the images and the end of the chapter where the extended descriptions are placed. This provides that filler.</p>
+    <p>
+        Complex images contain substantial information; more details than can be conveyed in a short phrase or sentence. These are typically:</p>
+    <ul>
+        <li>graphs and charts, including flow charts and organizational charts;</li>
+        <li>diagrams and illustrations where the page text relies on the user being able to understand the image;</li>
+        <li>maps showing locations or other information such as weather systems.</li>
+    </ul>
+
+    <hr />
+
+    <h2>End of Chapter Extended Descriptions</h2>
+
+    <div id="image1-extended-desc" class="endDesc">
+        <h3>Example 3: Description of Bar Chart</h3>
+        <div>
+            <h4>Overview</h4>
+            <p>The chart shows the website hits for the first quarter of 2014. It shows that Site 1 has more visitors than either
+                of the other sites, but the number of visitors is decreasing. Site 2 has a fairly constant number of visitors,
+                while for Site 3 page hits are increasing month on month.</p>
+            <h4>Data</h4>
+            <table>
+                <tr>
+                    <th>Period</th>
+                    <th>Site 1</th>
+                    <th>Site 2</th>
+                    <th>Site 3</th>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>135</td>
+                    <td>112</td>
+                    <td>92</td>
+                </tr>
+                <tr>
+                    <td>Feb</td>
+                    <td>117</td>
+                    <td>114</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>Mar</td>
+                    <td>96</td>
+                    <td>111</td>
+                    <td>126</td>
+                </tr>
+                <tr>
+                    <td>Qtr Total</td>
+                    <td>348</td>
+                    <td>337</td>
+                    <td>308</td>
+                </tr>
+            </table>
+            <h4>Presentation</h4>
+            <p>The bar chart represents both the number of visitors per month for each website, and the total number of visitors
+                per website for the entire quarter. Website visitors for each month are represented using columns lined up
+                horizontally, with heights indicating the number of visitors. A fourth column is provided for each website
+                with the accumulated site visitors for the quarter.</p>
+            <p>
+                <a href="#image1-link">Navigate back to Example 3: Bar Chart image.</a>
+            </p>
+        </div>
+    </div>
+
+    <hr />
+
+    <div id="image2-extended-desc" class="endDesc">
+        <h3>Example 4: Description of Peacock</h3>
+
+            <p>
+                The male peacock is metallic blue on the crown, the feathers of the head being short and curled. The fan-shaped crest on
+                the head is made of feathers with bare black shafts and tipped with blush-green webbing. A white stripe above
+                the eye and a crescent shaped white patch below the eye are formed by bare white skin. The sides of the head
+                have iridescent greenish blue feathers. The back has scaly bronze-green feathers with black and copper markings.
+            </p>
+            <p>
+                <a href="#image2-link">Navigate back to Example 4: Peacock image.</a>
+            </p>
+    </div>
+
+</body>
+
+</html>
