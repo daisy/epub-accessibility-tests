@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<title>Math in EPUB Advance Testbook</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+<link rel="stylesheet" type="text/css" href="../Styles/a11yMath.css"/>
+</head>
+
+<body onload="MakeMathAccessible()" role="doc-chapter">
+
+  <h1>Math in EPUB Tests</h1>
+
+  <section id="math-030" class="ftest">
+    <h2><span class="test-id">math-030</span></h2>
+
+    <p class="desc">MathML Only</p>
+    <p class="eval">Indicate Pass or Fail.</p>
+
+    <p>
+        The test has 4 MathML expressions.
+        <br/>
+        <br/>
+        The test passes if you are able to visually see the math equation (which should look similar to the reference image of the math equation following) and the assistive technology reports presence of all 4 MathML expressions and provides functionality to read it.  Additionally while navigating the mathML equation take note if you are able to see the portions of the equation highlighted as you navigate the various sections of the equation.
+        <br/>
+         <br/>
+        Note: The equation may look a little different (i.e. not pixel perfect), but the content of the MathML rendered math eqation should be equal to the content in the PNG reference image.
+         <br/>
+        <br/>
+       If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix "mathml alt text” and you heard the expression “(mathml alt text): x sub 1, y sub 1” or was the math expression expressed via the readers own math rulesets such as “left parenthesis x subscript 1, y subscript 1 right parenthesis” with no prefix.”
+        <br/>
+        <br/>
+        The test fails if you un unable to see the MathML rendered equation and only see the reference image of the equation for your comparison.
+        <br/>
+        <br/>
+        Also note any other visual anomolies you encounter.
+        <br/>
+    </p>
+    <p>Begin first expression.</p>
+    <p>
+        The formula for a line that runs through the points
+        <span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(mathml alt-text): x sub 1, y sub 1">
+          <mo>(</mo>
+            <msub> <mi>x</mi><mn>1</mn></msub>
+             <mo>,</mo>
+            <msub> <mi>y</mi><mn>1</mn></msub>
+          <mo>)</mo>
+        </math>
+        </span>
+        <img src="../Images/epub-image-x1y1.png" style="vertical-align: -0.844ex;" alt="reference image of math only for visual comparison"/>
+        and
+  </p>
+  <p> Begin second expression.</p>
+  <p>
+            <span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(mathml alt-text): x sub 2 y sub 2">
+              <mo>(</mo>
+                <msub> <mi>x</mi><mn>2</mn> </msub>
+                 <mo>,</mo>
+                <msub> <mi>y</mi><mn>2</mn> </msub>
+              <mo>)</mo>
+            </math>
+                </span>
+            <img src="../Images/epub-image-x2y2.png" style="vertical-align: -0.844ex;" alt="reference image of math only for visual comparison"/>
+            is:
+  </p>
+  <p>Begin third expression.</p>
+            <span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+                <mrow>
+                  <mstyle displaystyle="true">
+                    <mi>y</mi>
+                    <mo>−<!-- − --></mo>
+                    <msub>
+                      <mi>y</mi>
+                      <mrow>
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>=</mo>
+                    <mrow>
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>y</mi>
+                            <mrow>
+                              <mn>2</mn>
+                            </mrow>
+                          </msub>
+                          <mo>−<!-- − --></mo>
+                          <msub>
+                            <mi>y</mi>
+                            <mrow>
+                              <mn>1</mn>
+                            </mrow>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <msub>
+                            <mi>x</mi>
+                            <mrow>
+                              <mn>2</mn>
+                            </mrow>
+                          </msub>
+                          <mo>−<!-- − --></mo>
+                          <msub>
+                            <mi>x</mi>
+                            <mrow>
+                              <mn>1</mn>
+                            </mrow>
+                          </msub>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <mo stretchy="false">(</mo>
+                    <mi>x</mi>
+                    <mo>−<!-- − --></mo>
+                    <msub>
+                      <mi>x</mi>
+                      <mrow>
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mstyle>
+                </mrow>
+            </math>
+            </span>
+            <img src="../Images/epub-image-2pointform.png" style="vertical-align: -2.103ex;" alt="reference image of math only for visual comparison"/>
+
+    <p>Begin fourth expression.</p>
+    <p>
+            where
+            <span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(mathml alt-text): x sub 2 not-equals x sub 1">
+              <msub> <mi>x</mi><mn>2</mn> </msub>
+              <mo>≠<!-- not equals --></mo>
+              <msub> <mi>x</mi><mn>1</mn> </msub>
+            </math>
+                </span>
+            <img src="../Images/epub-image-x2nex1.png" style="vertical-align: -0.704ex;" alt="reference image of math only for visual comparison"/>.
+  </p>
+</section>
+</body>
+</html>
