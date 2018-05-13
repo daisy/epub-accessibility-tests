@@ -35,19 +35,20 @@
     <item id="a11yMath.js" href="Misc/a11yMath.js" media-type="application/javascript"/>
     <item id="a11yMath.css" href="Styles/a11yMath.css" media-type="text/css"/>
     <item id="base.css" href="Styles/base.css" media-type="text/css"/>
-    <item id="epub-image-math.xhtml" href="Text/epub-image-math.xhtml"
-      media-type="application/xhtml+xml"/>
-    <item id="epub-image-math-examples.xhtml" href="Text/epub-image-math-examples.xhtml"
-      media-type="application/xhtml+xml" properties="scripted mathml svg"/>
+
+    <item id="epub-mathml-only-examples.xhtml" href="Text/epub-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
+    <item id="epub-image-math.xhtml" href="Text/epub-image-math.xhtml" media-type="application/xhtml+xml"/>
+    <item id="epub-image-math-examples.xhtml" href="Text/epub-image-math-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml svg"/>
     <item href="Text/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+
     <item id="epub-image-2pointform.svg" href="Images/epub-image-2pointform.svg" media-type="image/svg+xml"/>
-   <item id="epub-image-x1y1.svg" href="Images/epub-image-x1y1.svg" media-type="image/svg+xml"/>
-   <item id="epub-image-x2nex1.svg" href="Images/epub-image-x2nex1.svg" media-type="image/svg+xml"/>
-   <item id="epub-image-x2y2.svg" href="Images/epub-image-x2y2.svg" media-type="image/svg+xml"/>
+    <item id="epub-image-x1y1.svg" href="Images/epub-image-x1y1.svg" media-type="image/svg+xml"/>
+    <item id="epub-image-x2nex1.svg" href="Images/epub-image-x2nex1.svg" media-type="image/svg+xml"/>
+    <item id="epub-image-x2y2.svg" href="Images/epub-image-x2y2.svg" media-type="image/svg+xml"/>
     <item id="epub-image-2pointform.png" href="Images/epub-image-2pointform.png" media-type="image/png"/>
-   <item id="epub-image-x1y1.png" href="Images/epub-image-x1y1.png" media-type="image/png"/>
-   <item id="epub-image-x2nex1.png" href="Images/epub-image-x2nex1.png" media-type="image/png"/>
-   <item id="epub-image-x2y2.png" href="Images/epub-image-x2y2.png" media-type="image/png"/>
+    <item id="epub-image-x1y1.png" href="Images/epub-image-x1y1.png" media-type="image/png"/>
+    <item id="epub-image-x2nex1.png" href="Images/epub-image-x2nex1.png" media-type="image/png"/>
+    <item id="epub-image-x2y2.png" href="Images/epub-image-x2y2.png" media-type="image/png"/>
    </manifest>
   <spine toc="ncx">
     <itemref idref="nav"/>

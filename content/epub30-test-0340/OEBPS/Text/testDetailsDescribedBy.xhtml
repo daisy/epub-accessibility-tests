@@ -3,35 +3,40 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
 
 <head>
-    <title>Extended Descriptions using ARIA described-by Visually Hidden Aside</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Extended descriptions using ARIA described-by pointing to a visually hidden aside</title>
     <meta name="charset" content="utf-8" />
     <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
     <link href="../Styles/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <h1>Extended Descriptions using ARIA described-by pointing to a Visually Hidden Aside</h1>
+    <h1>Extended Descriptions using ARIA <code>described-by</code> pointing to a Visually Hidden Aside</h1>
 
-<p>In the following examples the aria-describedby is used to expose the extended image description which is in an aside.</p>
-    <p><b>Note 1:</b> Since aria-describedby will flatten all the extended image description text, we believe  the table within the extended image description will not be navigable using AT.</p>
-    <p><b>Note 2:</b> Since the description is hidden visually this solution is not recommended for universal accessibility because the description will not be available to low vision and people with learning disabilities.</p>
+    <h2>Notes about techniques</h2>
+    <p>In the following examples, the <code>aria-describedby</code> attribute is used to expose the extended image description, which is in an <code>aside</code> element.</p>
 
-    <hr />
-    <h2>Example 7: Bar Chart</h2>
+    <p>In the first example, <code>aria-describedby</code> points to an <code>aside</code> element, placed inside a <code>figcaption</code> element.</p>
 
-    <section id="extdesc-100" class="ftest">
-      <h2><span class="test-id">extdesc-100</span></h2>
-      <p class="desc">Support for describedby aside placed inside figcaption.</p>
-      <p>The test passes if you are able to read/hear the following text when the focus is on the image:<br/>
-      "The chart shows the website hits for the first quarter of 2014. It shows that Site 1 has more visitors than
-                          either of the other sites, but the number of visitors is decreasing. Site 2 has a fairly constant number
-                          of visitors, while for Site 3 page hits are increasing month on month."<br/>
-      Note: there may be a lot more text read that is in a table.</p>
+    <p>In the second example, the head of the peacock is described using a paragraph of text that is in an aside on the web page.</p>
 
-      <p class="eval">Indicate Pass or Fail</p>
+    <p><em>Note:</em></p>
+    <ul>
+      <li>Since <code>aria-describedby</code> will flatten all the extended image description text, we believe the table within the extended image description will not be navigable using AT.</li>
+      <li>Since the description is hidden visually, this solution is not recommended for universal accessibility because the description will not be available to low vision users and people with learning disabilities.</li>
+    </ul>
 
+    <p>The test below refers to the bar chart image immediately following.</p>
+    <section id="extdesc-150" class="ftest">
+      <h2><span class="test-title"><code>aria-describedby</code> points to an <code>aside</code> in a <code>figcaption</code></span><br/><span class="test-id">extdesc-150</span></h2>
+      <div class="desc">
+        <p>The test passes if you are able to read/hear the following text when the focus is on the image:</p>
+        <blockquote>The chart shows the website hits for the first quarter of 2014. It shows that Site 1 has more visitors than either of the other sites, but the number of visitors is decreasing. Site 2 has a fairly constant number of visitors, while for Site 3 page hits are increasing month on month.
+        </blockquote>
+        <p>Note: there may be a lot more text read that is in a table.</p>
+      </div>
+    </section>
 
+    <h2>Image for above test</h2>
     <figure>
         <img src="../Images/chart-ebcaadfb.png" alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"
             aria-describedby="image1-extended-desc" />
@@ -83,27 +88,27 @@
             </aside>
         </figcaption>
     </figure>
-</section>
 
 
-    <h2>Example 8: Peacock Detailed Description of Image</h2>
-    <p>In this example, the head of the peacock is described using a paragraph of text that is in an aside on the web page.</p>
+    <p>The test below refers to the peacock image immediately following.</p>
 
-    <section id="extdesc-110" class="ftest">
-      <h2><span class="test-id">extdesc-110</span></h2>
-      <p class="desc">Support for describedby aside placed inside figcaption.</p>
-      <p class="eval">Indicate Pass or Fail</p>
-<p>The test passes if you are able to read/hear the following text when the focus is on the image:<br/>
-"The male is metallic blue on the crown, the feathers of the head being short and curled. The fan-shaped crest on the head
+    <section id="extdesc-160" class="ftest">
+      <h2><span class="test-title"><code>aria-describedby</code> points to an <code>aside</code> at the end of chapter</span><br/><span class="test-id">extdesc-160</span></h2>
+
+      <div class="desc">
+        <p>The test passes if you are able to read/hear the following text when the focus is on the image</p>
+        <blockquote>The male is metallic blue on the crown, the feathers of the head being short and curled. The fan-shaped crest on the head
             is made of feathers with bare black shafts and tipped with blush-green webbing. A white stripe above the eye
             and a crescent shaped white patch below the eye are formed by bare white skin. The sides of the head have iridescent
-            greenish blue feathers. The back has scaly bronze-green feathers with black and copper markings."</p>
+            greenish blue feathers. The back has scaly bronze-green feathers with black and copper markings."</blockquote>
+      </div>
+    </section>
 
-
+    <h2>Image for above test</h2>
     <img src="../Images/peafowl-998cf337.jpg" alt="Male peacock head" aria-describedby="image2-extended-desc" />
-  </section>
-<hr/>
-<h3>Filler simulating aside at the end of the chapter</h3>
+
+    <hr/>
+    <h2>Filler simulating aside at the end of the chapter</h2>
 
 
     <aside class="extendedDescription" id="image2-extended-desc">

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
 
 <head>
-    <title>Details Element Expanding Test</title>
+    <title>Details and summary expanding</title>
 
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="charset" content="utf-8" />
@@ -13,25 +13,23 @@
 </head>
 
 <body>
-<h1>Details and Summary Expanding</h1>
+<h1>Details and summary expanding</h1>
 
-<p>The expanding and collapsing nature of the HTML details element with the summary feature needs to be tested for accessibility. The example we have here is a very large chunk of text with HTML markup. When expanded, it would reflow into several pages. Some Reading Apps have a scroling view and others have a pagenated view. We want to make sure that this behaves correctly.</p>
+<p>The expanding and collapsing nature of the HTML details element with the summary feature needs to be tested for accessibility. The example we have here is a very large chunk of text with HTML markup. When expanded, it would reflow into several pages. Some reading systems have a scrolling view and others have a paginated view. We want to make sure that this behaves correctly.</p>
 
-<p>The text is a recipe  that is a real recipe you could try.</p>
+<p>The text is a recipe that is a real recipe you could try.</p>
 
-<h2>Example 13: Details Expanding</h2>
-<section id="extdesc-160" class="ftest">
-  <h2><span class="test-id">extdesc-160</span></h2>
-  <p class="desc">Expanding details and ease of reading</p>
-  <p>This test passes if all the following steps are successful:</p>
-  <ul>
-    <li>You can expand the details and the screen adjusts by itself, bringing the relevant text on screen.</li>
-    <li>You can read to the end of description. After the recipe you should see some End of chapter Header and text to ensure nothing was cut off.</li>
-  </ul>
-  <p>Please repeat this test for paginated view as well as scroll view and provide a note about it. Please also include notes about usability of this approach.</p>
-
-  <p class="eval">Indicate Pass or Fail</p>
-
+<section id="extdesc-210" class="ftest">
+  <h2><span class="title">Expanding details and ease of reading</span><br/><span class="test-id">extdesc-210</span></h2>
+  <div class="desc">
+    <p>This test passes if all the following steps are successful:</p>
+    <ul>
+      <li>You can expand the details and the screen adjusts by itself, bringing the relevant text on screen.</li>
+      <li>You can read to the end of description. After the recipe you should see some End of chapter Header and text to ensure nothing was cut off.</li>
+    </ul>
+    <p>Please repeat this test for paginated view as well as scroll view and provide a note about it. Please also include notes about usability of this approach.</p>
+  </div>
+</section>
 
 <details><summary>Goulash Soup</summary>
 <h1>Soups and Stews</h1>
@@ -80,7 +78,6 @@
 
 
 </details>
-</section>
 
 <h2>This is at the end of the chapter</h2>
 <p>This sentence is the last item in this details expansion test.</p>

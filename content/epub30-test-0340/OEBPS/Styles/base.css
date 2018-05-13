@@ -3,15 +3,15 @@
 body {
     font-family: arial, helvetica, sans-serif;
     color: black;
-    background: white;        
+    background: white;
 }
 
-.test-id, .demo-ctest {    
+.test-id, .demo-ctest {
     font-size: 80%;
-    font-style: normal;    
+    font-style: normal;
     color:gray;
-    margin-right: 1em;    
-    padding: 0.3em;
+    margin-right: 1em;
+    /*padding: 0.3em;*/
 }
 
 .ctest, .otest {
@@ -81,4 +81,9 @@ dl.info dt {
 .-epub-media-overlay-playback-active .mo-playing {
     background-color: green !important;
     color: white !important;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
 }
