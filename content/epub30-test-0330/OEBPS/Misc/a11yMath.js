@@ -16,7 +16,7 @@ function CanUseMathML() {
 		var matches = window.navigator.userAgent.match(/Edge\/\d+/);
 		return (matches!=null);
 	};
-	return!isEdge();
+	return !isEdge();
 }
 
 
