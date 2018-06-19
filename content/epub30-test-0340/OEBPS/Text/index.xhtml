@@ -13,33 +13,61 @@
         <ol>
             <li><a href="intro-extended-descriptions.xhtml">Introduction to Extended Descriptions</a></li>
 
-            <li><a href="testDetailsUnderImage.xhtml#extdesc-010">Presence of <code>aria-details</code> on <code>img</code> in <code>figure</code> (extdesc-010)</a></li>
-            <li><a href="testDetailsUnderImage.xhtml#extdesc-020">Linking to extended description inside <code>figcaption</code> (extdesc-020)</a></li>
-            <li><a href="testDetailsUnderImage.xhtml#extdesc-030">Presence of <code>details</code> and <code>summary</code> elements (extdesc-030)</a></li>
-            <li><a href="testDetailsUnderImage.xhtml#extdesc-040">Expanding and collapsing the <code>details</code> element (extdesc-040)</a></li>
-            <li><a href="testDetailsUnderImage.xhtml#extdesc-050">Presence of <code>aria-details</code> (extdesc-050)</a></li>
-            <li><a href="testDetailsUnderImage.xhtml#extdesc-060">Linking to extended description next to the image (extdesc-060)</a></li>
-            <li><a href="testDetailsUnderImage.xhtml#extdesc-070">Presence of <code>details</code> and <code>summary</code> elements (extdesc-070)</a></li>
-            <li><a href="testDetailsUnderImage.xhtml#extdesc-080">Expanding and collapsing the <code>details</code> element (extdesc-080)</a></li>
+            <li><a href="testDetailsUnderImage.xhtml#s1">Tests for bar chart image that uses HTML <code>details</code>/<code>summary</code> for image description, and <code>aria-details</code> for navigation</a>
+              <ol>
+                <li><a href="testDetailsUnderImage.xhtml#extdesc-010">Detection of <code>aria-details</code> on <code>img</code> in <code>figure</code> (extdesc-010)</a></li>
+                <li><a href="testDetailsUnderImage.xhtml#extdesc-020">Moving to extended description inside <code>figcaption</code> (extdesc-020)</a></li>
+                <li><a href="testDetailsUnderImage.xhtml#extdesc-030">Detection of <code>details</code> and <code>summary</code> elements (extdesc-030)</a></li>
+                <li><a href="testDetailsUnderImage.xhtml#extdesc-040">Expanding and collapsing the <code>details</code> element (extdesc-040)</a></li>
+              </ol>
+            </li>
 
-            <li><a href="testDetailsEndOfChapter.xhtml#extdesc-090">Presence of <code>aria-details</code> on <code>img</code> (extdesc-090)</a></li>
-            <li><a href="testDetailsEndOfChapter.xhtml#extdesc-100">Linking to extended description at end of chapter (extdesc-100)</a></li>
-            <li><a href="testDetailsEndOfChapter.xhtml#extdesc-110">Linking to extended description via text hyperlink (extdesc-110)</a></li>
-            <li><a href="testDetailsEndOfChapter.xhtml#extdesc-120">Linking to extended description via image hyperlink (extdesc-120)</a></li>
+            <li><a href="testDetailsUnderImage.xhtml#s2">Tests for peacock image that uses HTML <code>details</code>/<code>summary</code> for image description, and <code>aria-details</code> for navigation</a>
+              <ol>
+                <li><a href="testDetailsUnderImage.xhtml#extdesc-050">Detection of <code>aria-details</code> (extdesc-050)</a></li>
+                <li><a href="testDetailsUnderImage.xhtml#extdesc-060">Moving to extended description next to the image (extdesc-060)</a></li>
+                <li><a href="testDetailsUnderImage.xhtml#extdesc-070">Detection of <code>details</code> and <code>summary</code> elements (extdesc-070)</a></li>
+                <li><a href="testDetailsUnderImage.xhtml#extdesc-080">Expanding and collapsing the <code>details</code> element (extdesc-080)</a></li>
+              </ol>
+            </li>
 
-            <li><a href="testDetailsEndOfChapterWithFootnoteSemantics.xhtml#extdesc-130">Text hyperlinking to footnote reference (extdesc-130)</a></li>
-            <li><a href="testDetailsEndOfChapterWithFootnoteSemantics.xhtml#extdesc-140">Image hyperlinking to footnote reference (extdesc-140)</a></li>
+            <li><a href="testDetailsEndOfChapter.xhtml#s1">Tests for bar chart image that uses <code>aria-details</code> for navigation to end of chapter description</a>
+              <ol>
+                <li><a href="testDetailsEndOfChapter.xhtml#extdesc-090">Detection of <code>aria-details</code> on <code>img</code> (extdesc-090)</a></li>
+                <li><a href="testDetailsEndOfChapter.xhtml#extdesc-100">Linking to extended description at end of chapter (extdesc-100)</a></li>
+                <li><a href="testDetailsEndOfChapter.xhtml#extdesc-110">Fallback technique for linking to extended description via text hyperlink (extdesc-110)</a></li>
+                <li><a href="testDetailsEndOfChapter.xhtml#extdesc-120">Fallback technique for linking to extended description via image hyperlink (extdesc-120)</a></li>
+              </ol>
+            </li>
 
-            <li><a href="testDetailsDescribedBy.xhtml#extdesc-150"><code>aria-describedby</code> points to an <code>aside</code> in a <code>figcaption</code> (extdesc-150)</a></li>
-            <li><a href="testDetailsDescribedBy.xhtml#extdesc-160"><code>aria-describedby</code> points to an <code>aside</code> at the end of chapter (extdesc-160)</a></li>
+            <li><a href="testDetailsEndOfChapterWithFootnoteSemantics.xhtml#s1">Tests for use of footnotes for descriptions</a>
+              <ol>
+                <li><a href="testDetailsEndOfChapterWithFootnoteSemantics.xhtml#extdesc-130">Text hyperlinking to footnote reference (extdesc-130)</a></li>
+                <li><a href="testDetailsEndOfChapterWithFootnoteSemantics.xhtml#extdesc-140">Image hyperlinking to footnote reference (extdesc-140)</a></li>
+              </ol>
+            </li>
 
-            <li><a href="testPresentationalImage.xhtml#extdesc-170">Block-level <code>image</code> with empty <code>alt</code> and without role=&quot;presentation&quot; (extdesc-170)</a></li>
-            <li><a href="testPresentationalImage.xhtml#extdesc-180">Inline graphic with empty <code>alt</code> and without role=&quot;presentation&quot; (extdesc-180)</a></li>
-            <li><a href="testPresentationalImage.xhtml#extdesc-190">Block-level <code>img</code> with <code>role=&quot;presentation&quot;</code> and empty <code>alt</code> (extdesc-190)</a></li>
-            <li><a href="testPresentationalImage.xhtml#extdesc-200">Inline graphic with <code>role=&quot;presentation&quot;</code> and empty <code>alt</code> (extdesc-200)</a></li>
+            <li><a href="testDetailsDescribedBy.xhtml#s1">Tests for <code>aria-describedby</code></a>
+              <ol>
+                <li><a href="testDetailsDescribedBy.xhtml#extdesc-150"><code>aria-describedby</code> points to an <code>aside</code> in a <code>figcaption</code> (extdesc-150)</a></li>
+                <li><a href="testDetailsDescribedBy.xhtml#extdesc-160"><code>aria-describedby</code> points to an <code>aside</code> at the end of chapter (extdesc-160)</a></li>
+              </ol>
+            </li>
 
-           <li><a href="testDetailsExpanding.xhtml#extdesc-210">Expanding details and ease of reading (extdesc-210)</a></li>
-           <li><a href="testDetailsCollapsing.xhtml#extdesc-220">Collapsing and pagination (extdesc-220)</a></li>
+            <li><a href="testPresentationalImage.xhtml#s1">Tests for decorative images</a>
+              <ol>
+                <li><a href="testPresentationalImage.xhtml#extdesc-170">Block-level <code>image</code> with empty <code>alt</code> and without role=&quot;presentation&quot; (extdesc-170)</a></li>
+                <li><a href="testPresentationalImage.xhtml#extdesc-180">Inline graphic with empty <code>alt</code> and without role=&quot;presentation&quot; (extdesc-180)</a></li>
+                <li><a href="testPresentationalImage.xhtml#extdesc-190">Block-level <code>img</code> with <code>role=&quot;presentation&quot;</code> and empty <code>alt</code> (extdesc-190)</a></li>
+                <li><a href="testPresentationalImage.xhtml#extdesc-200">Inline graphic with <code>role=&quot;presentation&quot;</code> and empty <code>alt</code> (extdesc-200)</a></li>
+              </ol>
+            </li>
+            <li><span>Tests for expanding and collapsing <code>details</code></span>
+              <ol>
+                <li><a href="testDetailsExpanding.xhtml#extdesc-210">Expanding <code>details</code> and ease of reading (extdesc-210)</a></li>
+                <li><a href="testDetailsCollapsing.xhtml#extdesc-220">Collapsing and pagination (extdesc-220)</a></li>
+              </ol>
+            </li>
 
         </ol>
     </nav>

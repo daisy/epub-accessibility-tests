@@ -9,20 +9,20 @@
 </head>
 
 <body>
-<h1>Details and summary expanding and collapsing</h1>
+<h1><code>details</code> and <code>summary</code> expanding and collapsing</h1>
 
-<p>The expanding and collapsing nature of the HTML details element with the summary feature needs to be tested for accessibility. The example we have here is a very large chunk of text with HTML markup. When expanded, it would reflow into several pages. Some reading systems have a scrolling view and others have a paginated view. We want to make sure that this behaves correctly.</p>
+<p>The expanding and collapsing nature of the HTML <code>details</code> element with the <code>summary</code> feature needs to be tested for accessibility. The example we have here is a very large chunk of text with HTML markup. When expanded, it would reflow into several pages. Some reading systems have a scrolling view and others have a paginated view. We want to make sure that this behaves correctly.</p>
 
 <p>The text is a recipe that is a real recipe you could try.</p>
 
 <section id="extdesc-220" class="ftest">
-  <h2><span class="test-title">Collapsing and pagination</span><br/>g<span class="test-id">extdesc-220</span></h2>
+  <h2><span class="test-title">Collapsing and pagination</span><br/><span class="test-id">extdesc-220</span></h2>
 
   <div class="desc">
     <p>This test passes if the expanded description collapses without leaving space or pages behind. Two conditions must be satisfied:</p>
     <ul>
       <li>On activating the expand/collapse button twice, the description first expands then collapses.</li>
-      <li>The extra pages or space created for showing the extended description also collapse, and you are able to read End of chapter Header and text just after the expand/collapse button.</li>
+      <li>The extra pages or space created for showing the extended description also collapse, and you are able to read end of chapter header and text just after the expand/collapse button.</li>
     </ul>
     <p>Please repeat this test for paginated view as well as scrolling view, and provide a note about it. Please also include notes about usability of this approach.</p>
   </div>

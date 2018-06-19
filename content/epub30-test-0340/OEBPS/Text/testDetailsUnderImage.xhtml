@@ -20,20 +20,22 @@
 
   <p>In both images, <code>aria-details</code> also points to this details/summary structure, which eventually will be picked up by assistive technologies and reading systems to make this a seamless experience.</p>
 
+  <h1 id="s1">Tests for bar chart image that uses HTML <code>details</code>/<code>summary</code> for image description, and <code>aria-details</code> for navigation</h1>
+
   <p>The tests below refer to the bar chart image immediately following.</p>
 
   <section id="extdesc-010" class="ftest">
-    <h2><span class="test-title">Presence of <code>aria-details</code> on <code>img</code> in <code>figure</code></span><br/><span class="test-id">extdesc-010</span></h2>
+    <h2><span class="test-title">Detection of <code>aria-details</code> on <code>img</code> in <code>figure</code></span><br/><span class="test-id">extdesc-010</span></h2>
     <p class="desc">This test passes if <code>aria-details</code> for the image is indicated by the UI or reported by your AT.</p>
   </section>
 
   <section id="extdesc-020" class="ftest">
-    <h2><span class="test-title">Linking to extended description inside <code>figcaption</code></span><br/><span class="test-id">extdesc-020</span></h2>
-    <p class="desc">This test passes if the UI or the AT provides functionality which takes you to the HTML details/summary element just below the image.</p>
+    <h2><span class="test-title">Moving to extended description inside <code>figcaption</code></span><br/><span class="test-id">extdesc-020</span></h2>
+    <p class="desc">This test passes if the UI or the AT provides functionality for <code>aria-details</code>, which takes you to the HTML details/summary element just below the image.</p>
   </section>
 
   <section id="extdesc-030" class="ftest">
-    <h2><span class="test-title">Presence of <code>details</code> and <code>summary</code> elements</span><br/><span class="test-id">extdesc-030</span></h2>
+    <h2><span class="test-title">Detection of <code>details</code> and <code>summary</code> elements</span><br/><span class="test-id">extdesc-030</span></h2>
     <p class="desc">This test passes if the HTML <code>details</code> and <code>summary</code> elements are presented by the UI, or reported by your AT.</p>
   </section>
   <section id="extdesc-040" class="ftest">
@@ -100,21 +102,22 @@
       </figcaption>
   </figure>
 
-  <h1>Extended description using <code>details</code> and <code>summary</code> after <code>img</code></h1>
+  <h1 id="s2">Tests for peacock image that uses HTML <code>details</code>/<code>summary</code> for image description, and <code>aria-details</code> for navigation</h1>
+
   <p>The four tests below refer to the peacock image immediately following the tests.</p>
 
   <section id="extdesc-050" class="ftest">
-    <h2><span class="test-title">Presence of <code>aria-details</code> on <code>img</code></span><br/><span class="test-id">extdesc-050</span></h2>
+    <h2><span class="test-title">Detection of <code>aria-details</code> on <code>img</code></span><br/><span class="test-id">extdesc-050</span></h2>
     <p class="desc">This test passes if <code>aria-details</code> for the image is indicated by the UI or reported by your AT.</p>
   </section>
 
   <section id="extdesc-060" class="ftest">
-    <h2><span class="test-title">Linking to extended description next to the image</span><br/><span class="test-id">extdesc-060</span></h2>
-    <p class="desc">This test passes if the UI or the AT provides functionality which takes you to the HTML details/summary element just below the image.</p>
+    <h2><span class="test-title">Moving to extended description next to the image</span><br/><span class="test-id">extdesc-060</span></h2>
+    <p class="desc">This test passes if the UI or the AT provides functionality for <code>aria-details</code>, which takes you to the HTML details/summary element just below the image.</p>
   </section>
 
   <section id="extdesc-070" class="ftest">
-    <h2><span class="test-title">Presence of <code>details</code> and <code>summary</code> elements</span><br/><span class="test-id">extdesc-070</span></h2>
+    <h2><span class="test-title">Detection of <code>details</code> and <code>summary</code> elements</span><br/><span class="test-id">extdesc-070</span></h2>
     <p class="desc">This test passes if the HTML <code>details</code> and <code>summary</code> elements are presented by the UI, or reported by your AT.</p>
   </section>
 
