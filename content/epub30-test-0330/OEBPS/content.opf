@@ -15,8 +15,8 @@
     <dc:contributor>George Kerscher</dc:contributor>
     <dc:contributor>Avneesh Singh</dc:contributor>
     <dc:identifier id="com.github.epub-testsuite.epub30-test-0330">com.github.epub-testsuite.epub30-test-0330</dc:identifier>
-    <dc:date>2018-05-09</dc:date>
-    <meta property="dcterms:modified">2018-05-09T08:00:00Z</meta>
+    <dc:date>2018-06-20</dc:date>
+    <meta property="dcterms:modified">2018-06-20T10:00:00Z</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
     <meta property="schema:accessibilityFeature">describedMath</meta>
