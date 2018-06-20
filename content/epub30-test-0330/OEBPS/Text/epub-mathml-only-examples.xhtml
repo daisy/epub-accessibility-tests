@@ -10,12 +10,12 @@
 
   <h1>Math in EPUB Tests</h1>
 
-  <p>There are 2 tests in this document, based on the following 4 MathML expressions found at the end, as well as equivalent images of the expressions for comparison. You can ignore these tests if you are a non-visual reader.</p>
+  <p>There are 2 tests in this document, based on four MathML expressions found at the end, as well as equivalent images of the expressions for comparison. You can ignore these tests if you are a non-visual reader.</p>
 
   <section id="math-030" class="ftest">
     <h2><span class="test-title">Rendering of MathML</span> <span class="test-id">math-030</span></h2>
 
-    <p class="desc">The test passes if you are able to visually see the math equation (which should look similar to the reference image of the math equation). The test fails if you are unable to see the MathML-rendered equation or the rendering looks distorted. Note: The equation may look a little different (i.e. not pixel perfect), but the content of the MathML-rendered math equation should be equivalent to the content in the PNG reference image.</p>
+    <p class="desc">The test passes if you are able to visually see the math equation (which should look similar to the reference image of the math equation). The test fails if you are unable to see the MathML-rendered equation or the MathML rendering looks distorted. Note: The equation may look a little different (i.e. not pixel perfect), but the content of the MathML-rendered math equation should be equivalent to the content in the PNG reference image.</p>
 
   </section>
 
@@ -33,17 +33,13 @@
       <p>You may also see the third equation positioned differently than the other equations, you may ignore that.</p>
     </div>
 <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix "mathml alt text” and you heard the expression "(mathml alt text): x sub 1, y sub 1" or was the math expression expressed via the readers own math rulesets such as "left parenthesis x subscript 1, y subscript 1 right parenthesis" with no prefix. </p>
-    
+
 </section>
 
 <h2>Four math expressions for tests 030 and 040</h2>
 <p>The following statement contains 4 expressions (<a href="#exp1">1</a>, <a href="#exp2">2</a>, <a href="#exp3">3</a>, <a href="#exp4">4</a> )</p>
     <p>
         <span>The formula for a line that runs through the points </span>
-    </p>
-
-    <p>
-      <span class="note">(first expression)</span>
 
         <span id="exp1">
           <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(mathml alt-text): x sub 1, y sub 1">
@@ -54,11 +50,9 @@
             <mo>)</mo>
           </math>
         </span>
-        <img src="../Images/epub-image-x1y1.png" style="vertical-align: -0.844ex;" alt="reference image of math only for visual comparison"/>
-    </p>
-    <p>
+
+
         <span>and</span>
-        <span class="note">(second expression)</span>
 
         <span id="exp2">
           <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(mathml alt-text): x sub 2 y sub 2">
@@ -69,15 +63,12 @@
             <mo>)</mo>
           </math>
         </span>
-        <img src="../Images/epub-image-x2y2.png" style="vertical-align: -0.844ex;" alt="reference image of math only for visual comparison"/>
 
-    </p>
-    <p><span>is</span></p>
 
-    <p>
-        <span class="note">(third expression)</span>
+    <span>is</span>
+
         <span id="exp3">
-            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
               <mrow>
                 <mstyle displaystyle="true">
                   <mi>y</mi>
@@ -137,11 +128,10 @@
               </mrow>
           </math>
         </span>
-        <img src="../Images/epub-image-2pointform.png" style="vertical-align: -2.103ex;" alt="reference image of math only for visual comparison"/>
-      </p>
-      <p>
+
+
         <span>where</span>
-        <span class="note">(fourth expression)</span>
+
         <span id="exp4">
           <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(mathml alt-text): x sub 2 not-equals x sub 1">
             <msub> <mi>x</mi><mn>2</mn> </msub>
@@ -149,8 +139,18 @@
             <msub> <mi>x</mi><mn>1</mn> </msub>
           </math>
         </span>
-        <img src="../Images/epub-image-x2nex1.png" style="vertical-align: -0.704ex;" alt="reference image of math only for visual comparison"/>.
   </p>
 
+  <p>Here are the PNG reference images for the MathML above. The following statement contains 4 expressions (<a href="#img1">1</a>, <a href="#img2">2</a>, <a href="#img3">3</a>, <a href="#img4">4</a> )</p>
+  <p>
+    <span>The formula for a line that runs through the points </span>
+    <img id="img1" src="../Images/epub-image-x1y1.png" style="vertical-align: -0.844ex;" alt="reference image of math only for visual comparison"/>
+    <span>and</span>
+    <img id="img2" src="../Images/epub-image-x2y2.png" style="vertical-align: -0.844ex;" alt="reference image of math only for visual comparison"/>
+    <span>is</span>
+    <img id="img3" src="../Images/epub-image-2pointform.png" style="vertical-align: -2.103ex;" alt="reference image of math only for visual comparison"/>
+    <span>where</span>
+    <img id="img4" src="../Images/epub-image-x2nex1.png" style="vertical-align: -0.704ex;" alt="reference image of math only for visual comparison"/>.
+  </p>
 </body>
 </html>
