@@ -4,6 +4,7 @@
 <meta charset="UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
 <link rel="stylesheet" type="text/css" href="../Styles/a11yMath.css"/>
+
 </head>
 
 <body onload="MakeMathAccessible()">
@@ -15,20 +16,12 @@
   <section id="math-030" class="ftest">
     <h2><span class="test-title">Rendering of inline MathML</span> <span class="test-id">math-030</span></h2>
 
-    <p class="desc">The test passes if you are able to visually see the math equation (which should look similar to the reference image of the math equation). The test fails if you are unable to see the MathML-rendered equation or the MathML rendering looks distorted. Note: The equation may look a little different (i.e. not pixel perfect), but the content of the MathML-rendered math equation should be equivalent to the content in the PNG reference image.  Inline mathml are equations 1,2 and 4.</p>
+    <p class="desc">The test passes if you are able to visually see the math equation (which should look similar to the reference image of the math equation). The test fails if you are unable to see the MathML-rendered equation or the MathML rendering looks distorted. Note: The equation may look a little different (i.e. not pixel perfect), but the content of the MathML-rendered math equation should be equivalent to the content in the PNG reference image. </p>
 
   </section>
-    
+
   <section id="math-040" class="ftest">
-    <h2><span class="test-title">Rendering of block MathML</span> <span class="test-id">math-040</span></h2>
-
-    <p class="desc">The test passes if you are able to visually see the math equation (which should look similar to the reference image of the math equation). The test fails if you are unable to see the MathML-rendered equation or the MathML rendering looks distorted. Note: The equation may look a little different (i.e. not pixel perfect), but the content of the MathML-rendered math equation should be equivalent to the content in the PNG reference image.  Block mathML is equation 3 only.</p>
-
-  </section>
-    
-
-  <section id="math-050" class="ftest">
-    <h2><span class="test-title">Navigating MathML with AT and other technologies</span> <span class="test-id">math-050</span></h2>
+    <h2><span class="test-title">Navigating inline MathML with AT and other technologies</span> <span class="test-id">math-040</span></h2>
     <div class="desc">
       <p>The test passes if the following steps succeed.</p>
 
@@ -44,7 +37,7 @@
 
 </section>
 
-<h2>Four math expressions for tests 030, 040, and 050</h2>
+<h2>Four math expressions for tests 030 and 040</h2>
 <p>The following statement contains 4 expressions (<a href="#exp1">1</a>, <a href="#exp2">2</a>, <a href="#exp3">3</a>, <a href="#exp4">4</a> )</p>
     <p>
         <span>The formula for a line that runs through the points </span>
@@ -76,7 +69,7 @@
     <span>is</span>
 
         <span id="exp3">
-            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
               <mrow>
                 <mstyle displaystyle="true">
                   <mi>y</mi>
@@ -149,18 +142,160 @@
         </span>
   </p>
 
-  <p>Here are the PNG reference images for the MathML above. The following statement contains 4 expressions (<a href="#img1">1</a>, <a href="#img2">2</a>, <a href="#img3">3</a>, <a href="#img4">4</a> )</p>
+  <p>Here are the PNG reference images for the MathML above:</p>
   <p>
     <span>The formula for a line that runs through the points </span>
     <img id="img1" src="../Images/epub-image-x1y1.png" style="vertical-align: -0.844ex;" alt="reference image of math only for visual comparison"/>
     <span>and</span>
     <img id="img2" src="../Images/epub-image-x2y2.png" style="vertical-align: -0.844ex;" alt="reference image of math only for visual comparison"/>
     <span>is</span>
-    <br/>  
     <img id="img3" src="../Images/epub-image-2pointform.png" style="vertical-align: -2.103ex;" alt="reference image of math only for visual comparison"/>
-    <br/> 
     <span>where</span>
     <img id="img4" src="../Images/epub-image-x2nex1.png" style="vertical-align: -0.704ex;" alt="reference image of math only for visual comparison"/>.
   </p>
+
+
+  <section id="math-050" class="ftest">
+    <h2><span class="test-title">Rendering of block MathML</span> <span class="test-id">math-050</span></h2>
+
+    <p class="desc">The test passes if you are able to visually see the math equation (which should look similar to the reference image of the math equation, below the equation). The test fails if you are unable to see the MathML-rendered equation or the MathML rendering looks distorted. Note: The equation may look a little different (i.e. not pixel perfect), but the content of the MathML-rendered math equation should be equivalent to the content in the PNG reference image.</p>
+
+  </section>
+
+  <section id="math-060" class="ftest">
+    <h2><span class="test-title">Navigating block MathML with AT and other technologies</span> <span class="test-id">math-060</span></h2>
+    <div class="desc">
+      <p>The test passes if the following steps succeed.</p>
+
+      <ul>
+        <li>The AT or other reading technologies report presence of all 4 MathML expressions and provide functionality to read it. </li>
+        <li>While navigating the mathML equation you are able to see the portions of the equation highlighted as you navigate the various parts of the equation.</li>
+      </ul>
+
+      <p>The test fails if you don't read/hear the third equation containing an equals sign and the presence of a fraction contained within.</p>
+      <p>You may also see the third equation positioned differently than the other equations, you may ignore that.</p>
+    </div>
+<p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix "mathml alt text” and you heard the expression "(mathml alt text): x sub 1, y sub 1" or was the math expression expressed via the readers own math rulesets such as "left parenthesis x subscript 1, y subscript 1 right parenthesis" with no prefix. </p>
+
+</section>
+
+<h2>Four math expressions for tests 050 and 060</h2>
+<p>The following statement contains 4 expressions (<a href="#exp1">1</a>, <a href="#exp2">2</a>, <a href="#exp3">3</a>, <a href="#exp4">4</a> )</p>
+    <p style="text-align: center; line-height: 2.5em;">
+        <span>The formula for a line that runs through the points </span>
+
+        <span id="exp1b">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(mathml alt-text): x sub 1, y sub 1">
+            <mo>(</mo>
+            <msub> <mi>x</mi><mn>1</mn></msub>
+            <mo>,</mo>
+            <msub> <mi>y</mi><mn>1</mn></msub>
+            <mo>)</mo>
+          </math>
+        </span>
+
+
+        <span>and</span>
+
+        <span id="exp2b">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(mathml alt-text): x sub 2 y sub 2">
+            <mo>(</mo>
+            <msub> <mi>x</mi><mn>2</mn> </msub>
+            <mo>,</mo>
+            <msub> <mi>y</mi><mn>2</mn> </msub>
+            <mo>)</mo>
+          </math>
+        </span>
+
+
+    <span>is</span>
+
+        <span id="exp3b">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math>
+        </span>
+
+
+        <span>where</span>
+
+        <span id="exp4b">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(mathml alt-text): x sub 2 not-equals x sub 1">
+            <msub> <mi>x</mi><mn>2</mn> </msub>
+            <mo>≠<!-- not equals --></mo>
+            <msub> <mi>x</mi><mn>1</mn> </msub>
+          </math>
+        </span>
+  </p>
+
+  <p>Here are the PNG reference images for the MathML above.</p>
+  <div style="text-align: center;">
+    <p>The formula for a line that runs through the points</p>
+    <img id="img1b" src="../Images/epub-image-x1y1.png" style="vertical-align: -0.844ex;" alt="reference image of math only for visual comparison"/>
+    <p>and</p>
+    <img id="img2b" src="../Images/epub-image-x2y2.png" style="vertical-align: -0.844ex;" alt="reference image of math only for visual comparison"/>
+    <p>is</p>
+    <img id="img3b" src="../Images/epub-image-2pointform.png" style="vertical-align: -2.103ex;" alt="reference image of math only for visual comparison"/>
+    <p>where</p>
+    <img id="img4b" src="../Images/epub-image-x2nex1.png" style="vertical-align: -0.704ex;" alt="reference image of math only for visual comparison"/>.
+
+</div>
+
 </body>
 </html>
