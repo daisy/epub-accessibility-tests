@@ -10,17 +10,25 @@
 
   <h1>Math in EPUB Tests</h1>
 
-  <p>There are 2 tests in this document, based on four MathML expressions found at the end, as well as equivalent images of the expressions for comparison. You can ignore these tests if you are a non-visual reader.</p>
+  <p>There are 3 tests in this document, based on four MathML expressions found at the end, as well as equivalent images of the expressions for comparison. You can ignore these tests if you are a non-visual reader.</p>
 
   <section id="math-030" class="ftest">
-    <h2><span class="test-title">Rendering of MathML</span> <span class="test-id">math-030</span></h2>
+    <h2><span class="test-title">Rendering of inline MathML</span> <span class="test-id">math-030</span></h2>
 
-    <p class="desc">The test passes if you are able to visually see the math equation (which should look similar to the reference image of the math equation). The test fails if you are unable to see the MathML-rendered equation or the MathML rendering looks distorted. Note: The equation may look a little different (i.e. not pixel perfect), but the content of the MathML-rendered math equation should be equivalent to the content in the PNG reference image.</p>
+    <p class="desc">The test passes if you are able to visually see the math equation (which should look similar to the reference image of the math equation). The test fails if you are unable to see the MathML-rendered equation or the MathML rendering looks distorted. Note: The equation may look a little different (i.e. not pixel perfect), but the content of the MathML-rendered math equation should be equivalent to the content in the PNG reference image.  Inline mathml are equations 1,2 and 4.</p>
 
   </section>
-
+    
   <section id="math-040" class="ftest">
-    <h2><span class="test-title">Navigating MathML with AT and other technologies</span> <span class="test-id">math-040</span></h2>
+    <h2><span class="test-title">Rendering of block MathML</span> <span class="test-id">math-040</span></h2>
+
+    <p class="desc">The test passes if you are able to visually see the math equation (which should look similar to the reference image of the math equation). The test fails if you are unable to see the MathML-rendered equation or the MathML rendering looks distorted. Note: The equation may look a little different (i.e. not pixel perfect), but the content of the MathML-rendered math equation should be equivalent to the content in the PNG reference image.  Block mathML is equation 3 only.</p>
+
+  </section>
+    
+
+  <section id="math-050" class="ftest">
+    <h2><span class="test-title">Navigating MathML with AT and other technologies</span> <span class="test-id">math-050</span></h2>
     <div class="desc">
       <p>The test passes if the following steps succeed.</p>
 
@@ -36,7 +44,7 @@
 
 </section>
 
-<h2>Four math expressions for tests 030 and 040</h2>
+<h2>Four math expressions for tests 030, 040, and 050</h2>
 <p>The following statement contains 4 expressions (<a href="#exp1">1</a>, <a href="#exp2">2</a>, <a href="#exp3">3</a>, <a href="#exp4">4</a> )</p>
     <p>
         <span>The formula for a line that runs through the points </span>
@@ -68,7 +76,7 @@
     <span>is</span>
 
         <span id="exp3">
-            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
               <mrow>
                 <mstyle displaystyle="true">
                   <mi>y</mi>
@@ -148,7 +156,9 @@
     <span>and</span>
     <img id="img2" src="../Images/epub-image-x2y2.png" style="vertical-align: -0.844ex;" alt="reference image of math only for visual comparison"/>
     <span>is</span>
+    <br/>  
     <img id="img3" src="../Images/epub-image-2pointform.png" style="vertical-align: -2.103ex;" alt="reference image of math only for visual comparison"/>
+    <br/> 
     <span>where</span>
     <img id="img4" src="../Images/epub-image-x2nex1.png" style="vertical-align: -0.704ex;" alt="reference image of math only for visual comparison"/>.
   </p>
