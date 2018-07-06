@@ -15,8 +15,8 @@
     <dc:contributor>George Kerscher</dc:contributor>
     <dc:contributor>Avneesh Singh</dc:contributor>
     <dc:identifier id="com.github.epub-testsuite.epub30-test-0330">com.github.epub-testsuite.epub30-test-0330</dc:identifier>
-    <dc:date>2018-06-20</dc:date>
-    <meta property="dcterms:modified">2018-06-20T10:00:00Z</meta>
+    <dc:date>2018-07-06</dc:date>
+    <meta property="dcterms:modified">2018-07-06T13:00:00Z</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
     <meta property="schema:accessibilityFeature">describedMath</meta>
@@ -36,24 +36,24 @@
     <item id="a11yMath.css" href="Styles/a11yMath.css" media-type="text/css"/>
     <item id="base.css" href="Styles/base.css" media-type="text/css"/>
 
-    <item id="epub-mathml-only-examples.xhtml" href="Text/epub-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
-    <item id="epub-image-math.xhtml" href="Text/epub-image-math.xhtml" media-type="application/xhtml+xml"/>
-    <item id="epub-image-math-examples.xhtml" href="Text/epub-image-math-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml svg"/>
-    <item href="Text/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="nav" href="Text/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+
+    <item id="epub-math-introduction.xhtml" href="Text/epub-math-introduction.xhtml" media-type="application/xhtml+xml"/>
+    <item id="epub-image-fallback-mathml-examples.xhtml" href="Text/epub-image-fallback-mathml-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml svg"/>
+    <item id="epub-rendering-mathml-only-examples.xhtml" href="Text/epub-rendering-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
+    <item id="epub-navigating-mathml-only-examples.xhtml" href="Text/epub-navigating-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
+    <item id="epub-math-appendix.xhtml" href="Text/epub-math-appendix.xhtml" media-type="application/xhtml+xml"/>
 
     <item id="epub-image-2pointform.svg" href="Images/epub-image-2pointform.svg" media-type="image/svg+xml"/>
-    <item id="epub-image-x1y1.svg" href="Images/epub-image-x1y1.svg" media-type="image/svg+xml"/>
-    <item id="epub-image-x2nex1.svg" href="Images/epub-image-x2nex1.svg" media-type="image/svg+xml"/>
-    <item id="epub-image-x2y2.svg" href="Images/epub-image-x2y2.svg" media-type="image/svg+xml"/>
     <item id="epub-image-2pointform.png" href="Images/epub-image-2pointform.png" media-type="image/png"/>
-    <item id="epub-image-x1y1.png" href="Images/epub-image-x1y1.png" media-type="image/png"/>
-    <item id="epub-image-x2nex1.png" href="Images/epub-image-x2nex1.png" media-type="image/png"/>
-    <item id="epub-image-x2y2.png" href="Images/epub-image-x2y2.png" media-type="image/png"/>
    </manifest>
+   
   <spine toc="ncx">
     <itemref idref="nav"/>
-    <itemref idref="epub-image-math.xhtml"/>
-    <itemref idref="epub-image-math-examples.xhtml"/>
-    <itemref idref="epub-mathml-only-examples.xhtml"/>
+    <itemref idref="epub-math-introduction.xhtml"/>
+    <itemref idref="epub-image-fallback-mathml-examples.xhtml"/>
+    <itemref idref="epub-rendering-mathml-only-examples.xhtml"/>
+    <itemref idref="epub-navigating-mathml-only-examples.xhtml"/>
+    <itemref idref="epub-math-appendix.xhtml"/>
   </spine>
 </package>

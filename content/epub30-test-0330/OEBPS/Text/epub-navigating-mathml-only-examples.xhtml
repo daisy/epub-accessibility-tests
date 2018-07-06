@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<title>Math in EPUB Advance Testbook</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+<link rel="stylesheet" type="text/css" href="../Styles/a11yMath.css"/>
+
+</head>
+
+<body onload="MakeMathAccessible()">
+
+  <h1>Navigating MathML Only Tests</h1>
+
+   <section id="math-030" class="ftest">
+    <h2><span class="test-id">math-030</span> <span class="test-title">Navigating inline MathML with AT and other technologies</span></h2>
+    <div class="desc">
+      <p>The test passes if the following steps succeed.</p>
+
+      <ul>
+        <li>The AT or other reading technologies report presence of the MathML expression and provide functionality to read it.</li>
+        <li>While navigating the mathML equation you are able to see the portions of the equation highlighted as you navigate the various parts of the equation.</li>
+      </ul>
+
+      <p>The test fails if you don't read/hear the equation containing an equals sign and the presence of a fraction contained within.</p>
+    </div>
+
+
+<h2>Test 030</h2>
+    <p>Inline Math Equation will appear between the following two lines.</p>
+    <hr/>
+        <span id="exp3">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math>
+        </span>
+    <hr/>
+
+    <h3>Additional Notes for Test 030</h3>
+
+    <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix "mathml alt text” and you heard the expression "(mathml alt text): x sub 1, y sub 1" or was the math expression expressed via the readers own math rulesets such as "left parenthesis x subscript 1, y subscript 1 right parenthesis" with no prefix. </p>
+    
+    </section>
+    
+  <section id="math-040" class="ftest">
+    <h2><span class="test-id">math-040</span> <span class="test-title">Navigating block MathML with AT and other technologies</span></h2>
+    <div class="desc">
+      <p>The test passes if the following steps succeed.</p>
+
+      <ul>
+        <li>The AT or other reading technologies report presence of the MathML expression and provide functionality to read it. </li>
+        <li>While navigating the mathML equation you are able to see the portions of the equation highlighted as you navigate the various parts of the equation.</li>
+      </ul>
+
+      <p>The test fails if you don't read/hear the equation containing an equals sign and the presence of a fraction contained within.</p>
+    </div>
+
+
+<h2>Test 040</h2>
+    <p>Block Math Equation will appear between the following two lines.</p>
+    <hr/>
+        <span id="exp4">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math>
+        </span>
+    <hr/>
+ </section>
+</body>
+</html>
