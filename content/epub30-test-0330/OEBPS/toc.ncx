@@ -14,7 +14,7 @@
       <navLabel>
         <text>Start</text>
       </navLabel>
-      <content src="Text/epub-image-math.xhtml"/>
+      <content src="Text/epub-math-introduction.xhtml"/>
     </navPoint>
   </navMap>
 </ncx>

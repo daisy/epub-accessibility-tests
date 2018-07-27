@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>Math in EPUB Advanced Testbook</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+   </head>
+
+  <body>
+    <h1>Appendix</h1>
+
+        <p>Publishers use MathML in their production workflows to generate an image of the math expression. Assistive technology has started to implement support for MathML by converting the expressions to textual representations. Building on this combination of factors, we have developed some techniques that bring together SVG images of math with JavaScript and MathML to present math that utilizes the features of assistive technology.</p>
+
+        <p>The techniques in this title bring together SVG images of math with JavaScript and MathML. The objective of the test book is to identify the reading systems and assistive technologies that support the technique explained as follows:</p>
+      
+        <ol>
+            <li>If reading system supports JavaScript then it places MathML in the DOM, which means that reading systems that use both JavaScript and MathML will provide access to MathML.</li>
+            <li>If reading system does not support JavaScript then the Image of MathML with alttext is shown. This acts as a fallback mechanism.</li>
+        </ol>
+      
+        <p>To avoid reading duplicate expressions, the JavaScript ensures that only one of the above two mechanisms is presented by hiding the alternative.</p>
+
+  </body>
+</html>
