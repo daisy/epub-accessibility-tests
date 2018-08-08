@@ -51,6 +51,7 @@ a:focus, a:active, a:hover {
 
 :target {
   border: 2px solid black;
+  padding: 0.6em;
 }
 
 details[open] {
