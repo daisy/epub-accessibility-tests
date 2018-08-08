@@ -11,8 +11,8 @@
     <dc:contributor>Daniel Weck</dc:contributor>
     <dc:description>Tests for extended descriptions of images</dc:description>
     <dc:rights>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike (CC BY-NC-SA) license.</dc:rights>
-    <dc:date>2018-05-02</dc:date>
-    <meta property="dcterms:modified">2018-05-02T10:00:00Z</meta>
+    <dc:date>2018-08-08</dc:date>
+    <meta property="dcterms:modified">2018-08-08T09:00:00Z</meta>
     <meta property="schema:accessibilityHazard">none</meta>
     <meta property="schema:accessibilityFeature">alternativeText</meta>
     <meta property="schema:accessibilityFeature">index</meta>
