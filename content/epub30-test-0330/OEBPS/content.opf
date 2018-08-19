@@ -4,7 +4,8 @@
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
     <dc:language>en</dc:language>
     <dc:publisher>DIAGRAM Center</dc:publisher>
-    <dc:title>Math in EPUB Advanced Testbook</dc:title>
+    <dc:title>EPUBTEST 0330 - MathML in EPUB Advanced Accessibility Tests</dc:title>
+    <dc:description>Tests for accessibility strategies for MathML in EPUB</dc:description>
     <dc:creator id="creator01">DIAGRAM Center</dc:creator>
         <meta property="role" refines="#creator01">aut</meta>
         <meta property="file-as" refines="#creator01">DIAGRAM Center</meta>
@@ -14,7 +15,7 @@
     <dc:contributor>Jason White</dc:contributor>
     <dc:contributor>George Kerscher</dc:contributor>
     <dc:contributor>Avneesh Singh</dc:contributor>
-    <dc:identifier id="com.github.epub-testsuite.epub30-test-0330">com.github.epub-testsuite.epub30-test-0330</dc:identifier>
+    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330</dc:identifier>
     <dc:date>2018-08-08</dc:date>
     <meta property="dcterms:modified">2018-08-08T09:00:00Z</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
@@ -47,7 +48,7 @@
     <item id="epub-image-2pointform.svg" href="Images/epub-image-2pointform.svg" media-type="image/svg+xml"/>
     <item id="epub-image-2pointform.png" href="Images/epub-image-2pointform.png" media-type="image/png"/>
    </manifest>
-   
+
   <spine toc="ncx">
     <itemref idref="nav"/>
     <itemref idref="epub-math-introduction.xhtml"/>
