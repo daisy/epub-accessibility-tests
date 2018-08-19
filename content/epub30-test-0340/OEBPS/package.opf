@@ -3,7 +3,7 @@
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:title id="title">Extended Descriptions Sample Book</dc:title>
     <dc:creator>DIAGRAM Center</dc:creator>
-    <dc:identifier id="uid">extended-descriptions-experiments</dc:identifier>
+    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0340</dc:identifier>
     <dc:language>en-US</dc:language>
     <dc:publisher>DIAGRAM Center</dc:publisher>
     <dc:contributor>Charles LaPierre</dc:contributor>
