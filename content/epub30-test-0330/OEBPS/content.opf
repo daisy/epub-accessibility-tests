@@ -53,8 +53,8 @@
     <itemref idref="nav"/>
     <itemref idref="epub-math-introduction.xhtml"/>
     <itemref idref="epub-image-fallback-mathml-examples.xhtml"/>
-    <itemref idref="epub-rendering-mathml-only-examples.xhtml"/>
     <itemref idref="epub-navigating-mathml-only-examples.xhtml"/>
+    <itemref idref="epub-rendering-mathml-only-examples.xhtml"/>
     <itemref idref="epub-math-appendix.xhtml"/>
   </spine>
 </package>
