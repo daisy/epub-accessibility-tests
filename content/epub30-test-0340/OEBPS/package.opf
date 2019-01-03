@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="uid" prefix="cc: http://creativecommons.org/ns#">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:title id="title">EPUBTEST 0340 - Extended Descriptions Accessibility Tests</dc:title>
-    <dc:creator>DIAGRAM Center</dc:creator>
+    <dc:title id="title">EPUBTEST 0340 - Advance Accessibility Tests for Extended Descriptions</dc:title>
+    <dc:creator>DAISY Transition to EPUB 3 and  DIAGRAM Standards WG</dc:creator>
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0340</dc:identifier>
     <dc:language>en-US</dc:language>
-    <dc:publisher>DIAGRAM Center</dc:publisher>
+    <dc:publisher>DAISY Consortium and DIAGRAM Center</dc:publisher>
     <dc:contributor>Charles LaPierre</dc:contributor>
     <dc:contributor>George Kerscher</dc:contributor>
     <dc:contributor>Daniel Weck</dc:contributor>
+    <dc:contributor>Avneesh Singh</dc:contributor>
+    <dc:contributor>Amy Salmen</dc:contributor>
+    <dc:contributor>Lloyd Rasmussen</dc:contributor>
+    <dc:contributor>Marisa Demeglio</dc:contributor>
     <dc:description>Tests for accessible extended descriptions of images in EPUBs</dc:description>
     <dc:rights>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike (CC BY-NC-SA) license.</dc:rights>
-    <dc:date>2018-08-08</dc:date>
+    <dc:date>2019-01-03</dc:date>
     <meta property="dcterms:modified">2018-08-08T09:00:00Z</meta>
     <meta property="schema:accessibilityHazard">none</meta>
     <meta property="schema:accessibilityFeature">alternativeText</meta>
@@ -27,6 +31,8 @@
     <meta property="schema:accessibilitySummary">This EPUB is just for testing purposes as the intent is to test reading systems on accessibility for extended descriptions with the descriptions.</meta>
     </metadata>
   <manifest>
+    <item id="cover_jpg" properties="cover-image" href="Images/cover.jpg" media-type="image/jpeg" />
+    <item id="cover" href="Text/cover.xhtml" media-type="application/xhtml+xml"/>
 
     <item id="styles" href="Styles/styles.css" media-type="text/css" />
     <item id="basestyles" href="Styles/base.css" media-type="text/css" />
@@ -35,7 +41,6 @@
     <item id="i0" href="Text/intro-extended-descriptions.xhtml" media-type="application/xhtml+xml" />
      <item id="i1" href="Text/testDetailsUnderImage.xhtml" media-type="application/xhtml+xml" />
     <item id="i2" href="Text/testDetailsEndOfChapter.xhtml" media-type="application/xhtml+xml"  />
-    <item id="i3" href="Text/testDetailsEndOfChapterWithFootnoteSemantics.xhtml" media-type="application/xhtml+xml"  />
     <item id="i4" href="Text/testDetailsDescribedBy.xhtml" media-type="application/xhtml+xml" />
     <item id="i5" href="Text/testPresentationalImage.xhtml" media-type="application/xhtml+xml" />
    <item id="i6" href="Text/testDetailsExpanding.xhtml" media-type="application/xhtml+xml" />
@@ -46,11 +51,11 @@
     <item id="img_peafowl" href="Images/peafowl-998cf337.jpg" media-type="image/jpeg"/>
   </manifest>
   <spine>
+		<itemref idref="cover"/>
     <itemref idref="toc"/>
     <itemref idref="i0"/>
     <itemref idref="i1"/>
     <itemref idref="i2"/>
-    <itemref idref="i3"/>
     <itemref idref="i4"/>
     <itemref idref="i5"/>
     <itemref idref="i6"/>
