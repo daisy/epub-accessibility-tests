@@ -1,23 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0"
-  unique-identifier="com.github.epub-testsuite.epub30-test-0330">
+  unique-identifier="uid">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
     <dc:language>en</dc:language>
-    <dc:publisher>DIAGRAM Center</dc:publisher>
-    <dc:title>EPUBTEST 0330 - MathML in EPUB Advanced Accessibility Tests</dc:title>
+    <dc:publisher>DAISY Consortium and DIAGRAM Center</dc:publisher>
+    <dc:title>EPUBTEST 0330 - Advance Accessibility Tests for Mathematics</dc:title>
     <dc:description>Tests for accessibility strategies for MathML in EPUB</dc:description>
-    <dc:creator id="creator01">DIAGRAM Center</dc:creator>
+    <dc:creator id="creator01">DAISY Transition to EPUB 3 and  DIAGRAM Standards WG</dc:creator>
         <meta property="role" refines="#creator01">aut</meta>
-        <meta property="file-as" refines="#creator01">DIAGRAM Center</meta>
+        <meta property="file-as" refines="#creator01">DAISY Transition to EPUB 3 and  DIAGRAM Standards WG</meta>
     <dc:contributor>Charles LaPierre</dc:contributor>
     <dc:contributor>Neil Soiffer</dc:contributor>
     <dc:contributor>Sina Bahram</dc:contributor>
     <dc:contributor>Jason White</dc:contributor>
     <dc:contributor>George Kerscher</dc:contributor>
     <dc:contributor>Avneesh Singh</dc:contributor>
+    <dc:contributor>Marisa Demeglio</dc:contributor>
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330</dc:identifier>
-    <dc:date>2018-08-08</dc:date>
-    <meta property="dcterms:modified">2018-08-08T09:00:00Z</meta>
+    <dc:date>2019-01-03</dc:date>
+    <meta property="dcterms:modified">2019-03-03T09:00:00Z</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
     <meta property="schema:accessibilityFeature">describedMath</meta>
@@ -32,8 +33,10 @@
 
   </metadata>
   <manifest>
-    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
-    <item id="a11yMath.js" href="Misc/a11yMath.js" media-type="application/javascript"/>
+    <item id="cover_jpg" properties="cover-image" href="Images/cover.jpg" media-type="image/jpeg" />
+    <item id="cover" href="Text/cover.xhtml" media-type="application/xhtml+xml"/>
+
+   <item id="a11yMath.js" href="Misc/a11yMath.js" media-type="application/javascript"/>
     <item id="a11yMath.css" href="Styles/a11yMath.css" media-type="text/css"/>
     <item id="base.css" href="Styles/base.css" media-type="text/css"/>
 
@@ -49,7 +52,8 @@
     <item id="epub-image-2pointform.png" href="Images/epub-image-2pointform.png" media-type="image/png"/>
    </manifest>
 
-  <spine toc="ncx">
+  <spine>
+		<itemref idref="cover"/>
     <itemref idref="nav"/>
     <itemref idref="epub-math-introduction.xhtml"/>
     <itemref idref="epub-image-fallback-mathml-examples.xhtml"/>
