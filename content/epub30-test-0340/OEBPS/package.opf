@@ -35,7 +35,6 @@
     <item id="i0" href="Text/intro-extended-descriptions.xhtml" media-type="application/xhtml+xml" />
      <item id="i1" href="Text/testDetailsUnderImage.xhtml" media-type="application/xhtml+xml" />
     <item id="i2" href="Text/testDetailsEndOfChapter.xhtml" media-type="application/xhtml+xml"  />
-    <item id="i3" href="Text/testDetailsEndOfChapterWithFootnoteSemantics.xhtml" media-type="application/xhtml+xml"  />
     <item id="i4" href="Text/testDetailsDescribedBy.xhtml" media-type="application/xhtml+xml" />
     <item id="i5" href="Text/testPresentationalImage.xhtml" media-type="application/xhtml+xml" />
    <item id="i6" href="Text/testDetailsExpanding.xhtml" media-type="application/xhtml+xml" />
@@ -50,7 +49,6 @@
     <itemref idref="i0"/>
     <itemref idref="i1"/>
     <itemref idref="i2"/>
-    <itemref idref="i3"/>
     <itemref idref="i4"/>
     <itemref idref="i5"/>
     <itemref idref="i6"/>

@@ -28,15 +28,15 @@
 
     <section id="extdesc-090" class="ftest">
       <h2><span class="test-title">Detection of <code>aria-details</code></span><br/><span class="test-id">extdesc-090</span></h2>
-      <p class="desc">This test passes if <code>aria-details</code> for the image is indicated by the UI or reported by your AT.</p>
+      <p class="desc">This test passes if <code>aria-details</code> for the image is reported. (For example, your screen reader will announce <q>has details</q>.)</p>
     </section>
 
     <section id="extdesc-100" class="ftest">
       <h2><span class="test-title">Linking to extended description at end of chapter</span><br/><span class="test-id">extdesc-100</span></h2>
-      <p class="desc">This test passes if the UI or the AT provides functionality for <code>aria-details</code>, which takes you to the description at the end of the chapter, under the heading "Description of Bar Chart."</p>
+      <p class="desc">This test passes if you can use <code>aria-details</code> to take you to the description at the end of the chapter, under the heading "Description of Bar Chart". (For example your browser or screen reader may provide some shortcut key or an interactive element like button, link etc. for using <code>aria-details</code>.)</p>
     </section>
 
-    <h2>Image for above tests</h2>
+    <h2>Following is the bar chart image for the above tests</h2>
 
     <figure id="image0">
         <img src="../Images/chart-ebcaadfb.png" alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"
@@ -44,6 +44,7 @@
         <figcaption>Example.com Site visitors Jan to March 2014</figcaption>
     </figure>
 
+<h1 id="s11">Fallback technique 1</h1>
     <p>The test below refers to the bar chart image immediately following.</p>
     <section id="extdesc-110" class="ftest">
       <h2><span class="test-title">Fallback technique for linking to extended description via text hyperlink</span><br/><span class="test-id">extdesc-110</span></h2>
@@ -59,7 +60,7 @@
     </section>
 
 
-    <h2>Image for above test</h2>
+    <h2>Following is the bar chart image for the above fallback test</h2>
 
     <figure id="image1">
         <img src="../Images/chart-ebcaadfb.png" alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"/>
@@ -67,6 +68,7 @@
     </figure>
     <a id="image1-link" href="#image1-extended-desc" title="Follow link for extended description at end of chapter">Follow for extended description</a>
 
+<h1 id="s12">Fallback technique 2</h1>
     <p>The test below refers to the peacock image immediately following.</p>
 
     <section id="extdesc-120" class="ftest">
@@ -74,7 +76,7 @@
       <div class="desc">
         <p>This test passes if all the following steps are successful:</p>
         <ul>
-          <li>The link "Follow link for extended description at end of chapter" is reported, and on clicking it takes the focus to extended description at end of this
+          <li>The link "Follow link for extended description at end of chapter" is reported, and on activating it takes the focus to extended description at end of this
         document. The extended description is placed under the heading "Description of Peacock"</li>
           <li>You can read the extended description</li>
           <li>On activating the link "Navigate back to Peacock image" below the extended description, it takes the focus back to original position in the image.</li>
@@ -82,7 +84,7 @@
       </div>
     </section>
 
-    <h2>Image for above test</h2>
+    <h2>Following is the peacock image for the above fallback test</h2>
     <img id="image2" src="../Images/peafowl-998cf337.jpg" alt="Male peacock head"/>
     <a id="image2-link" href="#image2-extended-desc" title="Follow link for extended description at end of chapter">
         <img src="../Images/more_info.jpeg" alt=""  /></a>
