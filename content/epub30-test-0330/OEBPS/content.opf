@@ -6,7 +6,7 @@
     <dc:publisher>DAISY Consortium and DIAGRAM Center</dc:publisher>
     <dc:title>EPUBTEST 0330 - Advance Accessibility Tests for Mathematics</dc:title>
     <dc:description>Tests for accessibility strategies for MathML in EPUB</dc:description>
-    <dc:creator id="creator01">DAISY Transition to EPUB 3 and  DIAGRAM Standards WG</dc:creator>
+    <dc:creator id="creator01">DAISY Consortium Transition to EPUB 3 and  DIAGRAM Standards WG</dc:creator>
         <meta property="role" refines="#creator01">aut</meta>
         <meta property="file-as" refines="#creator01">DAISY Transition to EPUB 3 and  DIAGRAM Standards WG</meta>
     <dc:contributor>Charles LaPierre</dc:contributor>
