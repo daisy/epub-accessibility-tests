@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:epub="http://www.idpf.org/2007/ops"
+      epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/#"
+      xmlns:ssml="http://www.w3.org/2001/10/synthesis"
+      ssml:alphabet="ipa"
+      xml:lang="fr" lang="fr">
+<head>
+	<title>Lecture non visuelle</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+</head>
+<body>
+    <h1>Tests de lecture non visuelle</h1>
+    <p>Les tests présentés ci-dessous sont destinés à évaluer l'expérience de lecture avec une technologie d'assistance telle qu'un lecteur d'écran ou un afficheur braille. Ne réalisez pas les tests décrits dans ce chapitre en utilisant la fonction de lecture audio intégrée au dispositif de lecture. </p>
+    <section id="reading-010" class="ftest">
+        <h2><span class="test-id">reading-010</span> <span class="test-title">Lire depuis la position courante</span></h2>
+        <div class="desc">
+			<p>Placez le focus au début d'un paragraphe ou d'une phrase et déclenchez la lecture. La lecture doit continuer jusqu'à ce que l'utilisateur l'interrompe ou à la fin du document actuel, c'est-à-dire du chapitre courant. </p>
+			<p>Le texte en cours de lecture doit de préférence rester dans la vue courante, mais ce n'est pas une obligation pour valider ce test.</p>
+		</div>
+        <p class="eval">Indiquez Succès ou Échec.</p>
+    </section>
+    <section id="reading-110" class="ftest">
+        <h2><span class="test-id">reading-110</span> <span class="test-title">Arrêter et reprendre la lecture au même endroit</span></h2>
+        <div class="desc">
+			<ol>
+				<li>Déclenchez la lecture à partir de n'importe quel endroit dans le livre. </li>
+				<li>Arrêtez la lecture et notez la dernière position lue. </li>
+				<li>Déclenchez de nouveau la lecture et vérifiez que celle-ci démarre à la même position. </li>
+			</ol>
+		</div>
+        <p class="eval">Indiquez Succès ou Échec.</p>
+    </section>
+    <section id="reading-210" class="ftest">
+        <h2><span class="test-id">reading-210</span> <span class="test-title">Tout le texte doit être lu dans un ordre correct</span></h2>
+        <div class="desc">
+			<p>Un exemple est fourni ci-dessous pour tester l'ordre de lecture. Le paragraphe 2 doit être lu après le paragraphe 1. Notez que visuellement, le paragraphe 2 est placé à gauche du paragraphe 1 mais apparaît en second dans l'ordre de lecture. </p>
+		</div>
+		<p class="eval">Indiquez Succès ou Échec.</p>
+		<section class="sample-text">
+			<p class="sample">
+			Paragraphe 1 : La fête des mères est une journée pour célébrer les mères et la maternité, les liens mère-enfant et l'influence des mères dans la société. Elle est célébrée dans de nombreuses régions du monde, la plupart du temps en mars ou en mai. Elle complète certaines fêtes similaires, telles que la fête des pères ou des frères et sœurs.
+			</p>
+			<p class="sidebartype">
+			Paragraphe 2 : La fête des mères en Israël : Les population de confession juive célèbrent la fête des mères le 30 Shevat du calendrier juif, qui tombe entre le 30 janvier et le 1er mars. Cette célébration a été placée à la date de la disparition de Henrietta Szold.
+			</p>
+		</section>
+    </section>
+    <section id="reading-310" class="ftest">
+        <h2><span class="test-id">reading-310</span> <span class="test-title">Lecture des alternatives textuelles des images</span></h2>
+        <p><img src="../images/mobydick.jpg"  id="img267" alt="Moby Dick avec un marin dans sa gueule et d'autres lui plantant des harpons, avec le bateau en fond" /></p>
+        <p class="desc">Assurez-vous que l'alternative textuelle de l'image est disponible. </p>
+        <p class="eval">Si vous pouvez accéder à l'alternative textuelle de l'image ci-dessous et que vous pouvez la lire caractère par caractère et mot par mot, alors le test est validé. L'alternative textuelle qui doit être lue est la suivante: "Moby Dick avec un marin dans sa gueule et d'autres lui plantant des harpons, avec le bateau en fond."</p>
+		<p class="eval">Indiquez Succès ou Échec.</p> 
+    </section>
+    <section id="reading-410" class="ftest">
+        <h2><span class="test-id">reading-410</span> <span class="test-title">Modifier la vitesse de lecture</span></h2>
+		<p class="desc">Il doit être possible d'ajuster (augmenter/diminuer) la vitesse de lecture. Ce test doit être réalisé avec la technologie d'assistance utilisée lors de l'évaluation.</p>
+		<p>Si vous testez en utilisant un afficheur braille, vous devez avoir la possibilité de lire en continu, i.e. que l'afficheur avance automatiquement. Le dispositif de lecture doit aussi supporter l'ajustement de la vitesse de lecture (le taux de rafraîchissement) de l'afficheur. </p>
+		<p class="eval">Indiquez Succès ou Échec.</p>
+	</section>
+    <section id="reading-510" class="ftest">
+        <h2><span class="test-id">reading-510</span> <span class="test-title">La synthèse vocale permet de distinguer les titres, les paragraphes, les éléments de listes, etc., grâce à des pauses</span></h2>
+		<p class="desc">L'utilisateur doit être capable d'identifier la différence entre différents éléments du contenu tels que les titres, les paragraphes ou les éléments de listes grâce à l'utilisation de pauses lors de la restitution par synthèse vocale ou un formatage approprié en braille.</p>
+		<p>Lisez le texte ci-dessous en utilisant la synthèse vocale et vérifiez la présence de pauses.</p>
+		<h3>Texte pour tester la synthèse vocale</h3>
+		<p>Le titre ci-dessus ne doit pas avoir été lu en continu avec ce paragraphe pour ne pas être confondu avec une seule phrase. Nous avons une phrase ordinaire contenant une virgule, qui doit être donc marquer une légère pause. Et une autre pause doit indiquer que ceci est une nouvelle phrase.</p>
+		<p>Voici un nouveau paragraphe. Une liste est présentée ci-dessous, qui doit être lue sous forme de trois groupes distincts :</p>
+		<ul>
+			<li>Rouge, vert, bleu</li>
+			<li>Un, deux, trois</li>
+			<li>Alpha, bravo, charlie</li>
+		</ul>
+		<p>Fin du texte pour tester la synthèse vocale.</p>
+		<p class="eval">Indiquez Succès ou Échec.</p>
+    </section>
+    <section id="reading-610" class="ftest">
+			<h2><span class="test-id">reading-610</span> <span class="test-title">Naviguer entre les cellules, les lignes et les colonnes d'un tableau</span></h2>
+		<p class="desc">Vérifiez que vous pouvez naviguer entre les lignes et les colonnes du tableau</p>
+		<p>Un exemple de tableau figure ci-dessous. </p>
+		<p class="eval">Indiquez Succès ou Échec.</p>
+    </section>
+    <section id="table-example">
+		<table>
+			<caption>Tableau de 4 colonnes et 5 lignes, montrant la population des principales villes françaises.</caption>
+			<thead>
+				<tr>
+					<th scope="col">Position</th>
+					<th scope="col">Ville</th>
+					<th scope="col">Région</th>
+					<th scope="col">Population</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Paris</td>
+					<td>Île de France</td>
+					<td>2 590 771</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Marseille</td>
+					<td>Bouches-du-Rhône Provence-Alpes-Côte d'Azur</td>
+					<td>889 029</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Lyon</td>
+					<td>Auvergne-Rhône-Alpes</td>
+					<td>527 800</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Toulouse</td>
+					<td>Haute-Garonne Occitanie</td>
+					<td>370 796</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Nice</td>
+					<td>Alpes-Maritimes Provence-Alpes-Côte d'Azur</td>
+					<td>322 442</td>
+				</tr>
+			</tbody>
+		</table>
+    </section>
+    <section id="reading-710" class="ftest">
+      <h2><span class="test-id">reading-710</span> <span class="test-title">Naviguer entre les liens internes</span></h2>
+			<p class="desc">Vérifiez que vous pouvez naviguer entre les liens internes.</p>
+            <ol>
+                <li>Naviguer vers le lien interne et sélectionnez-le.</li>
+                <li>Vérifiez que le focus a été déplacé.</li>
+                <li>Naviguez vers le lien Retour et sélectionnez-le.</li>
+                <li>Vérifiez que le focus est revenu à la position d'origine. </li>
+            </ol>
+        <p class="eval">Si vous pouvez naviguer depuis ce paragraphe vers la cible du lien en sélectionnant <a href="supplement.xhtml#link-target-1">ce lien</a>, et si le lien sur la page de destination permet de revenir au paragraphe ci-dessous, le test est validé.</p>
+        <p id="link-target-1a">Vous reviendrez à cet endroit après avoir suivi le lien Retour.</p>
+    </section>
+    <section id="reading-810" class="ftest">
+		<h2><span class="test-id">reading-810</span> <span class="test-title">Se déplacer vers le prochain bloc</span></h2>
+		<div class="desc">
+			<p>Vérifiez que vous pouvez vous déplacer vers le prochain élément situé dans la page, c'est-à-dire un paragraphe, une image ou un tableau, en utilisant un raccourci clavier courant (flèche vers le bas par exemple) ou un geste (glissement vers la droite).</p>
+			</div>
+			<p>Un exemple de texte est fourni ci-dessous pour réaliser ce test. Si en utilisant le geste ou le raccourci suivi correspondant à la commande "élément suivant" le focus est déplacé sur le bloc d'élément suivant de la page, c'est-à-dire un paragraphe, des figures ou des notes, alors le test est validé. </p>
+		
+		<p class="eval">Indiquez Succès ou Échec.</p>
+    </section>
+	<section class="sample-text" id="sample-text">
+		<figure class="image">
+		  <img src="../images/img01.jpg" alt="Figure"/>
+		  <figcaption>Légende de la figure 2.2 : Des neurones transmettant des informations à d'autre neurones. les informations passent de l'axone du neurone pré-synaptique aux dendrites des neurones post-synaptiques. </figcaption>
+		</figure>
+		<p>Paragraphe : L'endroit où une terminaison pré-synaptique se termine à proximité immédiate d'un dendrite récepteur est appelé <dfn epub:type="keyword">synapse</dfn>. La cellule qui envoie les informations est appelée le neurone <dfn epub:type="keyword">pré-synaptique</dfn>, et la cellule qui reçoit les informations est appelée le neurone <dfn epub:type="keyword">post-synaptique</dfn>. L'espace intercellulaire entre les neurones pré-synaptique et post-synaptique est appelé l'<dfn epub:type="keyword">'espace synaptique</dfn> ou <dfn epub:type="keyword">fente synaptique</dfn>. Un neurone moyen forme approximativement 1 000 synapses avec d'autres neurones. Il a été estimé qu'il y a davantage de synapses dans le cerveau humain que d'étoiles dans notre galaxie. </p>
+		<figure class="image">
+			<img src="../images/img02.jpg" alt="Figure"/>
+			<figcaption>Légende de la figure 2.3 : Le synapse est l'endroit où les signaux chimiques passent entre les neurones. Les neurotransmetteurs sont relâchés des terminaisons du neurone pré-synaptique vers l'espace extra-cellulaire, la fente synaptique ou l'espace synaptique. Les molécules neurotransmettrices peuvent alors se lier avec des récepteurs sur le neurone post-synaptique pour susciter une réponse. L'excès de neurotransmetteurs peut alors être réabsorbé dans le neurone pré-synaptique par l'action de molécules de recaptation appelées transporteurs. Ce processus garantit que le signal se termine lorsque c'est approprié.   </figcaption>
+		</figure>
+		<p>Paragraphe : Le cerveau contient une autre classe de cellules appelée cellules gliales. Il y a 10 à 50 fois plus de cellules gliales que de neurones dans le système nerveux central. Les cellules gliales sont réparties en deux catégories : les microgliales et les macrogliales. Les cellules microgliales sont des cellules phagoytiques qui sont mobilisées après une blessure, une infection ou ne maladie. Elles sont dérivées des macrophages et sont ne sont pas liées à d'autres types de cellules du système nerveux. </p>
+		<ul>
+			<li>Liste : Éléments supports dans le système nerveux, fournissant la structure et isolant les groupes de neurones ;</li>
+			<li>Oligodendrocytes dans le système nerveux central et cellules de Schwann dans la périphérie du système nerveux, qui forme la myéline, la gaine qui entoure certaines axones ;</li>
+			<li>Les détritivores qui enlèvent les débris après des blessures ou la mort neuronale ;</li>
+			<li>Les régulateurs de la concentration en ions potassium (K+), dans l'espace extracellulaire qui enlèvent les neurotransmetteurs de l'espace extracellulaires après la transmission synaptique ;</li>
+			<li>Les guides pour la migration des neurones et l'émanation des neurones durant le développement ; et</li>
+			<li>Les inducteurs de la formation du jonctions imperméables dans les cellules endothéliales qui constituent les vaines et les vaisseaux du cerveau pour former la barrière sang-cerveau.<a epub:type="noteref" role="doc-noteref" href="#fn03">3</a></li>
+		</ul>
+		<aside epub:type="sidebar">
+			<h3>Encadré : La barrière sang-cerveau</h3>
+			<p>La barrière sang-cerveau protège les neurones et les cellules gliales dans le cerveau des substances qui pourraient les endommager. Les cellules endothéliales qui forment les vaisseaux et les veines constituent cette barrière, formant des jonctions imperméables. </p>
+			<p>Les astrocytes entourent les cellules endothéliales pour former les jonctions. Contrairement aux vaisseaux sanguins situés dans d'autres parties du corps qui sont relativement perméable à une variété de molécules, la barrière sang-cerveau éloigne beaucoup de substances, dont les toxines, des neurones et des cellules gliales.</p>
+		</aside>
+		<p>Paragraphe : Les scientifiques en savent moins sur les fonctions des cellules gliales que sur les fonctions des neurones. Les cellules gliales remplissent une variété de fonctions.</p>
+		<p>Paragraphe: Les milliards de neurones qui constituent le cerveau coordonnent les pensées, le comportement, l'homéostasie, et davantage. Comment tous ces neurones transmettent et reçoivent de l'information ?</p>
+		<p>Paragraphe : Les neurones véhiculent de l'information en transmettant des messages à d'autres neurones ou à d'autres types de cellules, tels que les muscles. </p>
+		<aside id="fn03" epub:type="footnote" role="doc-footnote">
+			<p>Note 3 : <span lang="en">Kandel, E. R. 1991. Nerve cells and behavior. In E.R. Kandel, J.H. Schwartz, and T.M. Jessell (Eds.), Principles of Neural Science, 3rd edition (pp. 18-32).</span> </p>
+		</aside>
+	</section>
+    <section id="reading-910" class="ftest">
+        <h2><span class="test-id">reading-910</span> <span class="test-title">Naviguer par caractères</span></h2>
+		<p class="desc">Vérifiez qu'il est possible de naviguer vers le caractère suivant ou précédent dans le texte du livre en utilisant une commande ou un geste usuel.</p>
+        <p class="eval">Indiquez Succès ou Échec.</p>
+    </section>
+    <section id="reading-1010" class="ftest">
+        <h2><span class="test-id">reading-1010</span> <span class="test-title">Naviguer par mots</span></h2>
+		<p class="desc">Vérifiez qu'il est possible de naviguer ver le mot suivant ou précédent dans le texte du livre en utilisant une commande ou un geste usuel.</p>
+        <p class="eval">Indiquez Succès ou Échec.</p>
+    </section>
+    <section id="reading-1110" class="ftest">
+        <h2><span class="test-id">reading-1110</span> <span class="test-title">Naviguer par lignes</span></h2>
+		<p class="desc">Vérifier qu'il est possible de naviguer vers la ligne précédente ou suivante  dans le texte du livre en utilisant une commande ou un geste usuel.</p>
+        <p class="eval">Indiquez Succès ou Échec.</p>
+    </section>
+    <section id="reading-1210" class="ftest">
+        <h2><span class="test-id">reading-1210</span> <span class="test-title">Naviguer dans le contenu par titres</span></h2>
+		<p class="desc">Vérifiez qu'il est possible de naviguer vers le titre précédent ou suivant dans ce livre sans utiliser la table des matières.</p>
+        <p class="eval">Indiquez Succès ou Échec.</p>
+    </section>
+    <section id="reading-1310" class="ftest">
+        <h2><span class="test-id">reading-1310</span> <span class="test-title">Sélectionner et copier du texte</span></h2>
+		<p class="desc">Les dispositifs de lecture doivent permettre de copier des fragments de texte qui peuvent alors être utilisés pour prendre des notes, dans des citations, ou pour faciliter la recherche d'expressions contenues dans le livre. Dans certains cas, cela peut être réalisé grâce aux fonctionnalités d'une technologie d'assistance telle qu'un lecteur d'écran, grâce à un curseur virtuel ou toute autre procédure. </p>
+		<p>Copiez le texte (450 caractères) entre les mots "Début" et "Fin" dans le passage ci-dessous. </p>
+		<p>Début Songez à la ruse de la mer et à la manière dont ses créatures les plus redoutables glissent sous l’eau, à peu près invisibles, traîtreusement cachée par les plus suaves tons d’azur. Songez à la beauté et à l’éclat satanique de ses plus impitoyables tribus, à la forme exquise de certains requins. Songez au cannibalisme universel qui règne dans la mer où les créatures de proie s’entre-dévorent, menant une guerre éternelle depuis l’origine du monde. </p>
+		<p>Fin</p>
+		<p>Si le texte peut être sélectionné, copié et collé dans une autre application, le test est validé. Détaillez le mécanisme dans une note afin d'assister les autres utilisateurs.</p>
+		<p class="eval">Indiquez Succès ou Échec.</p>
+    </section>
+</body>
+</html>

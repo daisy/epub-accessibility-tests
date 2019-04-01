@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0300-fr</dc:identifier>
+        <dc:description>Tests de lecture fondamentaux pour l'accessibilité</dc:description>
+        <dc:title id="title">Tests fondamentaux d'accessibilité des dispositifs de lecture</dc:title>
+        <meta refines="title" property="title-type">main</meta>
+        <!-- repeat creator element for all contributors -->
+        <dc:creator>DAISY Consortium</dc:creator>
+		<dc:source>Numéros de pages ajoutés à des fins de tests.</dc:source>
+        <dc:language>fr</dc:language>
+        <meta property="dcterms:modified">2019-02-05T11:00:00Z</meta>
+	    <meta property="schema:accessibilitySummary">La publication permet une navigation par éléments de structure et par page. Toutes les images non décoratives disposent d'un texte alternatif, d'une légende ou sont décrites dans le texte. La publication est conforme à WCAG 2.0 niveau AA.</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessMode">visual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    </metadata>
+    <manifest>
+        <!-- css -->
+        <item href="css/base.css" media-type="text/css" id="css"/>
+		<!-- cover -->
+		<item id="cover_jpg" properties="cover-image" href="images/cover.jpg" media-type="image/jpeg" />
+		<item id="cover" href="xhtml/cover.xhtml" media-type="application/xhtml+xml"/>
+		<!-- images -->
+        <item href="images/mobydick.jpg" media-type="image/jpeg" id="moby"/>
+        <item href="images/img01.jpg" media-type="image/jpeg" id="img01y"/>
+        <item href="images/img02.jpg" media-type="image/jpeg" id="img02"/>
+        <item href="images/circle.svg" media-type="image/svg+xml" id="img03"/>
+        <!-- frontmatter -->
+        <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>        
+		<item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
+        <!-- bodymatter -->
+        <!-- xhtml -->
+		<item href="xhtml/introduction.xhtml" id="introduction" media-type="application/xhtml+xml"/>
+        <item href="xhtml/Basic-functionality-tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
+        <item href="xhtml/Non_Visual_Reading_Tests.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
+        <item href="xhtml/visual-adjustment-tests.xhtml" id="xhtml-003" media-type="application/xhtml+xml" properties="svg"/>
+        <item href="xhtml/Read_aloud_tests.xhtml" id="xhtml-004" media-type="application/xhtml+xml"/>
+        <item href="xhtml/supplement.xhtml" id="xhtml-005" media-type="application/xhtml+xml"/>
+    </manifest>
+    <spine>
+		<itemref idref="cover"/>
+        <itemref idref="front"/>
+        <itemref idref="nav" linear="no"/>
+        <itemref idref="introduction"/>
+        <itemref idref="xhtml-001"/>
+        <itemref idref="xhtml-002"/>
+        <itemref idref="xhtml-003"/>
+        <itemref idref="xhtml-004"/>
+        <itemref idref="xhtml-005"/>
+    </spine>
+</package>
