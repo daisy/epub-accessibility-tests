@@ -8,6 +8,7 @@
     <!-- repeat creator element for all contributors -->
     <dc:creator>DAISY Consortium</dc:creator>
     <dc:language>en</dc:language>
+    <dc:subject>read-aloud</dc:subject>
     <meta property="dcterms:modified">2019-03-31T11:00:00Z</meta>
     <meta property="schema:accessibilitySummary">The publication contains structural navigation. The publication meets WCAG 2.0 Level AA.</meta>
     <meta property="schema:accessMode">textual</meta>
