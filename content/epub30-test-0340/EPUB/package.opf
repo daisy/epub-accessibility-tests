@@ -10,6 +10,7 @@
     <dc:rights>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike (CC BY-NC-SA) license.</dc:rights>
     <dc:date>2019-01-03</dc:date>
     <dc:subject>extended-descriptions</dc:subject>
+    <meta property="schema:version">1.0.0</meta>
     <meta property="dcterms:modified">2018-08-08T09:00:00Z</meta>
     <meta property="schema:accessibilityHazard">none</meta>
     <meta property="schema:accessibilityFeature">alternativeText</meta>

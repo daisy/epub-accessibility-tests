@@ -19,6 +19,7 @@
 		<meta property="media:duration" refines="#tobi_spine_4_smil">00:05:15.2119953</meta>
 		<meta property="media:duration" refines="#tobi_spine_5_smil">00:13:27.4688662</meta>
 		<meta property="media:duration">00:19:52.5231745</meta>
+		<meta property="schema:version">1.0.0</meta>
 		<meta name="generator" content="Tobi, authoring tool for DAISY and EPUB talking books"/>
 	</metadata>
 	<manifest>

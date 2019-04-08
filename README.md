@@ -3,7 +3,13 @@ epub-accessibility-tests
 
 EPUB Content containing accessibility tests for reading systems
 
+## To build EPUBs:
+
+Run `run.sh` to run epubcheck and build EPUB files. The output appears in the `build` directory, named after the EPUB IDs plus the version number.
+
 ## Structural requirements for these books
+
+Use `EPUB`, not `OEPBS`, for the content directory, if you want to use the included build script.
 
 ### In the package document:
 
