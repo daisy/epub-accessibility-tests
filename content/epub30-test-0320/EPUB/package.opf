@@ -9,7 +9,7 @@
 		<meta property="media:active-class">-epub-media-overlay-active</meta>
 		<meta property="media:playback-active-class">-epub-media-overlay-playback-active</meta>
 		<dc:description>Accessibility tests for Media Overlays in a reflowable context</dc:description>
-		<dc:title id="title">EPUBTEST 0320 - Media Overlays Fundamental Accessibility Tests</dc:title>
+		<dc:title id="title">Advanced Accessibility Tests: Media Overlays</dc:title>
 		<dc:rights>Copyright © 2015 DAISY Consortium</dc:rights>
 		<dc:creator id="creator1">DAISY Consortium</dc:creator>
 		<dc:language>en</dc:language>
