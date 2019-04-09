@@ -5,7 +5,7 @@ EPUB Content containing accessibility tests for reading systems
 
 ## To build EPUBs:
 
-Run `run.sh` to run epubcheck and build EPUB files. The output appears in the `build` directory, named after the EPUB IDs plus the version number.
+Run `run.sh` to run epubcheck and build EPUB files. The output appears in the `build` directory, named after the EPUB title plus the version number.
 
 ## Structural requirements for these books
 
@@ -21,13 +21,12 @@ Use `EPUB`, not `OEPBS`, for the content directory, if you want to use the inclu
   - media-overlays
   - extended-descriptions
   - math
-
+- the title goes in `dc:title` and has the ID of `title`, e.g.
+```<dc:title id="title">title</dc:title>```
 - the topic goes in `dc:subject`, e.g.
 ```<dc:subject>media-overlays</dc:subject>```
-
 - a language, e.g
 ```<dc:language>fr</dc:language>```
-
 - a version, in the form of MAJ.MIN.PATCH, e.g.
 ```<meta property="schema:version">1.0.0</meta>```
 
@@ -56,3 +55,13 @@ For example:
   <p class="eval">Indicate Pass or Fail.</p>
 </section>
 ```
+
+## About versioning
+
+The version number is formatted as MAJ.MIN.PATCH. The rules for how to use each are:
+
+1. MAJ: Implies big changes, so use sparingly. At the moment, changes to MAJ or MIN both result in the epubtest.org ingestion system seeing the version as "new" and will list results for older version numbers as being out of date.
+
+2. MIN: Same effect as MAJ but implies changes of a less drastic nature.
+
+3. PATCH: For non-breaking changes. E.g. a French book that has version 1.2.4 is treated as being as recent as an English book with version 1.2.3. PATCH is useful for when you make a change that doesn't affect testing.
