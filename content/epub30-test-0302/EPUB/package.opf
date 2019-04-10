@@ -2,13 +2,14 @@
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0302</dc:identifier>
-    <dc:title id="title">Fundamental Accessibility Tests: Visual Adjustments</dc:title>
-    <dc:description>These tests include changing the font and text size, colors, brightness, compatibility with magnification utilities and support for high contrast and SVG images.</dc:description>
+    <dc:title id="title">Fundamental Accessibility Tests: Non-Visual Reading</dc:title>
+    <dc:description>These tests are for evaluating the reading experience with an assistive technology tool such as a screen reader or refreshable Braille display. Tests include continuous reading, pause and resume, reading order, alternative text, table and hyperlink navigation, copying text.</dc:description>
     <meta refines="title" property="title-type">main</meta>
     <!-- repeat creator element for all contributors -->
     <dc:creator>DAISY Consortium</dc:creator>
+    <dc:source>Page numbers added for test purposes.</dc:source>
     <dc:language>en</dc:language>
-    <dc:subject>visual-adjustments</dc:subject>
+    <dc:subject>non-visual-reading</dc:subject>
     <meta property="dcterms:modified">2019-03-31T11:00:00Z</meta>
     <meta property="schema:accessibilitySummary">The publication contains structural navigation. All non-decorative images have alt text, captions or are described in the surrounding text. The publication meets WCAG 2.0 Level AA.</meta>
     <meta property="schema:accessMode">textual</meta>
@@ -24,16 +25,16 @@
     <item id="cover_jpg" properties="cover-image" href="images/cover.jpg" media-type="image/jpeg"/>
     <item id="cover" href="xhtml/cover.xhtml" media-type="application/xhtml+xml"/>
     <!-- images -->
+    <item href="images/mobydick.jpg" media-type="image/jpeg" id="moby"/>
     <item href="images/img01.jpg" media-type="image/jpeg" id="img01"/>
     <item href="images/img02.jpg" media-type="image/jpeg" id="img02"/>
-    <item href="images/circle.svg" media-type="image/svg+xml" id="img03"/>
     <!-- frontmatter -->
     <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
     <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
     <!-- bodymatter -->
     <!-- xhtml -->
     <item href="xhtml/introduction.xhtml" id="introduction" media-type="application/xhtml+xml"/>
-    <item href="xhtml/visual-adjustment-tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="xhtml/Non_Visual_Reading_Tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
     <item href="xhtml/supplement.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
   </manifest>
   <spine>

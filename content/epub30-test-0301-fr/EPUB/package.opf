@@ -2,16 +2,16 @@
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0301-fr</dc:identifier>
-    <dc:title id="title">Tests fondamentaux pour l’accessibilité: Lecture non visuelle</dc:title>
-    <dc:description>These tests are for evaluating the reading experience with an assistive technology tool such as a screen reader or refreshable Braille display. Tests include continuous reading, pause and resume, reading order, alternative text, table and hyperlink navigation, copying text.</dc:description>
+    <dc:title id="title">Tests fondamentaux pour l’accessibilité: Fonctionnalités de base</dc:title>
+    <dc:description>These tests include starting the reading system and opening the titles, navigating the content, searching, and using bookmarks and notes.</dc:description>
     <meta refines="title" property="title-type">main</meta>
     <!-- repeat creator element for all contributors -->
     <dc:creator>DAISY Consortium</dc:creator>
     <dc:source>Numéros de pages ajoutés à des fins de tests.</dc:source>
     <dc:language>fr</dc:language>
-    <dc:subject>non-visual-reading</dc:subject>
+    <dc:subject>basic-functionality</dc:subject>
     <meta property="dcterms:modified">2019-03-31T11:00:00Z</meta>
-    <meta property="schema:accessibilitySummary">La publication permet une navigation par éléments de structure. Toutes les images non décoratives disposent d'un texte alternatif, d'une légende ou sont décrites dans le texte. La publication est conforme à WCAG 2.0 niveau AA.</meta>
+    <meta property="schema:accessibilitySummary">La publication permet une navigation par éléments de structure et par page. La publication est conforme à WCAG 2.0 niveau AA.</meta>
     <meta property="schema:accessMode">textual</meta>
     <meta property="schema:accessMode">visual</meta>
     <meta property="schema:accessModeSufficient">textual</meta>
@@ -24,17 +24,13 @@
     <!-- cover -->
     <item id="cover_jpg" properties="cover-image" href="images/cover.jpg" media-type="image/jpeg"/>
     <item id="cover" href="xhtml/cover.xhtml" media-type="application/xhtml+xml"/>
-    <!-- images -->
-    <item href="images/mobydick.jpg" media-type="image/jpeg" id="moby"/>
-    <item href="images/img01.jpg" media-type="image/jpeg" id="img01"/>
-    <item href="images/img02.jpg" media-type="image/jpeg" id="img02"/>
     <!-- frontmatter -->
     <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
     <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
     <!-- bodymatter -->
     <!-- xhtml -->
     <item href="xhtml/introduction.xhtml" id="introduction" media-type="application/xhtml+xml"/>
-    <item href="xhtml/Non_Visual_Reading_Tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Basic-functionality-tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
     <item href="xhtml/supplement.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
   </manifest>
   <spine>

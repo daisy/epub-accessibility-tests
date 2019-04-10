@@ -2,15 +2,15 @@
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0303-fr</dc:identifier>
-    <dc:title id="title">Tests fondamentaux pour l’accessibilité: Fonctionnalité de lecture audio</dc:title>
-    <dc:description>These tests include start, pause and resume Read Aloud, reading order, punctuation support and visual emphasis of the spoken text.</dc:description>
+    <dc:title id="title">Tests fondamentaux pour l’accessibilité: Ajustements visuels</dc:title>
+    <dc:description>These tests include changing the font and text size, colors, brightness, compatibility with magnification utilities and support for high contrast and SVG images.</dc:description>
     <meta refines="title" property="title-type">main</meta>
     <!-- repeat creator element for all contributors -->
     <dc:creator>DAISY Consortium</dc:creator>
     <dc:language>fr</dc:language>
-    <dc:subject>read-aloud</dc:subject>
+    <dc:subject>visual-adjustments</dc:subject>
     <meta property="dcterms:modified">2019-03-31T11:00:00Z</meta>
-    <meta property="schema:accessibilitySummary">La publication permet une navigation par éléments de structure. La publication est conforme à WCAG 2.0 niveau AA.</meta>
+    <meta property="schema:accessibilitySummary">La publication permet une navigation par éléments de structure. Toutes les images non décoratives disposent d'un texte alternatif, d'une légende ou sont décrites dans le texte. La publication est conforme à WCAG 2.0 niveau AA.</meta>
     <meta property="schema:accessMode">textual</meta>
     <meta property="schema:accessMode">visual</meta>
     <meta property="schema:accessModeSufficient">textual</meta>
@@ -23,13 +23,18 @@
     <!-- cover -->
     <item id="cover_jpg" properties="cover-image" href="images/cover.jpg" media-type="image/jpeg"/>
     <item id="cover" href="xhtml/cover.xhtml" media-type="application/xhtml+xml"/>
+    <!-- images -->
+    <item href="images/img01.jpg" media-type="image/jpeg" id="img01"/>
+    <item href="images/img02.jpg" media-type="image/jpeg" id="img02"/>
+    <item href="images/circle.svg" media-type="image/svg+xml" id="img03"/>
     <!-- frontmatter -->
     <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
     <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
     <!-- bodymatter -->
     <!-- xhtml -->
     <item href="xhtml/introduction.xhtml" id="introduction" media-type="application/xhtml+xml"/>
-    <item href="xhtml/Read_aloud_tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
+    <item href="xhtml/visual-adjustment-tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="xhtml/supplement.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
   </manifest>
   <spine>
     <itemref idref="cover"/>
@@ -37,5 +42,6 @@
     <itemref idref="nav" linear="no"/>
     <itemref idref="introduction"/>
     <itemref idref="xhtml-001"/>
+    <itemref idref="xhtml-002"/>
   </spine>
 </package>
