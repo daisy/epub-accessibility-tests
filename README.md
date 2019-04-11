@@ -38,7 +38,6 @@ All tests must have an entry in the navigation document. The entry must be a lis
 If you need to create an entry for something that is not a test, don't include `class='test'` on it, e.g.
 ```<li><a href="supplement.xhtml">Supplemental Content</a></li>```
 
-is perfectly acceptable and will not cause any confusion for the system.
 
 ### In the content document
 
