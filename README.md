@@ -21,8 +21,8 @@ Use `EPUB`, not `OEPBS`, for the content directory, if you want to use the inclu
   - media-overlays
   - extended-descriptions
   - math
-- the title goes in `dc:title` and has the ID of `title`, e.g.
-```<dc:title id="title">title</dc:title>```
+- the title goes in `dc:title`, e.g.
+```<dc:title>title</dc:title>```
 - the topic goes in `dc:subject`, e.g.
 ```<dc:subject>media-overlays</dc:subject>```
 - a language, e.g
@@ -32,14 +32,20 @@ Use `EPUB`, not `OEPBS`, for the content directory, if you want to use the inclu
 
 ### In the navigation document
 
-All tests must have an entry in the navigation document.
+All tests must have an entry in the navigation document. The entry must be a list item with `class='test'` and it must contain a link, e.g.
+```<li class="test"><a href="content.xhtml#test-id">Test Name</a></li>```
+
+If you need to create an entry for something that is not a test, don't include `class='test'` on it, e.g.
+```<li><a href="supplement.xhtml">Supplemental Content</a></li>```
+
+is perfectly acceptable and will not cause any confusion for the system.
 
 ### In the content document
 
 Each test must be formatted exactly as:
 
 ```
-<section id="TEST-ID" class="ftest">
+<section id="TEST-ID" class="test">
   <h2><span class="test-id">TEST-ID</span> <span class="test-title">TEST TITLE</span></h2>
   <p class="desc">TEST DESCRIPTION</p>
   <p class="eval">EVALUATION INSTRUCTIONS</p>
@@ -49,7 +55,7 @@ Each test must be formatted exactly as:
 For example:
 
 ```
-<section id="file-010" class="ftest">
+<section id="file-010" class="test">
   <h2><span class="test-id">file-010</span> <span class="test-title">Operating system/Platform accessibility:</span></h2>
   <p class="desc">If you are using a hardware device, it can be started independently and essential accessibility for starting and exiting applications is available.</p>
   <p class="eval">Indicate Pass or Fail.</p>

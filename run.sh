@@ -7,7 +7,7 @@ do
     java -jar ${EPUBCHECK} --mode exp --save ./content/${dir##*/}
     wait
     version=`cat ${dir}/EPUB/package.opf | xpath '//meta[@property="schema:version"]/text()' 2>/dev/null`
-    title=`cat ${dir}/EPUB/package.opf | xpath '//dc:title[@id="title"]/text()' 2>/dev/null`
+    title=`cat ${dir}/EPUB/package.opf | xpath '//dc:title/text()' 2>/dev/null`
     title=${title// /-}
     title=${title//:/}
     cd ./content
