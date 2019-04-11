@@ -5,7 +5,9 @@ EPUB Content containing accessibility tests for reading systems
 
 ## To build EPUBs:
 
-Run `run.sh` to run epubcheck and build EPUB files. The output appears in the `build` directory, named after the EPUB title plus the version number.
+Run `build-all.sh` to run epubcheck and build EPUB files. The output appears in the `build` directory, named after the EPUB title plus the version number.
+
+If you just need to build one book, run `build-one.sh foldername` where `foldername` is the directory containing the EPUB fileset for that book.
 
 ## Structural requirements for these books
 
