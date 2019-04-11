@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="uid" prefix="cc: http://creativecommons.org/ns#">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:title id="title">Advanced Accessibility Tests: Extended Descriptions</dc:title>
+    <dc:title>Advanced Accessibility Tests: Extended Descriptions</dc:title>
     <dc:creator>DAISY Consortium Transition to EPUB 3 and DIAGRAM Standards WG</dc:creator>
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0340</dc:identifier>
     <dc:language>en-US</dc:language>

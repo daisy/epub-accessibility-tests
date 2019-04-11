@@ -2,7 +2,7 @@
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0303-fr</dc:identifier>
-    <dc:title id="title">Tests fondamentaux pour l’accessibilité: Ajustements visuels</dc:title>
+    <dc:title>Tests fondamentaux pour l’accessibilité: Ajustements visuels</dc:title>
     <dc:description>These tests include changing the font and text size, colors, brightness, compatibility with magnification utilities and support for high contrast and SVG images.</dc:description>
     <meta refines="title" property="title-type">main</meta>
     <!-- repeat creator element for all contributors -->
