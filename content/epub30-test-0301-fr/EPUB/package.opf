@@ -3,7 +3,7 @@
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0301-fr</dc:identifier>
     <dc:title>Tests fondamentaux pour l’accessibilité: Fonctionnalités de base</dc:title>
-    <dc:description>These tests include starting the reading system and opening the titles, navigating the content, searching, and using bookmarks and notes.</dc:description>
+    <dc:description>Ces tests incluent le démarrage du dispositif de lecture, l'ouverture des livres, la navigation à l'intérieur du contenu, la recherche ainsi que l'utilisation des signets et des annotations.</dc:description>
     <meta refines="title" property="title-type">main</meta>
     <!-- repeat creator element for all contributors -->
     <dc:creator>DAISY Consortium</dc:creator>
