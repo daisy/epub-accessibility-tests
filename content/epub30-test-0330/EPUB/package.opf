@@ -6,7 +6,7 @@
     <dc:publisher>DAISY Consortium and DIAGRAM Center</dc:publisher>
     <dc:title>Advanced Accessibility Tests: Mathematics</dc:title>
     <dc:description>Tests for accessibility strategies for MathML in EPUB</dc:description>
-    <dc:creator id="creator01">DAISY Consortium Transition to EPUB 3 and  DIAGRAM Standards WG</dc:creator>
+    <dc:creator id="creator01">DAISY Consortium Transition to EPUB 3 and DIAGRAM Center Standards WG</dc:creator>
         <meta property="role" refines="#creator01">aut</meta>
         <meta property="file-as" refines="#creator01">DAISY Transition to EPUB 3 and  DIAGRAM Standards WG</meta>
     <dc:contributor>Charles LaPierre</dc:contributor>
@@ -17,8 +17,8 @@
     <dc:contributor>Avneesh Singh</dc:contributor>
     <dc:contributor>Marisa DeMeglio</dc:contributor>
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330</dc:identifier>
-    <dc:date>2019-01-03</dc:date>
-    <meta property="dcterms:modified">2019-03-03T09:00:00Z</meta>
+    <dc:date>2019-05-10</dc:date>
+    <meta property="dcterms:modified">2019-05-10T09:00:00Z</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
     <meta property="schema:accessibilityFeature">describedMath</meta>
@@ -46,6 +46,7 @@
     <item id="epub-image-fallback-mathml-examples.xhtml" href="Text/epub-image-fallback-mathml-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml svg"/>
     <item id="epub-rendering-mathml-only-examples.xhtml" href="Text/epub-rendering-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
     <item id="epub-navigating-mathml-only-examples.xhtml" href="Text/epub-navigating-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
+    <item id="epub-SVG-and-mathml-in-details.xhtml" href="Text/epub-SVG-and-mathml-in-details.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
     <item id="epub-math-appendix.xhtml" href="Text/epub-math-appendix.xhtml" media-type="application/xhtml+xml"/>
 
     <item id="epub-image-2pointform.svg" href="Images/epub-image-2pointform.svg" media-type="image/svg+xml"/>
@@ -58,7 +59,8 @@
     <itemref idref="epub-math-introduction.xhtml"/>
     <itemref idref="epub-image-fallback-mathml-examples.xhtml"/>
     <itemref idref="epub-navigating-mathml-only-examples.xhtml"/>
-    <itemref idref="epub-rendering-mathml-only-examples.xhtml"/>
+    <itemref idref="epub-rendering-mathml-only-examples.xhtml"/>   
+    <itemref idref="epub-SVG-and-mathml-in-details.xhtml"/>
     <itemref idref="epub-math-appendix.xhtml"/>
   </spine>
 </package>
