@@ -6,6 +6,11 @@
   width: 1px;
   overflow: hidden;
 }
+
+.HideSummaryOfMath{
+    display:none;  
+}
+
 /* turn off MathML display on kindles */
 
 body {
