@@ -4,7 +4,6 @@
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0302-fr</dc:identifier>
     <dc:title>Tests fondamentaux pour l’accessibilité: Lecture non visuelle</dc:title>
     <dc:description>Ces tests décrivent l'évaluation de l'expérience de lecture avec des technologies d'assistances telles qu'un lecteur d'écran ou une plage braille. Ces tests incluent la lecture continue, la pause et la reprise de lecture, l'ordre de lecture, les alternatives textuelles, la navigation dans la table des matières et par liens ainsi que la copie de texte.</dc:description>
-    <meta refines="title" property="title-type">main</meta>
     <!-- repeat creator element for all contributors -->
     <dc:creator>DAISY Consortium</dc:creator>
     <dc:source>Numéros de pages ajoutés à des fins de tests.</dc:source>

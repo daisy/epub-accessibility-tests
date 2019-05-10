@@ -4,7 +4,6 @@
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0304-fr</dc:identifier>
     <dc:title>Tests fondamentaux pour l’accessibilité: Fonctionnalité de lecture audio</dc:title>
     <dc:description>Ces tests incluent les fonctionnalités de lancement, de mise en pause et de reprise de la fonctionnalité de lecture intégrée au dispositif, l'ordre de lecture, la gestion de la ponctuation et la mise en évidence visuelle du texte lu vocalement.</dc:description>
-    <meta refines="title" property="title-type">main</meta>
     <!-- repeat creator element for all contributors -->
     <dc:creator>DAISY Consortium</dc:creator>
     <dc:language>fr</dc:language>

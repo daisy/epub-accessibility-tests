@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package version="3.0" xmlns:dc="http://purl.org/dc/elements/1.1/" unique-identifier="uid" xmlns="http://www.idpf.org/2007/opf">
 	<metadata>
-		<meta property="title-type" refines="title">main</meta>
 		<meta property="dcterms:license">https://creativecommons.org/licenses/by/4.0/</meta>
 		<meta property="role" refines="#creator1" scheme="marc:relators">aut</meta>
 		<meta property="file-as" refines="#creator1">Consortium, DAISY</meta>

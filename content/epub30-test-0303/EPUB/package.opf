@@ -4,7 +4,6 @@
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0303</dc:identifier>
     <dc:title>Fundamental Accessibility Tests: Visual Adjustments</dc:title>
     <dc:description>These tests include changing the font and text size, colors, brightness, compatibility with magnification utilities and support for high contrast and SVG images.</dc:description>
-    <meta refines="title" property="title-type">main</meta>
     <!-- repeat creator element for all contributors -->
     <dc:creator>DAISY Consortium</dc:creator>
     <dc:language>en</dc:language>

@@ -4,7 +4,6 @@
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0302</dc:identifier>
     <dc:title>Fundamental Accessibility Tests: Non-Visual Reading</dc:title>
     <dc:description>These tests are for evaluating the reading experience with an assistive technology tool such as a screen reader or refreshable Braille display. Tests include continuous reading, pause and resume, reading order, alternative text, table and hyperlink navigation, copying text.</dc:description>
-    <meta refines="title" property="title-type">main</meta>
     <!-- repeat creator element for all contributors -->
     <dc:creator>DAISY Consortium</dc:creator>
     <dc:source>Page numbers added for test purposes.</dc:source>
