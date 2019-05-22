@@ -11,12 +11,12 @@
 
   <h1>MathML with Image Fallback Tests</h1>
 
- <section id="math-010" class="ftest">
+ <section id="math-010" class="test">
   <h2><span class="test-id">math-010</span> <span class="test-title">Support for fallback mechanism</span></h2>
-    
+
   <div class="desc">
     <p>The test passes if you can see the image and assistive technology the image and reads the following alt-text:</p>
-      
+
     <p>"y minus y sub 1, equals, the fraction with numerator y sub 2 minus y sub 1, and denominator x sub 2 minus x sub 1, times open paren x minus x sub 1 close paren"</p>
    </div>
 
@@ -25,18 +25,18 @@
         <hr/>
             <img id="exp7" src="../Images/epub-image-2pointform.svg" style="vertical-align: -1.644ex;" alt="y minus y sub 1, equals, the fraction with numerator y sub 2 minus y sub 1, and denominator x sub 2 minus x sub 1, times open paren x minus x sub 1 close paren"/>
         <hr/>
- 
-     
+
+
     </section>
 
-    <section id="math-020" class="ftest">
+    <section id="math-020" class="test">
       <h2><span class="test-id">math-020</span> <span class="test-title">Support for JavaScript and MathML</span></h2>
-      
+
         <p class="desc">The test passes if the assistive technology reports presence of the MathML expression and provides functionality to read it.</p>
- 
+
         <p>The test fails if you read/hear the prefix "image alt fallback" prior to the explanation of the math. The test also fails if you read/hear duplicate expressions, once for MathML and other for fall back.</p>
-        
-  
+
+
     <h3>Test 020</h3>
       <p>Math Equation will appear between the following two lines.</p>
      <hr/>
@@ -102,9 +102,9 @@
           </math>
         </span>
         <img class="MathImageNoSR" src="../Images/epub-image-2pointform.png" style="vertical-align: -2.103ex;" alt="(image alt fallback): y minus y sub 1, equals, the fraction with numerator y sub 2 minus y sub 1, and denominator x sub 2 minus x sub 1, times open paren x minus x sub 1 close paren"/>
-    <hr/>     
+    <hr/>
     <h3>Additional Notes for Test 020</h3>
-    
+
         <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix "mathml alt text” and you heard the expression “(mathml alt-text): y minus y 1 equals &#8230;” or was the math expression expressed via the readers own math rulesets such as “y minus y subscript 1, equals &#8230;” with no prefix.”</p>
 
         <p>Please make a note if you are able to see both the image of the math equation as well as the mathML rendered equation, since the mathML version should be visually hidden off-screen but accessible to AT.  Also note any other visual anomalies you encounter.</p>

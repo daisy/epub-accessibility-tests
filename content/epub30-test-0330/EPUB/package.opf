@@ -30,7 +30,7 @@
     <meta property="schema:accessModeSufficient">visual</meta>
     <meta property="schema:accessibilityAPI">ARIA</meta>
     <meta property="schema:accessibilitySummary">This EPUB is just for testing purposes as the intent is to test reading systems for math accessibility with the embedded math.</meta>
-    <meta property="schema:version">1.0.0</meta>
+    <meta property="schema:version">1.1.0</meta>
   </metadata>
   <manifest>
     <item id="cover_jpg" properties="cover-image" href="Images/cover.jpg" media-type="image/jpeg" />
