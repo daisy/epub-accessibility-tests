@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
+
+<head>
+    <title>Extended descriptions using ARIA described-by pointing to a visually hidden aside</title>
+    <meta name="charset" content="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+    <link href="../Styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1 id="s1">Extended descriptions using ARIA <code>described-by</code> pointing to a visually hidden aside</h1>
+
+    <h2>Notes about techniques</h2>
+    <p>In the following examples, the <code>aria-describedby</code> attribute is used to expose the extended image description, which is in an <code>aside</code> element.</p>
+
+    <p>In the first example, <code>aria-describedby</code> points to an <code>aside</code> element, placed inside a <code>figcaption</code> element.</p>
+
+    <p>In the second example, the head of the peacock is described using a paragraph of text that is in an aside on the web page.</p>
+
+    <p><em>Note:</em></p>
+    <ul>
+      <li>Since <code>aria-describedby</code> will flatten all the extended image description text, we believe the table within the extended image description will not be navigable using AT.</li>
+      <li>Since the description is hidden visually, this solution is not recommended for universal accessibility because the description will not be available to low vision users and people with learning disabilities.</li>
+    </ul>
+
+    <p>The test below refers to the bar chart image immediately following.</p>
+    <section id="extdesc-150" class="test">
+      <h2><span class="test-title"><code>aria-describedby</code> points to an <code>aside</code> in a <code>figcaption</code></span><br/><span class="test-id">extdesc-150</span></h2>
+      <div class="desc">
+        <p>The test passes if you are able to read/hear the following text when the focus is on the image. (You should be able to read it before reaching the horizontal break):</p>
+        <blockquote>Extended Description Overview<br />
+		The chart shows the website hits for the first quarter of 2014. It shows that Site 1 has more visitors than either of the other sites, but the number of visitors is decreasing. Site 2 has a fairly constant number of visitors, while for Site 3 page hits are increasing month on month.
+        </blockquote>
+        <p>Note: there may be a lot more text read that is in a table.</p>
+		<p>Note for screen reader users: It is possible that your screen reader reads the text inside aria-describedby before reporting the image. In such a case, please provide your experience in the notes.</p>
+      </div>
+    </section>
+
+    <h3>Following is the bar chart image along with its description for the above test</h3>
+    <figure>
+        <img src="../Images/chart-ebcaadfb.png" alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"
+            aria-describedby="image1-extended-desc" />
+			<hr/>
+			<p>Horizontal break</p>
+        <figcaption>
+            Example.com Site visitors Jan to March 2014
+            <aside class="extendedDescription" id="image1-extended-desc" >
+                <h4>Extended Description Overview</h4>
+                <p>The chart shows the website hits for the first quarter of 2014. It shows that Site 1 has more visitors than
+                    either of the other sites, but the number of visitors is decreasing. Site 2 has a fairly constant number
+                    of visitors, while for Site 3 page hits are increasing month on month.</p>
+                <h4>Data</h4>
+                <table>
+                    <tr>
+                        <th scope="col">Period</th>
+                        <th scope="col">Site 1</th>
+                        <th scope="col">Site 2</th>
+                        <th scope="col">Site 3</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jan</th>
+                        <td>135</td>
+                        <td>112</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Feb</th>
+                        <td>117</td>
+                        <td>114</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mar</th>
+                        <td>96</td>
+                        <td>111</td>
+                        <td>126</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Qtr Total</th>
+                        <td>348</td>
+                        <td>337</td>
+                        <td>308</td>
+                    </tr>
+                </table>
+            <h3>Presentation</h3>
+                <p>The bar chart represents both the number of visitors per month for each website, and the total number of
+                    visitors per website for the entire quarter. Website visitors for each month are represented using columns
+                    lined up horizontally, with heights indicating the number of visitors. A fourth column is provided for
+                    each website with the accumulated site visitors for the quarter.</p>
+            </aside>
+        </figcaption>
+    </figure>
+
+
+    <p>The test below refers to the peacock image immediately following.</p>
+
+    <section id="extdesc-160" class="test">
+      <h2><span class="test-title"><code>aria-describedby</code> points to an <code>aside</code> at the end of chapter</span><br/><span class="test-id">extdesc-160</span></h2>
+
+      <div class="desc">
+        <p>The test passes if you are able to read/hear the following text when the focus is on the image. (You should be able to read the description before reaching the Filler simulating aside at the end of the chapter)</p>
+        <blockquote>The male is metallic blue on the crown, the feathers of the head being short and curled. The fan-shaped crest on the head
+            is made of feathers with bare black shafts and tipped with blush-green webbing. A white stripe above the eye
+            and a crescent shaped white patch below the eye are formed by bare white skin. The sides of the head have iridescent
+            greenish blue feathers. The back has scaly bronze-green feathers with black and copper markings."</blockquote>
+      </div>
+    </section>
+
+    <h3>Following is the peacock image along with its description for the above test</h3>
+    <img src="../Images/peafowl-998cf337.jpg" alt="Male peacock head" aria-describedby="image2-extended-desc" />
+
+    <hr/>
+    <h2>Filler simulating aside at the end of the chapter</h2>
+
+
+    <aside class="extendedDescription" id="image2-extended-desc">
+        <p>
+            Extended Description: The male is metallic blue on the crown, the feathers of the head being short and curled. The fan-shaped crest on the head
+            is made of feathers with bare black shafts and tipped with blush-green webbing. A white stripe above the eye
+            and a crescent shaped white patch below the eye are formed by bare white skin. The sides of the head have iridescent
+            greenish blue feathers. The back has scaly bronze-green feathers with black and copper markings.
+        </p>
+    </aside>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+﻿@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+h1 { color: rgb(0,90,156); }
+h2 { font-size: 140%;}
+h3 { font-size: 130%; }
+h4 { font-size: 120%; }
+
+.ctest h2, .ctest h3, .ctest h4, .ctest h5, .otest h2, .otest h3, .otest h4, .otest h5 {
+	font-size: 120%;
+	color: rgb(0,0,0);
+}
+
+/* accessibility classes */
+/* ftest: fundamental accessibility test */
+/* atest: advanced accessibility test */
+.ftest h2, .ftest h3, .ftest h4, .ftest h5, .atest h2, .atest h3, .atest h4, .atest h5 {
+    font-size: 120%;
+    color: rgb(0,0,0);
+}
+
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    color: black;
+    background: white;        
+}
+
+.test-id, .demo-ctest {    
+    font-size: 80%;
+    font-style: normal;    
+    color:navy;
+    margin-right: 1em;    
+    padding: 0.3em;
+}
+
+.ctest, .otest {
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+/* accessibility classes */
+.ftest, .atest {
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+
+.ctest {
+    border: 1px solid gray;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+.otest {
+    border: 1px dotted gray;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+/* accessibility class */
+.ftest {
+    border: 1px solid gray;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+/* accessibility class */
+.atest {
+    border: 1px dotted gray;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+
+.nature {
+	display: block;
+	padding-right: 1em;
+	padding-left: 0.5em;
+	font-size: 50%;
+}
+
+.ctest .nature {
+	color: rgb(255,0,0);
+}
+
+.otest .nature {
+	color: rgb(0,0,255);
+}
+
+/* accessibility class */
+.ftest .nature {
+    color: rgb(255,0,0);
+}
+/* accessibility class */
+.atest .nature {
+    color: rgb(0,0,255);
+}
+
+
+dl.info dt {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+nav#toc ol  {
+    list-style-type: none;
+}
+
+nav a {
+	text-decoration:none;
+	color:black;
+}
+
+.eval {
+	font-weight:bold;
+}
+
+.eval:before {
+	content:"→";
+}
+
+.conditional {
+	font-style: italic;
+}
+
+table, th, td{
+ border: 1px solid black;
+border-collapse:collapse;
+padding:15px;
+
+ }
+
+aside[epub|type~="sidebar"] 
+{   padding: 0.5em;
+   margin-left: 1em;
+   margin-right: 1em;
+   width: 30%;
+   background-color: rgb(240,240,240);
+   float:left; 
+   border: 0.5px solid gray;
+}
+
+p.sidebartype 
+{   padding: 0.5em;
+   margin-left: 1em;
+   margin-right: 1em;
+   width: 30%;
+   background-color: rgb(240,240,240);
+   float:left; 
+
+}
+
+aside[epub|type~="footnote"] 
+{  
+   font-size: 80%;
+   font-style: italic;    
+   color:navy;
+   
+   margin-left: 1em;
+   margin-right: 1em;
+   padding: 0.5em;
+   clear:both;
+}
+
+p.sample { 
+width: 60%; 
+float:right; 
+margin-left: 1em; margin-right: 1em; 
+}
+
+
+figure.image {
+    margin-bottom: 30px;
+}
+
+figure.image figcaption {
+    font-size: medium;
+    margin-top: inherit !important;
+    margin-bottom: inherit !important;
+}
+
+
+.sample-text {
+overflow:hidden;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+

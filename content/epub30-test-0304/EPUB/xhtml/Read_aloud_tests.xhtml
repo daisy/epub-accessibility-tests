@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:epub="http://www.idpf.org/2007/ops">
+
+<head>
+  <meta charset="utf-8" />
+  <link href="../css/base.css" type="text/css" rel="stylesheet" />
+  <title>Read Aloud Tests</title>
+</head>
+
+<body>
+  <h1>Read Aloud Tests</h1>
+  <p>The tests given below are for evaluating the Read Aloud feature within the reading system. Do not perform these reading tests using a screen reader or an Operating System feature or a third party tool. </p>
+  <section id="ReadAloud-010" class="test">
+    <h2><span class="test-id">ReadAloud-010</span> <span class="test-title">The content can be read aloud</span></h2>
+    <div class="desc">
+      <p>Focus on the beginning of a paragraph or a sentence and initiate reading with text-to-speech using a feature of the reading system.</p>
+    </div>
+    <p class="eval">Indicate Pass or Fail.</p>
+  </section>
+  <section id="ReadAloud-110" class="test">
+    <h2><span class="test-id">ReadAloud-110</span> <span class="test-title">Stop and resume reading</span></h2>
+    <div class="desc">
+      <ol>
+        <li>Initiate reading from any point in the book. </li>
+        <li>Stop Read Aloud and note the last read position. </li>
+        <li>Initiate reading again using the Read Aloud feature and check if reading starts at the last read location. </li>
+      </ol>
+    </div>
+    <p class="eval">Indicate Pass or Fail.</p>
+  </section>
+  <section id="ReadAloud-210" class="test">
+    <h2><span class="test-id">ReadAloud-210</span> <span class="test-title">The Read Aloud feature should continue until interrupted by the user</span></h2>
+    <div class="desc">
+      <p>The Read Aloud feature should continue until interrupted by the user, keeping the text being spoken in view.</p>
+    </div>
+    <ol>
+      <li>Activate the Read Aloud feature.</li>
+      <li>The reading should continue across pages/screens until stopped manually.</li>
+      <li>The text being read aloud should be visible on the screen. </li>
+    </ol>
+    <p class="eval">Indicate Pass or Fail.</p>
+  </section>
+  <section id="ReadAloud-310" class="test">
+    <h2><span class="test-id">ReadAloud-310</span> <span class="test-title">All text should be read in the proper order</span></h2>
+    <div class="desc">
+      <p>Sample text has been provided below to test the reading order. The Paragraph 2 should be read after Paragraph 1 by the Read Aloud feature. Note that visually Paragraph 2 is placed to the left of Paragraph 1 but it is second in the reading
+        order. </p>
+    </div>
+    <p class="eval">Indicate Pass or Fail.</p>
+    <section class="sample-text">
+      <p class="sample">
+        Paragraph 1: Mother's Day is a celebration honoring mothers and motherhood, maternal bonds, and the influence of mothers in society. It is celebrated on various days in many parts of the world, most commonly in the months of March or May. It
+        complements similar celebrations honoring family members, such as Father's Day and Siblings Day.</p>
+      <p class="sidebartype">
+        Paragraph 2: Mothers's Day in Israel: The Jewish population celebrates Mother's Day on Shevat 30 of the Jewish calendar, which falls between 30 January and 1 March. The celebration was set as the same date that Henrietta Szold died.
+      </p>
+    </section>
+  </section>
+  <section id="ReadAloud-410" class="test">
+    <h2><span class="test-id">ReadAloud-410</span> <span class="test-title">Change Read Aloud reading speed</span></h2>
+    <p class="desc">It should be possible to adjust (increase/decrease) the speed of reading. </p>
+    <p class="eval">Indicate Pass or Fail.</p>
+  </section>
+  <section id="ReadAloud-510" class="test">
+    <h2><span class="test-id">ReadAloud-510</span> <span class="test-title">Text to Speech handles punctuation and document structure appropriately</span></h2>
+    <p class="desc">When Read Aloud is activated, there should be slight pauses after headings, list items etc., rather than reading as if it is one continuous section of text.</p>
+    <p>Read the text below using read aloud and listen for the pauses.</p>
+    <h3>Text for testing read aloud</h3>
+    <p>The above heading should not have run into this text as if it were one sentence. Now we have a regular sentence that includes a comma, so it should be spoken as two phrases. And a pause should have indicated that this is a separate sentence.
+    </p>
+    <p>This is a new paragraph. Below is a list, which should be read as three separate groups:</p>
+    <ul>
+      <li>Red, green, blue</li>
+      <li>One, two, three</li>
+      <li>Alpha, bravo, charlie</li>
+    </ul>
+    <p>End of text for testing read aloud.</p>
+    <p class="eval">Indicate Pass or Fail.</p>
+  </section>
+  <section id="ReadAloud-610" class="test">
+    <h2><span class="test-id">ReadAloud-610</span> <span class="test-title">Text is emphasised as it is spoken by read aloud</span></h2>
+    <p class="desc">Check if the Text is emphasised as it is spoken by read aloud.</p>
+    <ol>
+      <li>Activate the Read Aloud feature in the reading system. </li>
+      <li>When the Read Aloud is activated, the text being spoken should be emphasised visually using a contrasting colour or any other means. As the reading continues, the emphasis should also move to the next section of text to be read.</li>
+    </ol>
+    <p class="eval">Indicate Pass or Fail.</p>
+  </section>
+  <section id="ReadAloud-710" class="test">
+    <h2><span class="test-id">ReadAloud-710</span> <span class="test-title">The emphasis or highlight colour can be changed</span></h2>
+    <p class="desc">Activate Read Aloud feature as described in the previous test. Change the colour of emphasis or visual highlight of the text being read aloud using any feature available in the reading system or the operating system. The users
+      should have a choice of different colours for text highlighting.</p>
+    <p class="eval">Indicate Pass or Fail.</p>
+  </section>
+</body>
+
+</html>
