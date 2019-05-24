@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<package xmlns="http://www.idpf.org/2007/opf" version="3.0"
-  unique-identifier="uid">
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
     <dc:language>en</dc:language>
     <dc:publisher>DAISY Consortium and DIAGRAM Center</dc:publisher>
@@ -18,6 +17,7 @@
     <dc:contributor>Marisa DeMeglio</dc:contributor>
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330</dc:identifier>
     <dc:date>2019-05-10</dc:date>
+    <dc:subject>math</dc:subject>
     <meta property="dcterms:modified">2019-05-10T09:00:00Z</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
