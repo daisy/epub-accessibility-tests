@@ -14,7 +14,7 @@
     <meta property="schema:accessMode">visual</meta>
     <meta property="schema:accessModeSufficient">textual</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
-    <meta property="schema:version">1.0.0</meta>
+    <meta property="schema:version">1.0.1</meta>
   </metadata>
   <manifest>
     <!-- css -->
