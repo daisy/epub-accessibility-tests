@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <nav epub:type="toc" role="doc-toc" id="toc">
-    <h1 class="title">Table des matières</h1>
+  <nav epub:type="toc" role="doc-toc" id="toc" aria-labelledby="toc-heading">
+    <h1 class="title" id="toc-heading">Table des matières</h1>
     <ol>
       <li id="cover"><a href="cover.xhtml">Couverture</a></li>
       <li id="front"><a href="front.xhtml">Page de garde</a></li>
@@ -49,8 +49,8 @@
       </li>
     </ol>
   </nav>
-  <nav epub:type="page-list" role="doc-pagelist">
-    <h1>Liste des pages de la version imprimées</h1>
+  <nav epub:type="page-list" role="doc-pagelist" aria-labelledby="pagelist-heading">
+    <h1 id="pagelist-heading">Liste des pages de la version imprimées</h1>
     <ol>
       <li><a href="Basic-functionality-tests.xhtml#page1">1</a></li>
       <li><a href="Basic-functionality-tests.xhtml#page2">2</a></li>
