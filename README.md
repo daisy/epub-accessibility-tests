@@ -3,6 +3,16 @@ epub-accessibility-tests
 
 EPUB Content containing accessibility tests for reading systems
 
+## Index of materials
+
+* `content/epub30-test-0301/`: Basic Funtionality
+* `content/epub30-test-0302/`: Non-Visual Reading
+* `content/epub30-test-0303/`: Visual Adjustments
+* `content/epub30-test-0304/`: Read Aloud
+* `content/epub30-test-0320/`: Media Overlays 
+* `content/epub30-test-0330/`: Math
+* `content/epub30-test-0340/`: Extended Descriptions
+
 ## To build EPUBs:
 
 Run `build-all.sh` to run epubcheck and build EPUB files. The output appears in the `build` directory, named after the EPUB title plus the version number.
