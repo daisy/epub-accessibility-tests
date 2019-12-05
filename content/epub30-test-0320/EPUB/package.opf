@@ -13,12 +13,19 @@
 		<dc:creator id="creator1">DAISY Consortium</dc:creator>
 		<dc:language>en</dc:language>
 		<dc:subject>media-overlays</dc:subject>
+		<dc:source>Page numbers added for test purposes.</dc:source>
 		<dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0320</dc:identifier>
 		<meta property="media:duration" refines="#tobi_spine_3_smil">00:01:09.8423130</meta>
 		<meta property="media:duration" refines="#tobi_spine_4_smil">00:05:15.2119953</meta>
 		<meta property="media:duration" refines="#tobi_spine_5_smil">00:13:27.4688662</meta>
 		<meta property="media:duration">00:19:52.5231745</meta>
-		<meta property="schema:version">1.0.0</meta>
+		<meta property="schema:version">1.0.1</meta>
+		<meta property="schema:accessibilitySummary">The publication contains structural and page navigation. The publication meets WCAG 2.0 Level AA.</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessMode">visual</meta>
+		<meta property="schema:accessMode">auditory</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+    	<meta property="schema:accessibilityFeature">structuralNavigation, synchronizedAudioText</meta>
 		<meta name="generator" content="Tobi, authoring tool for DAISY and EPUB talking books"/>
 	</metadata>
 	<manifest>
