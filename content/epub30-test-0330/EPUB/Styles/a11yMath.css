@@ -7,6 +7,16 @@
   overflow: hidden;
 }
 
+.OffScreen{ 
+	/*same as MathMLNoDisplay but not acted upon by JS for test 021*/
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 .HideSummaryOfMath{
     display:none;  
 }

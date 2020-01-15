@@ -13,11 +13,9 @@
 
   <h1>SVG alt-text and MathML inside details tests</h1>
 
-  <p>There are two tests in this file. 070 and 080. The test has an SVG with alt text and aria-details linking to a details element with the MathML inside the details. The summary says "MathML Presentation." Test 080 has javascript that exposes the
-    details and a copy Math to clipboard; the idea is that if javascript can run, it will expose the details and enables the copying of math to the clipboard. If javascript cannot run, there is no point in having the details exposed or copying to
-    clipboard since that only works with javascript. The javascript should also insert the aria-details linking attribute.</p>
+  <p>The test has an SVG with alt text and aria-details linking to a details element with the MathML inside the details. The summary says "MathML Presentation." </p>
   <section id="math-070" class="test">
-    <h2><span class="test-id">math-070</span> <span class="test-title">Support for SVG alt-text and MathML inside <code>details</code> (not hidden)</span></h2>
+    <h2><span class="test-id">math-070</span> <span class="test-title">Support for SVG alt-text and MathML inside <code>details</code></span></h2>
 
     <p class="desc">The test passes if the assistive technology reads the Alt text, and after expanding the details and summary, the Assistive Technology reports presence of the MathML expression and provides functionality to read it.</p>
 
@@ -113,117 +111,7 @@ minus x sub 1, times open paren x minus x sub 1 close paren" aria-details="gk123
     <p>Please make a note if you are able to see both the SVG image of the math equation as well as the mathML rendered equation. Also note any other visual anomalies you encounter.</p>
   </section>
 
-  <section id="math-080" class="test">
-    <h2><span class="test-id">math-080</span> <span class="test-title">Support for SVG alt-text and MathML inside <code>details</code> (Unhidden with JavaScript)</span></h2>
-
-    <div class="desc">
-      <p>The test passes if all of the following steps succeed:</p>
-      <ul>
-        <li>The assistive technology reads the Alt text, and after expanding the details and summary, the Assistive Technology reports presence
-          Of the MathML expression and provides functionality to read it.</li>
-        <li>There is a "copy Math to clipboard" button in the test. The test passes if the MathML is copied to the clipboard on activating this button, and you can paste the mathML into a text editor or word processor.</li>
-      </ul>
-    </div>
-
-    <p>The test fails if The MathML in the details is presented as math markup without rendering it, i.e. it is garbage, or if the MathML is never exposed to assistive technology. The test can also fail if you are unable to copy the mathML
-      successfully to the clipboard and paste it somewhere.</p>
-
-
-    <h3>Test 080</h3>
-    <p>This is a math Equation as SVG with Alt text, which is followed by a "copy MathML to clipboard" button, followed by details and summary that says "MathML Presentation". This will appear between the following two lines.</p>
-
-    <hr />
-
-    <div style="text-align: center;">
-      <img id="gk2exp7" src="../Images/epub-image-2pointform.svg" style="vertical-align: -1.644ex; display: 'block'" alt="y minus y sub 1, equals, the fraction with numerator y sub 2 minus y sub 1, and denominator x sub 2
-minus x sub 1, times open paren x minus x sub 1 close paren" aria-details="gwkexp3" />
-    </div>
-
-    <div class="HideSummaryOfMath">
-      <button onclick="CopyToClipboard(this,'math2')">Copy Math To Clipboard</button>
-      <details id="gwkexp3">
-        <summary>MathML Presentation</summary>
-        <math id="math2" xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
-          <mrow>
-            <mstyle displaystyle="true">
-              <mi>y</mi>
-              <mo>−
-                <!-- − -->
-              </mo>
-              <msub>
-                <mi>y</mi>
-                <mrow>
-                  <mn>1</mn>
-                </mrow>
-              </msub>
-              <mo>=</mo>
-              <mrow>
-                <mfrac>
-                  <mrow>
-                    <msub>
-                      <mi>y</mi>
-                      <mrow>
-                        <mn>2</mn>
-                      </mrow>
-                    </msub>
-                    <mo>−
-                      <!-- − -->
-                    </mo>
-                    <msub>
-                      <mi>y</mi>
-                      <mrow>
-                        <mn>1</mn>
-                      </mrow>
-                    </msub>
-                  </mrow>
-                  <mrow>
-                    <msub>
-                      <mi>x</mi>
-                      <mrow>
-                        <mn>2</mn>
-                      </mrow>
-                    </msub>
-                    <mo>−
-                      <!-- − -->
-                    </mo>
-                    <msub>
-                      <mi>x</mi>
-                      <mrow>
-                        <mn>1</mn>
-                      </mrow>
-                    </msub>
-                  </mrow>
-                </mfrac>
-              </mrow>
-              <mo stretchy="false">(</mo>
-              <mi>x</mi>
-              <mo>−
-                <!-- − -->
-              </mo>
-              <msub>
-                <mi>x</mi>
-                <mrow>
-                  <mn>1</mn>
-                </mrow>
-              </msub>
-              <mo stretchy="false">)</mo>
-            </mstyle>
-          </mrow>
-        </math>
-      </details>
-    </div>
-    <hr />
-
-    <h3>Additional Notes for Test 080</h3>
-
-    <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the alt text being read followed by the details and the description to expand to read
-      the MathML. After expanding the details, please explain your reading experience.</p>
-
-    <p>Please make a note if you are able to see both the SVG image of the math equation as well as the mathML rendered equation. Also note any other visual anomalies you encounter.</p>
-
-    <p>Please also make note if the copy to clipboard of the math works and you were able to paste the math in your favorite editor. If you were able to do something interesting in a Math editor, please make note of that as well.</p>
-  </section>
-
+ 
 </body>
 
 </html>
