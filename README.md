@@ -15,9 +15,20 @@ EPUB Content containing accessibility tests for reading systems
 
 ## To build EPUBs:
 
+Set the location of your [EPUBCheck](https://github.com/w3c/epubcheck) jar, e.g. 
+```
+export EPUBCHECK=/Users/marisa/Downloads/epubcheck-4.2.0-rc/epubcheck.jar
+```
+
 Run `build-all.sh` to run epubcheck and build EPUB files. The output appears in the `build` directory, named after the EPUB title plus the version number.
 
 If you just need to build one book, run `build-one.sh foldername` where `foldername` is the directory containing the EPUB fileset for that book.
+
+Full example (building one book):
+
+```
+export EPUBCHECK=/Users/marisa/Downloads/epubcheck-4.2.0-rc/epubcheck.jar; ./build-one.sh ./content/epub30-test-0330
+```
 
 ## Structural requirements for these books
 
