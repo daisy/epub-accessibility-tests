@@ -52,6 +52,8 @@ Use `EPUB`, not `OEPBS`, for the content directory, if you want to use the inclu
 ```<dc:language>fr</dc:language>```
 - a version, in the form of MAJ.MIN.PATCH, e.g.
 ```<meta property="schema:version">1.0.0</meta>```
+- a unique identifier (don't repeat across versions), e.g.
+```    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330-1.1.2</dc:identifier>```
 
 ### In the navigation document
 
