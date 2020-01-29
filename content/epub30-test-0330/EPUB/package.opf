@@ -46,9 +46,12 @@
 
     <item id="epub-math-introduction.xhtml" href="Text/epub-math-introduction.xhtml" media-type="application/xhtml+xml"/>
     <item id="epub-image-fallback-mathml-examples.xhtml" href="Text/epub-image-fallback-mathml-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml svg"/>
-    <item id="epub-rendering-mathml-only-examples.xhtml" href="Text/epub-rendering-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
-    <item id="epub-navigating-mathml-only-examples.xhtml" href="Text/epub-navigating-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
-    <item id="epub-SVG-and-mathml-in-details.xhtml" href="Text/epub-SVG-and-mathml-in-details.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
+    <item id="epub-rendering-mathml-only-examples.xhtml" href="Text/epub-rendering-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+    <item id="epub-navigating-mathml-only-examples.xhtml" href="Text/epub-navigating-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+    <item id="epub-SVG-and-mathml-in-details.xhtml" href="Text/epub-SVG-and-mathml-in-details.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+    
+     <item id="epub-image-fallback-annotation-mathml-examples.xhtml" href="Text/epub-image-fallback-annotation-mathml-examples.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+    
     <item id="epub-math-appendix.xhtml" href="Text/epub-math-appendix.xhtml" media-type="application/xhtml+xml"/>
 
     <item id="epub-image-2pointform.svg" href="Images/epub-image-2pointform.svg" media-type="image/svg+xml"/>
@@ -63,6 +66,7 @@
     <itemref idref="epub-navigating-mathml-only-examples.xhtml"/>
     <itemref idref="epub-rendering-mathml-only-examples.xhtml"/>
     <itemref idref="epub-SVG-and-mathml-in-details.xhtml"/>
+    <itemref idref="epub-image-fallback-annotation-mathml-examples.xhtml"/>
     <itemref idref="epub-math-appendix.xhtml"/>
   </spine>
 </package>
