@@ -18,9 +18,9 @@
     <dc:contributor>Franco Alvarado</dc:contributor>
     
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330</dc:identifier>
-    <dc:date>2020-01-15</dc:date>
+    <dc:date>2020-01-30</dc:date>
     <dc:subject>math</dc:subject>
-    <meta property="dcterms:modified">2020-01-15T09:00:00Z</meta>
+    <meta property="dcterms:modified">2020-01-30T09:00:00Z</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
     <meta property="schema:accessibilityFeature">describedMath</meta>
@@ -32,7 +32,7 @@
     <meta property="schema:accessModeSufficient">visual</meta>
     <meta property="schema:accessibilityAPI">ARIA</meta>
     <meta property="schema:accessibilitySummary">This EPUB is just for testing purposes as the intent is to test reading systems for math accessibility with the embedded math.</meta>
-    <meta property="schema:version">1.1.1</meta>
+    <meta property="schema:version">1.2.0</meta>
   </metadata>
   <manifest>
     <item id="cover_jpg" properties="cover-image" href="Images/cover.jpg" media-type="image/jpeg" />
