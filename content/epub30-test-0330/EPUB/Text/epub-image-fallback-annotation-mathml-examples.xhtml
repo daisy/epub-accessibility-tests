@@ -188,9 +188,9 @@
     
     
        <section id="math-100" class="test">
-      <h2><span class="test-id">math-100</span> <span class="test-title">MathML with Fallback of aria-label</span></h2>
+        <h2><span class="test-id">math-100</span> <span class="test-title">MathML with aria-label Fallback on systems which support MathML</span></h2>
 
-        <p class="desc">The test passes if the assistive technology reports presence of the MathML expression and provides functionality to read it, for systems which can't read MathML this passes if the fallback  aria-label description is announced.</p>
+        <p class="desc">The test passes if the assistive technology reports presence of the MathML expression and provides functionality to read it.</p>
 
         <p>The test fails if you do not see or hear any math equation</p>
 
@@ -264,19 +264,118 @@
     <hr/>
     <h3>Additional Notes for Test 100</h3>
 
-        <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix "aria-label:” and you heard the expression “y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis” or you heard the equation with no prefix.”  </p>
+        <p>If the test passes, please provide notes about the following:</p>
+      <ul>
+          <li>Your MathML reading experience</li>
+         <li>How well you were able to navigate in MathML. For example, did you hear the prefix &quot;aria-label:&quot; and you heard the expression &quot;y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis&quot; or you heard the equation with no prefix.</li>
+         <li>Did you came across the same equation twice, one in MathML form and one through aria-label?</li>
+       </ul>
 
     </section>
-   
+
        <section id="math-110" class="test">
-      <h2><span class="test-id">math-110</span> <span class="test-title">MathML using XML m: Namespacing</span></h2>
+        <h2><span class="test-id">math-110</span> <span class="test-title">MathML with aria-label Fallback on system which does not support MathML</span></h2>
+
+            <div class="desc">
+                <p>The test passes if the fallback aria-label description is announced.</p>
+
+                <p>The test fails if you do not see or hear any math equation.</p>
+                <p>If the test passes, please provide notes about the following:</p>
+                <ul>
+                    <li>Did you hear the prefix &quot;aria-label:&quot; and you heard the expression &quot;y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis&quot; or you heard the equation with no prefix.</li>
+                   <li>Did you came across strange characters?</li>
+                   <li>Did you came across the same equation twice?</li>
+                </ul>
+           </div>
+
+    <h3>Test 110</h3>
+      <p>Math Equation will appear between the following two lines.</p>
+     <hr/>
+        <div  tabindex="0" aria-label="aria-label: y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+           <math xmlns="http://www.w3.org/1998/Math/MathML"  display="block">
+            <semantics>
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+            </semantics>
+            </math>
+    </div>
+    <hr/>
+    <h3>Additional Notes for Test 110</h3>
+
+        <p>If the test passes, please provide notes about the following:</p>
+      <ul>
+          <li>Your MathML reading experience</li>
+         <li>How well you were able to navigate in MathML. For example, did you hear the prefix &quot;aria-label:&quot; and you heard the expression &quot;y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis&quot; or you heard the equation with no prefix.</li>
+         <li>Did you came across the same equation twice, one in MathML form and one through aria-label?</li>
+       </ul>
+
+    </section>
+    
+    
+       <section id="math-120" class="test">
+      <h2><span class="test-id">math-120</span> <span class="test-title">MathML using XML m: Namespacing</span></h2>
 
         <p class="desc">The test passes if the assistive technology reports presence of the MathML expression and provides functionality to read it.</p>
 
         <p>The test  fails if you are unable to navigate the MathML, or the MathML is not rendered visually correctly.</p>
 
 
-    <h3>Test 110</h3>
+    <h3>Test 120</h3>
       <p>Math Equation will appear between the following two lines.</p>
      <hr/>
         <div tabindex="0">
@@ -343,20 +442,21 @@
             </m:math>
     </div>
     <hr/>
-    <h3>Additional Notes for Test 110</h3>
+    <h3>Additional Notes for Test 120</h3>
 
-        <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix "(mathml alt-text)” and you heard the expression “y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis” or you heard the equation with no prefix.”  Also note if the visual rendering was correct. (ie. did you see the entire equation or were parts missing.)</p>
+        <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix &quot;(mathml alt-text)&quot; and you heard the expression &quot;y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis&quot; or you heard the equation with no prefix.</p>
+        <p>Also note if the visual rendering was correct. (ie. did you see the entire equation or were parts missing.)</p>
     </section>
 
-       <section id="math-120" class="test">
-      <h2><span class="test-id">math-120</span> <span class="test-title">MathML using role=math </span></h2>
+       <section id="math-130" class="test">
+      <h2><span class="test-id">math-130</span> <span class="test-title">MathML using role=math </span></h2>
 
         <p class="desc">The test passes if the assistive technology reports presence of the MathML expression and provides functionality to read it.</p>
 
         <p>The test  fails if you are unable to navigate the MathML, or the MathML is not rendered visually correctly.</p>
 
 
-    <h3>Test 120</h3>
+    <h3>Test 130</h3>
       <p>Math Equation will appear between the following two lines.</p>
      <hr/>
         <span role="math" tabindex="0">
@@ -424,9 +524,10 @@
     </span>
     <hr/>
 
-    <h3>Additional Notes for Test 120</h3>
+    <h3>Additional Notes for Test 130</h3>
 
-        <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix "(mathml alt-text)” and you heard the expression “y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis” or you heard the equation with no prefix.”  Also note if the visual rendering was correct. (ie. did you see the entire equation or were parts missing.)</p>
+        <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix &quot;(mathml alt-text)&quot; and you heard the expression &quot;y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis&quot; or you heard the equation with no prefix.</p>
+        <p>Also note if the visual rendering was correct. (ie. did you see the entire equation or were parts missing.)</p>
     </section>
     
     
