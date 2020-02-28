@@ -60,7 +60,7 @@
 
 .overlaid__summary::-moz-details-marker,
 .overlaid__summary::-ms-details-marker,
-.overlaid__summary::-o-details-marker, {
+.overlaid__summary::-o-details-marker {
 	display: none;
 }
 
