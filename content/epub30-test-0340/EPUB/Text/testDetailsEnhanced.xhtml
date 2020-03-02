@@ -330,7 +330,7 @@
 
   
     <script>
-      EnhancedDetails.enhance(document.querySelector('.overlaid'));
+      document.querySelectorAll('.overlaid').forEach(EnhancedDetails.enhance);
     </script>
   </body>
 </html>
