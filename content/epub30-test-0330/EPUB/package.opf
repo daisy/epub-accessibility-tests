@@ -19,9 +19,9 @@
     
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330</dc:identifier>
     <dc:subject>math</dc:subject>
-    <dc:date>2020-03-20</dc:date>
-    <meta property="dcterms:modified">2020-03-20T09:00:00Z</meta>
-    <meta property="schema:version">1.2.0</meta>
+    <dc:date>2020-03-31</dc:date>
+    <meta property="dcterms:modified">2020-03-31T09:00:00Z</meta>
+    <meta property="schema:version">1.2.1</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
     <meta property="schema:accessibilityFeature">describedMath</meta>

@@ -16,19 +16,16 @@
         <div class="desc">
             <p>The test passes if the following is true:</p>
             
-            <p>When you use the Reading Systems "Read Aloud" feature the mathML's alt-text is spoken.</p>
-            
-            <p>You should hear the following: Mathml-alt-text: followed by the math equation</p>
+            <p>When you use the Reading Systems "Read Aloud" feature the mathML is spoken correctly or if the alt txt is spoken i.e.: Mathml-alt-text followed by the math equation: y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis</p>
 
-            <p>The test fails if you do not hear any math spoken.</p>
+            <p>The test fails if you do not hear any math spoken or if you don't hear the math equation containing a fraction and subscripts.</p>
             </div>
-
 
     <h3>Test 150</h3>
       <p>Math Equation will appear between the following two lines.</p>
      <hr/>
-        <div  tabindex="0">
-            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="Mathml-alt-text: y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+        <span>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="Mathml-alt-text: y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
               <semantics>
                 <mrow>
                   <mstyle displaystyle="true">
@@ -89,11 +86,11 @@
                 </mrow>
               </semantics>
             </math>
-        </div>
+        </span>
     <hr/>
     <h3>Additional Notes for Test 150</h3>
 
-    <p>If the test passes, please provide notes about what you heard. For example, did you hear the prefix "Mathml-alt-text:”.  If you didn't hear that prefix before the spoken math please provide the math you hear spoken in your notes.</p>
+    <p>Please provide notes about what you heard. For example, did you hear the prefix "Mathml-alt-text”.  If you didn't hear that prefix before the spoken math please provide the math expression you hear spoken in your notes.</p>
 
     
     </section>
