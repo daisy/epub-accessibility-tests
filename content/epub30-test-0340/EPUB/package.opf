@@ -3,7 +3,7 @@
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:title>Advanced Accessibility Tests: Extended Descriptions</dc:title>
     <dc:creator>DAISY Consortium Transition to EPUB 3 and DIAGRAM Standards WG</dc:creator>
-    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0340</dc:identifier>
+    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0340-1.0.1</dc:identifier>
     <dc:language>en-US</dc:language>
     <dc:publisher>DAISY Consortium and DIAGRAM Center</dc:publisher>
     <dc:description>Tests for accessible extended descriptions of images in EPUBs</dc:description>
