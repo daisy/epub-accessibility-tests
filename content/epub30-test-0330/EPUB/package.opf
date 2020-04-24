@@ -17,11 +17,11 @@
     <dc:contributor>Marisa DeMeglio</dc:contributor>
     <dc:contributor>Franco Alvarado</dc:contributor>
     
-    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330-1.2.4</dc:identifier>
+    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330-1.2.5</dc:identifier>
     <dc:subject>math</dc:subject>
-    <dc:date>2020-04-16</dc:date>
-    <meta property="dcterms:modified">2020-04-16T15:30:00Z</meta>
-    <meta property="schema:version">1.2.4</meta>
+    <dc:date>2020-04-24</dc:date>
+    <meta property="dcterms:modified">2020-04-24T11:30:00Z</meta>
+    <meta property="schema:version">1.2.5</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
     <meta property="schema:accessibilityFeature">describedMath</meta>
@@ -45,10 +45,10 @@
     <item id="nav" href="Text/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
 
     <item id="epub-math-introduction.xhtml" href="Text/epub-math-introduction.xhtml" media-type="application/xhtml+xml"/>
-    <item id="epub-image-fallback-mathml-examples.xhtml" href="Text/epub-image-fallback-mathml-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml svg"/>
+    <item id="epub-image-fallback-mathml-examples.xhtml" href="Text/epub-image-fallback-mathml-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
     <item id="epub-rendering-mathml-only-examples.xhtml" href="Text/epub-rendering-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
     <item id="epub-navigating-mathml-only-examples.xhtml" href="Text/epub-navigating-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
-    <item id="epub-SVG-and-mathml-in-details.xhtml" href="Text/epub-SVG-and-mathml-in-details.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+    <item id="epub-SVG-and-mathml-in-details.xhtml" href="Text/epub-SVG-and-mathml-in-details.xhtml" media-type="application/xhtml+xml" properties="mathml svg"/>
     
      <item id="epub-image-fallback-annotation-mathml-examples.xhtml" href="Text/epub-image-fallback-annotation-mathml-examples.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
      
