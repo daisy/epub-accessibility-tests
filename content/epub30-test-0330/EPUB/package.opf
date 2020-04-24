@@ -20,7 +20,7 @@
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330-1.2.5</dc:identifier>
     <dc:subject>math</dc:subject>
     <dc:date>2020-04-24</dc:date>
-    <meta property="dcterms:modified">2020-04-24T11:30:00Z</meta>
+    <meta property="dcterms:modified">2020-04-24T13:30:00Z</meta>
     <meta property="schema:version">1.2.5</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
