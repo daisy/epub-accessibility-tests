@@ -15,10 +15,11 @@
   <h2><span class="test-id">math-010</span> <span class="test-title">Support for fallback mechanism</span></h2>
 
   <div class="desc">
-    <p>The test passes if you can see the image and assistive technology reads the following alt-text:</p>
-
-    <p>"y minus y sub 1, equals, the fraction with numerator y sub 2 minus y sub 1, and denominator x sub 2 minus x sub 1, times open paren x minus x sub 1 close paren"</p>
+    <p>The test passes if you can see the image and assistive technology reads the alt-text</p>
    </div>
+<p>The following alttext should be read:</p>
+    <p>"y minus y sub 1, equals, the fraction with numerator y sub 2 minus y sub 1, and denominator x sub 2 minus x sub 1, times open paren x minus x sub 1 close paren"</p>
+
 
      <h3>Test 010</h3>
        <p>Math Equation will appear between the following two lines.</p>
@@ -41,7 +42,7 @@
       <p>Math Equation will appear between the following two lines.</p>
      <hr/>
         <span id="exp3" class="MathMLNoJavaHidden" aria-hidden="true">
-            <math xmlns="http://www.w3.org/1998/Math/MathML" class="MathMLNoDisplay" display="block" alttext="(mathml alt-text): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" class="MathMLNoDisplay" display="block" alttext="(MathML alttext): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
               <mrow>
                 <mstyle displaystyle="true">
                   <mi>y</mi>
@@ -105,30 +106,31 @@
     <hr/>
     <h3>Additional Notes for Test 020</h3>
 
-        <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix "mathml alt text” and you heard the expression “(mathml alt-text): y minus y sub 1 equals &#8230;” or was the math expression expressed via the readers own math rulesets such as “y minus y subscript 1, equals &#8230;” with no prefix.”</p>
+        <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix "MathML alttext” and you heard the expression “(MathML alttext): y minus y sub 1 equals &#8230;” or was the math expression expressed via the readers own math rulesets such as “y minus y subscript 1, equals &#8230;” with no prefix.”</p>
 
-        <p>Please make a note if you are able to see both the image of the math equation as well as the mathML rendered equation, since the mathML version should be visually hidden off-screen but accessible to AT.  Also note any other visual anomalies you encounter.</p>
+        <p>Please make a note if you are able to see both the image of the math equation as well as the MathML rendered equation, since the MathML version should be visually hidden off-screen but accessible to assistive technology.  Also note any other visual anomalies you encounter.</p>
     </section>
 
 
     <section id="math-030" class="test">
-      <h2><span class="test-id">math-030</span> <span class="test-title">Image with MathML hidden off-screen but AT accessible</span></h2>
+      <h2><span class="test-id">math-030</span> <span class="test-title">Image with MathML hidden off-screen but accessible to assistive technology</span></h2>
 
-        <div class="desc">
+        <div class="desc"><p>The test checks if the off screen MathML expression is read by assistive technology. </p></div>
+<div>
             <p>The test passes if all of the following are true:</p>
             <ul>
                 <li>The assistive technology reports presence of the MathML expression and provides functionality to read it.</li>
                <li>The assistive technology reports the image and reads its alt text</li>
             </ul>
 
-            <p>The test fails if you only hear the image alt text description and are not able to access the offscreen mathML.</p>
+            <p>The test fails if you only hear the image alt text description and are not able to access the offscreen MathML.</p>
         </div>
 
     <h3>Test 030</h3>
       <p>Math Equation will appear between the following two lines.</p>
      <hr/>
         <span>
-            <math xmlns="http://www.w3.org/1998/Math/MathML" class="OffScreen" display="block" alttext="(mathml alt-text): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" class="OffScreen" display="block" alttext="(MathML alttext): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
               <mrow>
                 <mstyle displaystyle="true">
                   <mi>y</mi>
@@ -194,9 +196,9 @@
         <p>If the test passes, please provide notes about the following:</p>
         <ul>
             <li>Your MathML reading experience.</li>
-           <li>How well you were able to navigate in MathML. For example, did you hear the prefix "mathml alt text” and you heard the expression “(mathml alt-text): y minus y sub 1 equals StartFraction &#8230;” or was the math expression expressed via the readers own math rulesets such as “y minus y subscript 1, equals &#8230;” with no prefix.”</li>
+           <li>How well you were able to navigate in MathML. For example, did you hear the prefix "MathML alttext” and you heard the expression “(MathML alttext): y minus y sub 1 equals StartFraction &#8230;” or was the math expression expressed via the readers own math rulesets such as “y minus y subscript 1, equals &#8230;” with no prefix.”</li>
            <li>Is reading of equation two times a major issue.</li>
-           <li>If you are able to see both the image of the math equation as well as the mathML rendered equation, since the mathML version should be visually hidden off-screen but accessible to AT.</li>
+           <li>If you are able to see both the image of the math equation as well as the MathML rendered equation, since the MathML version should be visually hidden off-screen but accessible to assistive technology.</li>
            <li>Any other visual anomalies you encounter.</li>
         </ul>
     </section>

@@ -8,13 +8,14 @@
 
 <body>
 
-  <h1>MathML Displayed with Fallback PNG image in mathML Annotation / ARIA Label / Namespacing Tests</h1>
+  <h1>MathML Displayed with Fallback PNG image in MathML Annotation / ARIA Label / Namespacing Tests</h1>
  
       <section id="math-090" class="test">
       <h2><span class="test-id">math-090</span> <span class="test-title">MathML with Fallback PNG image in MathML Annotation on a reading system which supports MathML</span></h2>
 
-        <div class="desc">
-            <p>The test passes if all the following are true:</p>
+        <div class="desc"><p>The tests checks the reading experience of MathML with annotation. Please skip this test if your reading system does not support MathML.</p></div>
+            
+<div><p>The test passes if all the following are true:</p>
             <ul>
                 <li>The assistive technology reports presence of the MathML expression and provides functionality to read it,</li>  
                 <li>The assistive technology does not report presence of fallback image with alttext inside the AnnotationXML</li> 
@@ -88,7 +89,7 @@
                 </mstyle>
               </mrow>
             <annotation-xml name="alternate-representation" encoding="application/xhtml+xml">
-                <img xmlns="http://www.w3.org/1999/xhtml" src="../Images/epub-image-2pointform.png" alt="mathml annotation fallback alt text: y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis" />
+                <img xmlns="http://www.w3.org/1999/xhtml" src="../Images/epub-image-2pointform.png" alt="MathML annotation fallback alt text: y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis" />
             </annotation-xml>
             </semantics>
             </math>
@@ -103,8 +104,9 @@
      <section id="math-100" class="test">
       <h2><span class="test-id">math-100</span> <span class="test-title">Test MathML with Fallback PNG image in MathML Annotation in a reading system which does not support MathML</span></h2>
 
-        <div class="desc">
-            <p>The test passes if the fallback annotation image is displayed and its alt-text description is announced.</p>
+        <div class="desc"><p>The tests checks the reading experience of MathML with annotation. Please skip this test if your reading system supports MathML.</p></div>
+
+<div>            <p>The test passes if the fallback annotation image is displayed and its alt-text description is announced.</p>
   
             <p>The test fails if you do not see the image and its alttext.</p>
         </div>
@@ -174,7 +176,7 @@
                 </mstyle>
               </mrow>
             <annotation-xml name="alternate-representation" encoding="application/xhtml+xml">
-                <img xmlns="http://www.w3.org/1999/xhtml" src="../Images/epub-image-2pointform.png" alt="mathml annotation fallback alt text: y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis" />
+                <img xmlns="http://www.w3.org/1999/xhtml" src="../Images/epub-image-2pointform.png" alt="MathML annotation fallback alt text: y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis" />
             </annotation-xml>
             </semantics>
             </math>
@@ -190,7 +192,7 @@
        <section id="math-110" class="test">
         <h2><span class="test-id">math-110</span> <span class="test-title">MathML with aria-label Fallback on systems which support MathML</span></h2>
 
-        <p class="desc">The test passes if the assistive technology reports presence of the MathML expression and provides functionality to read it.</p>
+        <p class="desc">The test passes if the assistive technology reports presence of the MathML expression and provides functionality to read it. Please skip this test if your reading system does not support MathML</p>
 
         <p>The test fails if you do not see or hear any math equation</p>
 
@@ -276,17 +278,18 @@
        <section id="math-120" class="test">
         <h2><span class="test-id">math-120</span> <span class="test-title">MathML with aria-label Fallback on system which does not support MathML</span></h2>
 
-            <div class="desc">
-                <p>The test passes if the fallback aria-label description is announced.</p>
+            <p class="desc">The test passes if the fallback aria-label description is announced. Please skip this test if your reading system supports MathML.</p>
 
                 <p>The test fails if you do not see or hear any math equation.</p>
+
                 <p>If the test passes, please provide notes about the following:</p>
+           
                 <ul>
                     <li>Did you hear the prefix &quot;aria-label:&quot; and you heard the expression &quot;y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis&quot; or you heard the equation with no prefix.</li>
                    <li>Did you come across strange characters?</li>
                    <li>Did you come across the same equation twice?</li>
                 </ul>
-           </div>
+
 
     <h3>Test 120</h3>
       <p>Math Equation will appear between the following two lines.</p>
@@ -379,7 +382,7 @@
       <p>Math Equation will appear between the following two lines.</p>
      <hr/>
         <div tabindex="0">
-           <m:math display="block" alttext="(mathml alt-text): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
+           <m:math display="block" alttext="(MathML alttext): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
             <m:semantics>
               <m:mrow>
                 <m:mstyle displaystyle="true">
@@ -450,7 +453,7 @@
            
     <h3>Additional Notes for Test 130</h3>
 
-        <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix &quot;(mathml alt-text)&quot; and you heard the expression &quot;y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis&quot; or you heard the equation with no prefix.</p>
+        <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix &quot;(MathML alttext)&quot; and you heard the expression &quot;y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis&quot; or you heard the equation with no prefix.</p>
         <p>Also note if the visual rendering was correct. (ie. did you see the entire equation or were parts missing.)</p>
     </section>
 
@@ -466,7 +469,7 @@
       <p>Math Equation will appear between the following two lines.</p>
      <hr/>
         <span role="math" tabindex="0">
-           <math xmlns="http://www.w3.org/1998/Math/MathML"  display="block" alttext="(mathml alt-text): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
+           <math xmlns="http://www.w3.org/1998/Math/MathML"  display="block" alttext="(MathML alttext): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
             <semantics>
               <mrow>
                 <mstyle displaystyle="true">
@@ -538,7 +541,7 @@
 
     <h3>Additional Notes for Test 140</h3>
 
-        <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix &quot;(mathml alt-text)&quot; and you heard the expression &quot;y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis&quot; or you heard the equation with no prefix.</p>
+        <p>If the test passes, please provide notes about your MathML reading experience, and how well you were able to navigate in MathML. For example, did you hear the prefix &quot;(MathML alttext)&quot; and you heard the expression &quot;y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis&quot; or you heard the equation with no prefix.</p>
         <p>Also note if the visual rendering was correct. (ie. did you see the entire equation or were parts missing.)</p>
     </section>
     
