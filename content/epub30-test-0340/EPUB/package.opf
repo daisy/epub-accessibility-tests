@@ -15,8 +15,8 @@
     <dc:rights>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike (CC BY-NC-SA) license.</dc:rights>
     <dc:subject>extended-descriptions</dc:subject>
     <dc:date>2020-04-14</dc:date>
-    <meta property="dcterms:modified">2020-04-14T14:00:00Z</meta>
-    <meta property="schema:version">1.2.2</meta>
+    <meta property="dcterms:modified">2020-05-18T12:00:00Z</meta>
+    <meta property="schema:version">1.2.3</meta>
     <meta property="schema:accessibilityHazard">none</meta>
     <meta property="schema:accessibilityFeature">alternativeText</meta>
     <meta property="schema:accessibilityFeature">index</meta>
@@ -49,7 +49,9 @@
    <item id="i6" href="Text/testDetailsExpanding.xhtml" media-type="application/xhtml+xml" />
    <item id="i7" href="Text/testDetailsCollapsing.xhtml" media-type="application/xhtml+xml" />
    <item id="i8" href="Text/testDetailsEnhanced.xhtml" media-type="application/xhtml+xml" properties="scripted svg"/>
-  
+    <item id="i9" href="Text/testDetailsEndOfBook.xhtml" media-type="application/xhtml+xml"  />
+     <item id="i10" href="Text/endOfBookDescriptions.xhtml" media-type="application/xhtml+xml"  />
+
     <item id="img_more_info" href="Images/more_info.jpeg" media-type="image/jpeg"/>
     <item id="img_chart" href="Images/chart-ebcaadfb.png" media-type="image/png"/>
     <item id="img_peafowl" href="Images/peafowl-998cf337.jpg" media-type="image/jpeg"/>
@@ -66,5 +68,7 @@
     <itemref idref="i6"/>
     <itemref idref="i7"/>
     <itemref idref="i8"/>
+    <itemref idref="i9"/>
+    <itemref idref="i10"/>
   </spine>
 </package>

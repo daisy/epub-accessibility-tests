@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
+
+<head>
+    <title>Extended descriptions using links to end of chapter</title>
+    <meta name="charset" content="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+    <link href="../Styles/styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <h1>Extended descriptions using links to end of chapter</h1>
+
+    <h2>Notes about techniques</h2>
+    <p>In this chapter there are two examples. The extended descriptions are placed at the end of the book. It is expected that this approach will appeal to publishers that do not want the descriptions to  impact the appearance of the content. The approaches have the lowest impact on the visual layout. The bar chart has a text link and the peacock has an image as a link. A link back to the image is provided to take the reader back to the same location where they left off reading in the primary flow of content. </p>
+
+ 
+<h1 id="s1">Extended Description Link to End of Book</h1>
+    <p>The test below refers to the bar chart image immediately following.</p>
+    <section id="extdesc-220" class="test">
+      <h2><span class="test-title">Technique for linking to extended description via text hyperlinks to the end of the book and back</span><br/><span class="test-id">extdesc-220</span></h2>
+      <div class="desc">
+        <p>This test passes if all the following steps are successful:</p>
+        <ul>
+          <li>The link "Follow for extended description" is reported, and on activating, it takes the focus to extended description at end of this book. The extended description is placed under the heading "Description of Bar Chart" </li>
+          <li>Upon activation of the link you are taken to the image description directly instead of being placed at the top of the page and can read the extended description</li>
+          <li>On activating the link "Navigate back to Bar Chart image" below the extended description, it takes the focus back to original position in this chapter.</li>
+        </ul>
+      </div>
+    </section>
+
+      <figure id="image3">
+        <img src="../Images/chart-ebcaadfb.png" alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"/>
+        <figcaption>Example.com Site visitors Jan to March 2014</figcaption>
+    </figure>
+    <a id="image3-link" href="./endOfBookDescriptions.xhtml#image3-extended-desc">Follow for extended description</a>
+    
+  <hr/>
+    <p>End of this chapter</p>
+
+</body>
+
+</html>
