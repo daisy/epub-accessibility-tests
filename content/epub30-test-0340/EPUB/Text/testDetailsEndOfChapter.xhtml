@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <h1>Extended descriptions using links to end of chapter</h1>
+    <h1 id="s1">Extended descriptions using links to end of chapter</h1>
 
     <h2>Notes about techniques</h2>
     <p>In this chapter there are two examples. The extended descriptions are placed at the end of the chapter. It is expected that this approach will appeal to publishers that do not want the descriptions to  impact the appearance of the content. The approaches have the lowest impact on the visual layout. They both use <code>aria-details</code>, which points to a <code>div</code> at the end of the chapter, which eventually will be picked up by assistive technologies and reading systems to make navigation to the description a seamless experience. However, until <code>aria-details</code> is widely adopted, a traditional link is placed below the image that points to the same location at the end of the chapter. The bar chart has a text link and the peacock has an image as a link. A link back to the image is provided to take the reader back to the same location where they left off reading in the primary flow of content. </p>
@@ -23,16 +23,16 @@
       <li>Image hyperlink to act as fallback if <code>aria-details</code> is not supported.</li>
     </ul>
 
-    <h1 id="s1">Tests for bar chart image that uses <code>aria-details</code> for navigation to end of chapter description</h1>
+    <h1>Tests for bar chart image that uses <code>aria-details</code> for navigation to end of chapter description</h1>
     <p>The tests below refer to the bar chart image immediately following.</p>
 
     <section id="extdesc-070" class="test">
-      <h2><span class="test-title">Detection of <code>aria-details</code></span><br/><span class="test-id">extdesc-070</span></h2>
+      <h2><span class="test-id">extdesc-070</span><span class="test-title">Detection of <code>aria-details</code></span></h2>
       <p class="desc">This test passes if <code>aria-details</code> for the image is reported. (For example, your screen reader will announce <q>has details</q>.)</p>
     </section>
 
     <section id="extdesc-080" class="test">
-      <h2><span class="test-title">Linking to extended description at end of chapter</span><br/><span class="test-id">extdesc-080</span></h2>
+      <h2><span class="test-id">extdesc-080</span><span class="test-title">Linking to extended description at end of chapter</span></h2>
       <p class="desc">This test passes if you can use <code>aria-details</code> to take you to the description at the end of the chapter, under the heading "Description of Bar Chart". (For example your browser or screen reader may provide some shortcut key or an interactive element like button, link etc. for using <code>aria-details</code>.)</p>
     </section>
 
@@ -47,7 +47,7 @@
 <h1 id="s11">Fallback technique 1</h1>
     <p>The test below refers to the bar chart image immediately following.</p>
     <section id="extdesc-090" class="test">
-      <h2><span class="test-title">Fallback technique for linking to extended description via text hyperlink</span><br/><span class="test-id">extdesc-090</span></h2>
+      <h2><span class="test-id">extdesc-090</span><span class="test-title">Fallback technique for linking to extended description via text hyperlink</span></h2>
       <div class="desc">
         <p>This test passes if all the following steps are successful:</p>
         <ul>
@@ -72,7 +72,7 @@
     <p>The test below refers to the peacock image immediately following.</p>
 
     <section id="extdesc-100" class="test">
-      <h2><span class="test-title">Fallback technique for linking to extended description via image hyperlink</span><br/><span class="test-id">extdesc-100</span></h2>
+      <h2><span class="test-id">extdesc-100</span><span class="test-title">Fallback technique for linking to extended description via image hyperlink</span></h2>
       <div class="desc">
         <p>This test passes if all the following steps are successful:</p>
         <ul>
