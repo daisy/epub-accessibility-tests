@@ -14,9 +14,9 @@
     <dc:description>Tests for accessible extended descriptions of images in EPUBs</dc:description>
     <dc:rights>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike (CC BY-NC-SA) license.</dc:rights>
     <dc:subject>extended-descriptions</dc:subject>
-    <dc:date>2020-06-09</dc:date>
-    <meta property="dcterms:modified">2020-06-09T10:00:00Z</meta>
-    <meta property="schema:version">1.2.5</meta>
+    <dc:date>2020-07-15</dc:date>
+    <meta property="dcterms:modified">2020-07-15T10:00:00Z</meta>
+    <meta property="schema:version">1.2.6</meta>
     <meta property="schema:accessibilityHazard">none</meta>
     <meta property="schema:accessibilityFeature">alternativeText</meta>
     <meta property="schema:accessibilityFeature">index</meta>
@@ -51,6 +51,8 @@
    <item id="i8" href="Text/testDetailsEnhanced.xhtml" media-type="application/xhtml+xml" properties="scripted svg"/>
     <item id="i9" href="Text/testDetailsEndOfBook.xhtml" media-type="application/xhtml+xml"  />
      <item id="i10" href="Text/endOfBookDescriptions.xhtml" media-type="application/xhtml+xml"  />
+     <item id="i11" href="Text/testDetailsEndOfBookSingle.xhtml" media-type="application/xhtml+xml"  />
+   <item id="i12" href="Text/endOfBookDescriptionsSingle.xhtml" media-type="application/xhtml+xml"  />
 
     <item id="img_more_info" href="Images/more_info.jpeg" media-type="image/jpeg"/>
     <item id="img_chart" href="Images/chart-ebcaadfb.png" media-type="image/png"/>
@@ -70,5 +72,7 @@
     <itemref idref="i8"/>
     <itemref idref="i9"/>
     <itemref idref="i10"/>
-  </spine>
+    <itemref idref="i11"/>    
+    <itemref idref="i12"/> 
+    </spine>
 </package>
