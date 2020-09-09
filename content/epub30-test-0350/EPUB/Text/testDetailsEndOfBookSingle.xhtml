@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
 
 <head>
-    <title>Extended descriptions using links to end of chapter - Single Description</title>
+    <title>Extended descriptions using links to separate HTML file containing single Description</title>
     <meta name="charset" content="utf-8" />
     <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
     <link href="../Styles/styles.css" rel="stylesheet" type="text/css" />
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <h1 id="s1">Extended descriptions using links to end of Book - Single Description</h1>
+    <h1 id="s1">Extended description placed on a separate HTML file  and connected with the image by using hyperlinks</h1>
 
     <h2>Notes about techniques</h2>
     <p>In this chapter the extended description is placed at the end of the book as a single file with one description per file. It is expected that this approach will appeal to publishers that do not want the descriptions to impact the appearance of the content. The approaches have the lowest impact on the visual layout. The bar chart has a text link. A link back to the image is provided to take the reader back to the same location where they left off reading in the primary flow of content. </p>
@@ -20,15 +20,16 @@
     <p>The test below refers to the bar chart image immediately following.</p>
     
     <section id="extdescription-020" class="test">
-      <h2><span class="test-id">extdescription-020</span> <span class="test-title">Technique for linking to extended description via text hyperlinks to the end of the book and back</span><br/></h2>
-      <div class="desc">
+      <h2><span class="test-id">extdescription-020</span> <span class="test-title">Technique for linking to a single extended description placed in a separate HTML file  via text hyperlinks</span><br/></h2>
+      <div class="desc">Check if activating the hyperlink placed under the image takes you to a separate HTML file with extended descriptions, and the back link there brings you back to the image.</div>
+
         <p>This test passes if all the following steps are successful:</p>
         <ul>
-          <li>The link "Follow for extended description" is reported, and on activating, it takes the focus to extended description at end of this book. The extended description is placed under the heading "Description of Bar Chart" </li>
-          <li>Upon activation of the link you are taken to the image description directly instead of being placed at the top of the page and can read the extended description</li>
+          <li>The link "Follow for extended description" is reported, and on activating, it takes the focus to the HTML file with the extended description. The precision of landing position on the HTML page does not matter because there is only one extended description on this file.</li>
+          <li>You can read the extended description</li>
           <li>On activating the link "Navigate back to Bar Chart image" below the extended description, it takes the focus back to original position in this chapter.</li>
         </ul>
-      </div>
+
     </section>
 
       <figure id="image3">
