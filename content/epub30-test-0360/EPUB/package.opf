@@ -2,12 +2,12 @@
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
     <dc:language>en</dc:language>
-    <dc:publisher>DAISY Consortium and DIAGRAM Center</dc:publisher>
+    <dc:publisher>DAISY Consortium and the DIAGRAM Center</dc:publisher>
     <dc:title>Accessibility Tests Mathematics</dc:title>
     <dc:description>Math Recommendation for EPUB</dc:description>
-    <dc:creator id="creator01">DAISY Consortium Transition to EPUB 3 and DIAGRAM Center Standards WG</dc:creator>
+    <dc:creator id="creator01">DAISY Consortium Transition to EPUB 3 and the DIAGRAM Center Standards WG</dc:creator>
         <meta property="role" refines="#creator01">aut</meta>
-        <meta property="file-as" refines="#creator01">DAISY Transition to EPUB 3 and DIAGRAM Standards WG</meta>
+        <meta property="file-as" refines="#creator01">DAISY Transition to EPUB 3 and the DIAGRAM Standards WG</meta>
     <dc:contributor>Charles LaPierre</dc:contributor>
     <dc:contributor>George Kerscher</dc:contributor>
     <dc:contributor>Avneesh Singh</dc:contributor>
@@ -17,8 +17,8 @@
     <dc:identifier id="uid">daisy.diagram.mathMLRecommendation</dc:identifier>
     <dc:subject>math</dc:subject>
 
-    <dc:date>2020-09-22</dc:date>
-    <meta property="dcterms:modified">2020-09-22T08:30:00Z</meta>
+    <dc:date>2020-09-23</dc:date>
+    <meta property="dcterms:modified">2020-09-23T07:00:00Z</meta>
     <meta property="schema:version">1.1.1</meta>
     
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
