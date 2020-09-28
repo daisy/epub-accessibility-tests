@@ -1,4 +1,5 @@
 #!/bin/bash
+EPUBCHECK="/Users/marisa/Downloads/epubcheck-4.2.0-rc/epubcheck.jar"
 if [ -z "$1" ]
   then
     echo "Error: No epub directory supplied"

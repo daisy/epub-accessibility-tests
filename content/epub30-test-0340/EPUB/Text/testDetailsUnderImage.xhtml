@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <h1>Extended description using <code>details</code> and <code>summary</code></h1>
+  <h1 id="s1">Extended description using <code>details</code> and <code>summary</code></h1>
 
   <h2>Notes about techniques</h2>
 
@@ -20,24 +20,24 @@
 
   <p>In both images, <code>aria-details</code> also points to this details/summary structure, which eventually will be picked up by assistive technologies and reading systems to make this a seamless experience.</p>
 
-  <h1 id="s1">Tests for bar chart image that uses HTML <code>details</code>/<code>summary</code> for image description, and <code>aria-details</code> for navigation</h1>
-
   <p>The tests below refer to the bar chart image immediately following.</p>
 
   <section id="extdesc-010" class="test">
-    <h2><span class="test-title">Detection of <code>aria-details</code> on image (<code>img</code> element) in <code>figure</code> element</span><br/><span class="test-id">extdesc-010</span></h2>
+    <h2><span class="test-id">extdesc-010</span><span class="test-title">Detection of <code>aria-details</code> on image (<code>img</code> element) in <code>figure</code> element</span></h2>
     <p class="desc">This test passes if <code>aria-details</code> for the image is reported. (For example, your screen reader will announce <q>has details</q>)</p>
   </section>
-
+    
+    
   <section id="extdesc-020" class="test">
-    <h2><span class="test-title">Moving to extended description inside <code>figcaption</code></span><br/><span class="test-id">extdesc-020</span></h2>
+    <h2><span class="test-id">extdesc-020</span><span class="test-title">Moving to extended description inside <code>figcaption</code></span></h2>
     <p class="desc">This test passes if you can use <code>aria-details</code> to take you to the HTML <code>details/summary</code> element just below the image. (For example your browser or screen reader may provide some shortcut key or an interactive element like button, link etc. for using aria-details.)</p>
   </section>
 
   <section id="extdesc-030" class="test">
-    <h2><span class="test-title">Detection and utilization of <code>details</code> and <code>summary</code> elements</span> inside figcaption <br/><span class="test-id">extdesc-030</span></h2>
+    <h2><span class="test-id">extdesc-030</span><span class="test-title">Detection and utilization of <code>details</code> and <code>summary</code> elements</span> inside figcaption </h2>
     <p class="desc">This test passes if all the following steps are successful:</p>
-<ol>
+
+    <ol>
 <li>The HTML <code>details/summary</code> elements are reported. (For example, there is an interactive element like button, link etc. that you can activate.)</li>
 <li>You can expand and collapse the <code>details</code> element containing the extended description. (For example, you can activate the interactive element to expand or collapse the extended description.)</li>
 <li>When expanded, the extended description should appear immediately after the activating element. When you collapse it, you should remain at the same position.</li>
@@ -105,18 +105,18 @@
 
   <p>The three tests below refer to the peacock image immediately following the tests.</p>
 
-  <section id="extdesc-050" class="test">
-    <h2><span class="test-title">Detection of <code>aria-details</code> on image (<code>img</code> element)</span><br/><span class="test-id">extdesc-050</span></h2>
+   <section id="extdesc-040" class="test">
+    <h2><span class="test-id">extdesc-040</span><span class="test-title">Detection of <code>aria-details</code> on image (<code>img</code> element)</span></h2>
     <p class="desc">This test passes if <code>aria-details</code> for the image is reported. (For example, your screen reader will announce <q>has details</q>.)</p>
   </section>
 
-  <section id="extdesc-060" class="test">
-    <h2><span class="test-title">Moving to extended description next to the image</span><br/><span class="test-id">extdesc-060</span></h2>
+   <section id="extdesc-050" class="test">
+    <h2><span class="test-id">extdesc-050</span><span class="test-title">Moving to extended description next to the image</span></h2>
     <p class="desc">This test passes if you can use <code>aria-details</code> to take you to the HTML <code>details/summary</code> element just below the image. (For example your browser or screen reader may provide some shortcut key or an interactive element like button, link etc. for using aria-details.)</p>
   </section>
-
-  <section id="extdesc-070" class="test">
-    <h2><span class="test-title">Detection and utilization of <code>details</code> and <code>summary</code> elements</span><br/><span class="test-id">extdesc-070</span></h2>
+   
+  <section id="extdesc-060" class="test">
+    <h2><span class="test-id">extdesc-060</span><span class="test-title">Detection and utilization of <code>details</code> and <code>summary</code> elements</span></h2>
     <p class="desc">This test passes if all the following steps are successful:</p>
 <ol>
 <li>The HTML <code>details/summary</code> elements are reported. (For example, there is an interactive element like button, link etc. that you can activate.)</li>

@@ -1,0 +1,126 @@
+/* Styles for the overlaid details element */
+
+.overlaid {
+    position: relative;
+    display: inline-block;
+
+    --duration-return: 1200ms;
+    --easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlaid__details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 2rem 0 0 0;
+    z-index: 100;
+}
+
+.overlaid__details h2,
+.overlaid__details h3,
+.overlaid__details h4 {
+    margin-top: 0;
+}
+
+.overlaid__details:not(.dragging) {
+    transition: top var(--duration-return) var(--easing-standard),
+    left var(--duration-return) var(--easing-standard);
+}
+
+.overlaid__summary {
+    display: inline-flex;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    padding: 0.25rem;
+
+    right: 0;
+    top: 0;
+}
+
+/* always show the summary on focus */
+.overlaid__details:not([open]) .overlaid__summary:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* when using a mouse, show the summary on image hover (hide by default) */
+@media (pointer: fine) {
+    .overlaid__details:not([open]) .overlaid__summary {
+        color: transparent;
+        background-color: transparent;
+    }
+
+    .overlaid:hover .overlaid__details:not([open]) .overlaid__summary {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.overlaid__summary::-moz-details-marker,
+.overlaid__summary::-ms-details-marker,
+.overlaid__summary::-o-details-marker {
+	display: none;
+}
+
+.overlaid__summary::-webkit-details-marker {
+	display: none;
+}
+
+.overlaid__summary::marker {
+	display: none;
+	content: '';
+}
+
+.overlaid__summary .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.material-close {
+    display: none;
+}
+
+.overlaid__content {
+    padding: 1rem !important;
+    cursor: auto;
+    user-select: auto;
+}
+
+/** The open state */
+.overlaid__details[open] {
+    background-color: #fff;
+    outline-style: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.overlaid__details[open] .material-close {
+    display: block;
+}
+
+.overlaid__details[open] .material-info {
+    display: none;
+}
+
+/** Styles that will only apply when JavaScript is enabled */
+
+.overlaid__details.draggable {
+    cursor: grab;
+}
+
+.overlaid__details[open].resizable {
+    overflow: auto;
+    resize: both;
+}
+
+/** Disable all animation if the user prefers it */
+@media screen and (prefers-reduced-motion: reduce) {
+    .overlaid__details {
+       transition: none !important;
+    }
+}
+
+.overlaid__details > div {
+    padding: unset;
+}

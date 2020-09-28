@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:epub="http://www.idpf.org/2007/ops"
+  lang="en"
+>
+  <head>
+    <title>
+      Extended description using a progressively enhanced details and summary
+    </title>
+    <meta name="charset" content="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+    <link href="../Styles/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../Styles/enhanced_details.css" />
+    <script src="../Scripts/EnhancedDetails.js"></script>
+  </head>
+
+  <body>
+    <h1>Extended description using a progressively enhanced
+      <code>details</code> and <code>summary</code>
+    </h1>
+
+    <p>
+      This example demonstrates how the
+      <code>aria-details + &lt;details&gt;</code>
+      technique for setting complex image descriptions can be utilized in a
+      progressive and accessible way to provide additional accessibility
+      affordances. Only those additional affordances are tested here.
+    </p>
+    <p>
+      <b>Note</b>: All the tests in this chapter are for the sighted users
+      (users with low vision, dyslexia etc.). The non-visual users should skip
+      these tests.
+    </p>
+
+    <h1 id="s1">
+      Tests for progressively enhanced bar chart image that uses HTML
+      <code>details</code>/<code>summary</code> for image description, and
+      <code>aria-details</code> for association of image with extended
+      description.
+    </h1>
+
+    <section id="extdesc-190" class="test">
+      <h2>
+        <span class="test-id">extdesc-190</span><span class="test-title">JavaScript is enabled</span>        
+      </h2>
+      <p class="desc">
+        This test passes if the following condition is met when JavaScript is
+        enabled:
+      </p>
+      <p>
+        You see the text &quot;<b id="js-test-src">JavaScript is enabled. This test passes.</b>&quot; between
+        the following two horizontal lines
+      </p>
+
+      <hr />
+      <div id="js-test-dest">JavaScript is disabled. This test fails.</div>
+      <hr />
+      <p>
+        <b>Note</b>: this test is included because subsequent tests use
+        JavaScript to add accessibility affordances. If this test fails, other
+        tests on this page may not work as expected.
+      </p>
+    </section>
+
+    <section id="extdesc-200" class="test">
+      <h2>
+         <span class="test-id">enhanced-200</span><span class="test-title">Reduced Motion</span>
+      </h2>
+      <p class="desc">
+        The test checks whether the reading system supports the
+        prefers-reduced-motion media query.
+      </p>
+      <p>
+        If JavaScript is enabled, this test passes if reduced motion is
+        preferred at the operating system level and the summary icon does not
+        animate when closed. Please follow the following steps to test.
+      </p>
+      <ul>
+        <li>Open the details.</li>
+        <li>Move it to the side.</li>
+        <li>Close it.</li>
+      </ul>
+
+      <p>
+        <b>Note</b>: this test requires JavaScript to be enabled. If it is not, the
+        overlay will not be moveable, making it impossible to complete step 3
+        and observe the transition.
+      </p>
+
+      <p>
+        Here is a reference image of the accessibility Icon that you will see
+        for accessing the details of the image. This icon appears between the
+        following two lines for your reference.
+      </p>
+
+      <hr />
+      <div>
+        <svg
+          class="icon"
+          role="img"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="50"
+          viewBox="0 0 24 24"
+        >
+          <path
+            class="material-close"
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            fill="currentColor"
+          />
+          <path
+            class="material-info"
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+      <hr />
+      <p>
+        <b>Note</b>: If you do not see the reference image above then in your
+        notes add that your reading system does not support SVG images.
+      </p>
+
+      <section class="test-fixture">
+        <h2>BarChart for Reduced Motion Test</h2>
+        <figure>
+          <div class="overlaid">
+            <img
+              class="overlaid__img"
+              src="../Images/chart-ebcaadfb.png"
+              alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"
+              aria-details="image1-extended-desc"
+            />
+            <details id="image1-extended-desc" class="overlaid__details">
+              <summary
+                class="overlaid__summary"
+                title="Description"
+                aria-label="Description"
+              >
+                <svg
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    class="material-close"
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    fill="currentColor"
+                  />
+                  <path
+                    class="material-info"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </summary>
+              <div class="overlaid__content">
+                <h3>Overview</h3>
+                <p>
+                  The chart shows the website hits for the first quarter of
+                  2014. It shows that Site 1 has more visitors than either of
+                  the other sites, but the number of visitors is decreasing.
+                  Site 2 has a fairly constant number of visitors, while for
+                  Site 3 page hits are increasing month on month.
+                </p>
+                <h3>Data</h3>
+                <table>
+                  <tr>
+                    <th scope="col">Period</th>
+                    <th scope="col">Site 1</th>
+                    <th scope="col">Site 2</th>
+                    <th scope="col">Site 3</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Jan</th>
+                    <td>135</td>
+                    <td>112</td>
+                    <td>92</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Feb</th>
+                    <td>117</td>
+                    <td>114</td>
+                    <td>99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Mar</th>
+                    <td>96</td>
+                    <td>111</td>
+                    <td>126</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Qtr Total</th>
+                    <td>348</td>
+                    <td>337</td>
+                    <td>308</td>
+                  </tr>
+                </table>
+
+                <h3>Presentation</h3>
+                <p>
+                  The bar chart represents both the number of visitors per month
+                  for each website, and the total number of visitors per website
+                  for the entire quarter. Website visitors for each month are
+                  represented using columns lined up horizontally, with heights
+                  indicating the number of visitors. A fourth column is provided
+                  for each website with the accumulated site visitors for the
+                  quarter.
+                </p>
+              </div>
+            </details>
+          </div>
+          <figcaption>Example.com Site visitors Jan to March 2014</figcaption>
+        </figure>
+      </section>
+
+      <h3>Additional Notes for Test 200</h3>
+      <p>
+        Please provide your comments about the user experience for this test.
+      </p>
+    </section>
+
+    <section id="extdesc-210" class="test">
+      <h2>
+        <span class="test-id">extdesc-210</span><span class="test-title">Fine pointer</span>
+      </h2>
+      <p class="desc">
+        The test checks whether the reading system supports the pointer media
+        query.
+      </p>
+      <p>
+        This test passes if all of the following conditions are met:
+      </p>
+      <ul>
+        <li>
+          When using a
+          <a
+            href="https://drafts.csswg.org/mediaqueries-4/#valdef-media-pointer-fine"
+            >fine</a
+          >
+          pointer, the <code>summary</code> icon does not appear until the user
+          hovers the image. (For example, if using a mouse on desktop.)
+        </li>
+        <li>
+          When using any other type of pointer, the <code>summary</code> icon is
+          persistent. (For example, the icon should always overlay the image on
+          mobile.)
+        </li>
+      </ul>
+      <p>
+        Watch the reference screen capture between the following two horizontal lines below.  This annimation provides an idea of the expected appearance when a fine pointer is available as one moves their mouse pointer over the images to uncover the enhancement icon that can be pressed to retrive the extended image description.
+      </p>
+      <hr />
+      <img
+        src="../Images/mouse-hover.gif"
+        alt="A screen capture of a mouse cursor to the side of the reference image. When it moves over the image, an 'i' icon appears over the top right of the image."
+        width="600"
+      />
+      <hr />
+
+      <section class="test-fixture">
+        <h2>BarChart for Fine Pointer Test</h2>
+        <figure>
+          <div class="overlaid">
+            <img
+              class="overlaid__img"
+              src="../Images/chart-ebcaadfb.png"
+              alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"
+              aria-details="image2-extended-desc"
+            />
+            <details id="image2-extended-desc" class="overlaid__details">
+              <summary
+                class="overlaid__summary"
+                title="Description"
+                aria-label="Description"
+              >
+                <svg
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    class="material-close"
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    fill="currentColor"
+                  />
+                  <path
+                    class="material-info"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </summary>
+              <div class="overlaid__content">
+                <h3>Overview</h3>
+                <p>
+                  The chart shows the website hits for the first quarter of
+                  2014. It shows that Site 1 has more visitors than either of
+                  the other sites, but the number of visitors is decreasing.
+                  Site 2 has a fairly constant number of visitors, while for
+                  Site 3 page hits are increasing month on month.
+                </p>
+                <h3>Data</h3>
+                <table>
+                  <tr>
+                    <th scope="col">Period</th>
+                    <th scope="col">Site 1</th>
+                    <th scope="col">Site 2</th>
+                    <th scope="col">Site 3</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Jan</th>
+                    <td>135</td>
+                    <td>112</td>
+                    <td>92</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Feb</th>
+                    <td>117</td>
+                    <td>114</td>
+                    <td>99</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Mar</th>
+                    <td>96</td>
+                    <td>111</td>
+                    <td>126</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Qtr Total</th>
+                    <td>348</td>
+                    <td>337</td>
+                    <td>308</td>
+                  </tr>
+                </table>
+
+                <h3>Presentation</h3>
+                <p>
+                  The bar chart represents both the number of visitors per month
+                  for each website, and the total number of visitors per website
+                  for the entire quarter. Website visitors for each month are
+                  represented using columns lined up horizontally, with heights
+                  indicating the number of visitors. A fourth column is provided
+                  for each website with the accumulated site visitors for the
+                  quarter.
+                </p>
+              </div>
+            </details>
+          </div>
+          <figcaption>Example.com Site visitors Jan to March 2014</figcaption>
+        </figure>
+      </section>
+
+      <h3>Additional Notes for Test 210</h3>
+      <p>
+        Please provide your comments about the user experience for this test.
+      </p>
+    </section>
+
+    <script>
+      document.querySelectorAll(".overlaid").forEach(EnhancedDetails.enhance);
+      // make extdesc-190 pass
+      document.getElementById(
+        "js-test-dest"
+      ).innerHTML = document.getElementById("js-test-src").outerHTML;
+    </script>
+  </body>
+</html>
