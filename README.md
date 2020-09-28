@@ -48,8 +48,9 @@ Use `EPUB`, not `OEPBS`, for the content directory, if you want to use the inclu
 ```<dc:title>title</dc:title>```
 - the topic goes in `dc:subject`, e.g.
 ```<dc:subject>media-overlays</dc:subject>```
-- a language, e.g
-```<dc:language>fr</dc:language>```
+- a language, e.g ```<dc:language>fr</dc:language>```. Supported languages are:
+  - en
+  - fr
 - a version, in the form of MAJ.MIN.PATCH, e.g.
 ```<meta property="schema:version">1.0.0</meta>```
 - a unique identifier (don't repeat across versions), e.g.
