@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<title>Math image tests</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+</head>
+
+<body>
+
+<section aria-labelledby="block-math-image">
+<h1 id="block-math-image">Block Math Image</h1>
+    
+  <div class="desc">
+    <p>This example will show block math image example with fallback options.  This is not the ideal solution but not all Reading Systems may support the first option of native mathML.</p>
+   </div>
+
+   <section id="math-image-030" class="test">
+    <h2><span class="test-id">math-image-030</span> <span class="test-title">Navigating Block Math images followed by Summary/Details with MathML</span></h2>
+    <div class="desc"><p>The test checks if block MathML works with assistive technology and related technologies in a HTML Summary/Details as an option to get at the native MathML.</p></div>
+    <div>
+      <p>The test passes if the following steps succeed.</p>
+
+      <ul>
+        <li>You can see the visual Math image and hear its alt-text description, followed by an HTML <code>Summary/Details</code> not expanded by default</li>
+        <li>Once expanding the <code>Summary</code> the MathML is visible inside the <code>Details</code>, one can navigate the MathML with assistive technology.</li>
+      </ul>
+
+      <p>The test fails if you don't see the image of the math with its alt-text description, or if the details is always expanded, or if you are unable to navigate the MathML inside the details.</p>
+    </div>
+
+
+        <h3>030 Block Image of Math with HTML Summary/Details</h3>
+     
+      <p>Block Math Equation will appear between the following two lines.</p>
+    <hr/>
+
+        Some Text before the math equation 
+       <br/>
+       <img id="exp3" src="../Images/epub-image-2pointform.png" alt="Image Alt: y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis" aria-details="math-details1" />
+            
+    <details id="math-details1">
+      <summary>MathML Presentation</summary>
+      <math id="math1" xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(MathML alttext): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
+        <mrow>
+          <mstyle displaystyle="true">
+            <mi>y</mi>
+            <mo>−
+              <!-- − -->
+            </mo>
+            <msub>
+              <mi>y</mi>
+              <mrow>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>=</mo>
+            <mrow>
+              <mfrac>
+                <mrow>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>−
+                    <!-- − -->
+                  </mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mrow>
+                <mrow>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>−
+                    <!-- − -->
+                  </mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo>−
+              <!-- − -->
+            </mo>
+            <msub>
+              <mi>x</mi>
+              <mrow>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo stretchy="false">)</mo>
+          </mstyle>
+        </mrow>
+      </math>
+    </details>
+            
+            Some text after the image and details.
+    <hr/>
+    </section>
+</section>  
+     
+<section aria-labelledby="inline-math-image">
+<h1 id="inline-math-image">Inline Math Image</h1>
+    
+  <div class="desc">
+    <p>This example will show inline math image example with commented out mathML.  This is not the ideal solution but not all Reading Systems may support the first option of native mathML. Since the mathML will be commented out this technique is only for a publisher to keep the MathML with the EPUB so they can expose the mathML in the future.  Also some advance reading systems could preprocess an EPUB and expose the MathML if they can handle it.</p>
+   </div>
+
+   <section id="math-image-040" class="test">
+    <h2><span class="test-id">math-image-040</span> <span class="test-title">Navigating Inline Math images followed by commented out MathML</span></h2>
+    <div class="desc"><p>This test shows an inline math expression as an image with only alt-text describing the math equation.  This is not ideal but if a publisher can not use raw mathML directly this is an option for reprocessing in the future.</p></div>
+    <div>
+      <p>The test passes if the following steps succeed.</p>
+
+      <ul>
+        <li>You can see the visual Math image and hear its alt-text description.</li>
+        <li>You do not see any of the commented out mathml.</li>
+      </ul>
+
+      <p>The test fails if you don't see the image of the math with its alt-text description, or if you see the commented out mathML.</p>
+    </div>
+
+ 
+        <h3>040 Inline Math Image</h3>
+  
+        <p>Inline Math Equation will appear between the following two lines.</p>
+        <hr/>
+        <span>
+            Some Text before the math equation
+            
+            <img id="exp4" src="../Images/epub-image-2pointform.png" alt="Image Alt: y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis"/>
+            
+
+            <!-- Commented out MathML for future use
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(mathml alt-text): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−</mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−</mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−</mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math> 
+            End of commented out MathML-->
+            Some text after the equation.
+        </span>
+    <hr/>
+  </section>
+</section>
+    
+
+</body>
+</html>

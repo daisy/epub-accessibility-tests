@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>Accessibility tests mathematics introduction</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+   </head>
+
+  <body>
+<h1>Accessibility Tests Mathematics - Version 1.1.1</h1>
+<h2>Math Examples and Recommendations</h2>
+<p>The test book is created by the <a href="http://www.daisy.org/">DAISY Consortium</a> and the <a href="http://diagramcenter.org/">DIAGRAM Center</a> in the support of the efforts of publishing at the W3C and the Publishing Community group of the World Wide Web Consortium</p>
+
+<h2>Introduction</h2>
+
+        <p>Reading mathematics has always been a problem for persons who are blind, because math is not represented as static text. MathML is a way to encode math for machine processing and presentation, and it has been a W3C Standard for more than 20 years. However, the browsers have only implemented limited support.</p>
+
+        <p>Publishers often use MathML to generate an image of the math expression. Assistive technology can support MathML by converting the expressions to spoken or braille representations. Building on these factors, we have developed some techniques that present math both visually and to assistive technology such as screen readers.</p>
+   
+        <p>The techniques in this title identify the two leading options for publishers to include math in their EPUBs. The first is to put the raw mathML as either <b>block</b> or as <b>inline</b> directly into their EPUB without any fallback option.  The fallback solution will be to use an image of the math equation with appropriate Alt-text description of the equation followed by MathML inside an <b>HTML summary/details</b> element for equations that will be rendered as block.  For inline equations there will be no <b>HTML summary/details</b> provided but instead the mathML will be commented out inside the EPUB (which may be used in the future).</p>
+      
+   </body>
+</html>

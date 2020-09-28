@@ -17,10 +17,11 @@
     <dc:contributor>Marisa DeMeglio</dc:contributor>
     <dc:contributor>Franco Alvarado</dc:contributor>
     
-    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330</dc:identifier>
-    <dc:date>2020-01-15</dc:date>
+    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330-1.2.5</dc:identifier>
     <dc:subject>math</dc:subject>
-    <meta property="dcterms:modified">2020-01-15T09:00:00Z</meta>
+    <dc:date>2020-04-24</dc:date>
+    <meta property="dcterms:modified">2020-04-24T13:30:00Z</meta>
+    <meta property="schema:version">1.2.5</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
     <meta property="schema:accessibilityFeature">describedMath</meta>
@@ -32,8 +33,7 @@
     <meta property="schema:accessModeSufficient">visual</meta>
     <meta property="schema:accessibilityAPI">ARIA</meta>
     <meta property="schema:accessibilitySummary">This EPUB is just for testing purposes as the intent is to test reading systems for math accessibility with the embedded math.</meta>
-    <meta property="schema:version">1.1.1</meta>
-  </metadata>
+   </metadata>
   <manifest>
     <item id="cover_jpg" properties="cover-image" href="Images/cover.jpg" media-type="image/jpeg" />
     <item id="cover" href="Text/cover.xhtml" media-type="application/xhtml+xml"/>
@@ -45,10 +45,16 @@
     <item id="nav" href="Text/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
 
     <item id="epub-math-introduction.xhtml" href="Text/epub-math-introduction.xhtml" media-type="application/xhtml+xml"/>
-    <item id="epub-image-fallback-mathml-examples.xhtml" href="Text/epub-image-fallback-mathml-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml svg"/>
-    <item id="epub-rendering-mathml-only-examples.xhtml" href="Text/epub-rendering-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
-    <item id="epub-navigating-mathml-only-examples.xhtml" href="Text/epub-navigating-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
-    <item id="epub-SVG-and-mathml-in-details.xhtml" href="Text/epub-SVG-and-mathml-in-details.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
+    <item id="epub-image-fallback-mathml-examples.xhtml" href="Text/epub-image-fallback-mathml-examples.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
+    <item id="epub-rendering-mathml-only-examples.xhtml" href="Text/epub-rendering-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+    <item id="epub-navigating-mathml-only-examples.xhtml" href="Text/epub-navigating-mathml-only-examples.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+    <item id="epub-SVG-and-mathml-in-details.xhtml" href="Text/epub-SVG-and-mathml-in-details.xhtml" media-type="application/xhtml+xml" properties="mathml svg"/>
+    
+     <item id="epub-image-fallback-annotation-mathml-examples.xhtml" href="Text/epub-image-fallback-annotation-mathml-examples.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+     
+    <item id="epub-mathml-readaloud-example.xhtml" href="Text/epub-mathml-readaloud-example.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+   
+    
     <item id="epub-math-appendix.xhtml" href="Text/epub-math-appendix.xhtml" media-type="application/xhtml+xml"/>
 
     <item id="epub-image-2pointform.svg" href="Images/epub-image-2pointform.svg" media-type="image/svg+xml"/>
@@ -63,6 +69,8 @@
     <itemref idref="epub-navigating-mathml-only-examples.xhtml"/>
     <itemref idref="epub-rendering-mathml-only-examples.xhtml"/>
     <itemref idref="epub-SVG-and-mathml-in-details.xhtml"/>
-    <itemref idref="epub-math-appendix.xhtml"/>
+    <itemref idref="epub-image-fallback-annotation-mathml-examples.xhtml"/>
+    <itemref idref="epub-mathml-readaloud-example.xhtml"/>
+   <itemref idref="epub-math-appendix.xhtml"/>
   </spine>
 </package>
