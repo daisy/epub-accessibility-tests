@@ -5,7 +5,7 @@ EPUB Content containing accessibility tests for reading systems
 
 ## Index of materials
 
-* `content/epub30-test-0301/`: Basic Funtionality
+* `content/epub30-test-0301/`: Basic Functionality
 * `content/epub30-test-0302/`: Non-Visual Reading
 * `content/epub30-test-0303/`: Visual Adjustments
 * `content/epub30-test-0304/`: Read Aloud
