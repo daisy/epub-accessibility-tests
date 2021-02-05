@@ -17,9 +17,9 @@
     <dc:identifier id="uid">daisy.diagram.mathMLRecommendation</dc:identifier>
     <dc:subject>math</dc:subject>
 
-    <dc:date>2020-09-23</dc:date>
-    <meta property="dcterms:modified">2020-09-23T07:00:00Z</meta>
-    <meta property="schema:version">1.1.1</meta>
+    <dc:date>2021-02-05</dc:date>
+    <meta property="dcterms:modified">2021-02-95T06:00:00Z</meta>
+    <meta property="schema:version">1.1.2</meta>
     
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
