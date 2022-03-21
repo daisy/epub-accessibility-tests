@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
-<title>MathML Read-Aloud</title>
+<title>MathML No Namesapce</title>
 <meta charset="UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
 <link rel="stylesheet" type="text/css" href="../Styles/a11yMath.css"/>
@@ -8,25 +8,30 @@
 
 <body>
 
-  <h1>MathML Read-Aloud Tests</h1>
+  <h1>MathML No Namespace Test</h1>
  
-      <section id="math-150" class="test">
-      <h2><span class="test-id">math-150</span> <span class="test-title">MathML Read-Aloud</span></h2>
+      <section id="math-160" class="test">
+      <h2><span class="test-id">math-160</span> <span class="test-title">MathML No Namespace</span></h2>
 
         <div class="desc">
-The test checks the reading experience of MathML with read aloud feature.
+The test checks the reading experience of MathML with no namespace declared.
 </div>
-            <p>This test should be done by using "read aloud" feature of the reading system. The non-visual users can skip this test because they have already tested it in math-050.</p>
-            <p>The test passes if the following is true:</p>
-            <p>Either the MathML is spoken correctly or the alt txt is spoken i.e.: MathML alttext followed by the math equation: y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis</p>
-            <p>The test fails if you do not hear any math spoken or if you don't hear the math equation containing a fraction and subscripts.</p>
+
+       <p>The test passes if the following steps succeed.</p>
+
+      <ul>
+        <li>The assistive technology or other reading technologies report presence of the MathML expression and provide functionality to read it.</li>
+        <li>If you are a visual user, then please verify that you are able to see the portions of the equation highlighted as you navigate the various parts of the equation.</li>
+      </ul>
+
+      <p>The test fails if you don't read/hear the equation containing an equals sign and the presence of a fraction contained within.</p>
 
 
-    <h3>Test 150</h3>
+    <h3>Test 160</h3>
       <p>Math Equation will appear between the following two lines.</p>
      <hr/>
         <span>
-            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="MathML alttext: y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
+            <math display="block" alttext="MathML alttext: y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
                  <mrow>
                   <mstyle displaystyle="true">
                     <mi>y</mi>
@@ -87,12 +92,10 @@ The test checks the reading experience of MathML with read aloud feature.
             </math>
         </span>
     <hr/>
-    <h3>Additional Notes for Test 150</h3>
+    <h3>Additional Notes for Test 160</h3>
 
     <p>Please provide notes about what you heard. For example, did you hear the prefix "MathML alttext”.  If you didn't hear that prefix before the spoken math please provide the math expression you hear spoken in your notes.</p>
     <p>Please indicate in your notes if you know that this Reading System uses MathJax and ideally the version number of MathJax if possible.</p>
-
-    
     </section>
     
 </body>

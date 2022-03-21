@@ -17,11 +17,11 @@
     <dc:contributor>Marisa DeMeglio</dc:contributor>
     <dc:contributor>Franco Alvarado</dc:contributor>
     
-    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330-1.2.5</dc:identifier>
+    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0330-1.2.6</dc:identifier>
     <dc:subject>math</dc:subject>
-    <dc:date>2020-04-24</dc:date>
-    <meta property="dcterms:modified">2020-04-24T13:30:00Z</meta>
-    <meta property="schema:version">1.2.5</meta>
+    <dc:date>2022-03-03</dc:date>
+    <meta property="dcterms:modified">2022-03-03T13:30:00Z</meta>
+    <meta property="schema:version">1.2.6</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
     <meta property="schema:accessibilityFeature">describedMath</meta>
@@ -53,7 +53,8 @@
      <item id="epub-image-fallback-annotation-mathml-examples.xhtml" href="Text/epub-image-fallback-annotation-mathml-examples.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
      
     <item id="epub-mathml-readaloud-example.xhtml" href="Text/epub-mathml-readaloud-example.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
-   
+    
+    <item id="epub-mathml-no-namespace-example.xhtml" href="Text/epub-mathml-no-namespace-example.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
     
     <item id="epub-math-appendix.xhtml" href="Text/epub-math-appendix.xhtml" media-type="application/xhtml+xml"/>
 
@@ -71,6 +72,8 @@
     <itemref idref="epub-SVG-and-mathml-in-details.xhtml"/>
     <itemref idref="epub-image-fallback-annotation-mathml-examples.xhtml"/>
     <itemref idref="epub-mathml-readaloud-example.xhtml"/>
+    <itemref idref="epub-mathml-no-namespace-example.xhtml"/>
+    
    <itemref idref="epub-math-appendix.xhtml"/>
   </spine>
 </package>
