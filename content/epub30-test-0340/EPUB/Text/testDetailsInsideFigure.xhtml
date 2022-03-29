@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
+
+<head>
+    <title>Extended description using details and summary inside figure</title>
+    <meta name="charset" content="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../Styles/base.css" />
+    <link href="../Styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 id="s1">Extended description using <code>details</code> and <code>summary</code> inside Figure Element</h1>
+
+  <h2>Notes about techniques</h2>
+
+  <p>For the image on this page, the HTML <code>details</code> and <code>summary</code> elements are used to expose the extended image descriptions directly outside the <code>figcaption</code> but still within the <code>figure</code> element for the image.</p>
+
+  <p>We have also included <code>aria-details</code> whcih points to this details/summary structure, which eventually will be picked up by assistive technologies and reading systems to make this a seamless experience.</p>
+
+  <p>The test below refer to the bar chart image immediately following.</p>
+
+   <section id="extdesc-240" class="test">
+    <h2><span class="test-id">extdesc-240</span><span class="test-title">Detection and utilization of <code>details</code> and <code>summary</code> elements</span> inside <code>figure</code> element but outside the <code>figcaption</code> </h2>
+    <p class="desc">This test passes if all the following steps are successful:</p>
+
+    <ol>
+<li>The HTML <code>details/summary</code> elements are reported. (For example, there is an interactive element like button, link etc. that you can activate.)</li>
+<li>You can expand and collapse the <code>details</code> element containing the extended description. (For example, you can activate the interactive element to expand or collapse the extended description.)</li>
+<li>When expanded, the extended description should appear immediately after the activating element. When you collapse it, you should remain at the same position.</li>
+<li>The table within the extended description in the details is accessible to assistive technologies and is navigable.</li>
+</ol>
+  </section>
+
+  <h2>Following is the bar chart image for the above test</h2>
+  <figure>
+      <img src="../Images/chart-ebcaadfb.png" alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"
+          aria-details="image1-extended-desc" />
+          <details id="image1-extended-desc">
+              <summary>Expand / collapse description</summary>
+              <div>
+                  <h3>Overview</h3>
+                  <p>The chart shows the website hits for the first quarter of 2014. It shows that Site 1 has more visitors
+                      than either of the other sites, but the number of visitors is decreasing. Site 2 has a fairly constant
+                      number of visitors, while for Site 3 page hits are increasing month on month.</p>
+                  <h3>Data</h3>
+                <table>
+                    <tr>
+                        <th scope="col">Period</th>
+                        <th scope="col">Site 1</th>
+                        <th scope="col">Site 2</th>
+                        <th scope="col">Site 3</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jan</th>
+                        <td>135</td>
+                        <td>112</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Feb</th>
+                        <td>117</td>
+                        <td>114</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mar</th>
+                        <td>96</td>
+                        <td>111</td>
+                        <td>126</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Qtr Total</th>
+                        <td>348</td>
+                        <td>337</td>
+                        <td>308</td>
+                    </tr>
+                </table>
+            <h3>Presentation</h3>
+                  <p>The bar chart represents both the number of visitors per month for each website, and the total number
+                      of visitors per website for the entire quarter. Website visitors for each month are represented using
+                      columns lined up horizontally, with heights indicating the number of visitors. A fourth column is
+                      provided for each website with the accumulated site visitors for the quarter.</p>
+              </div>
+          </details>
+      <figcaption>
+          Example.com Site visitors Jan to March 2014
+      </figcaption>
+
+    </figure>
+
+</body>
+</html>
