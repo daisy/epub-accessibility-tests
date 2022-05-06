@@ -14,9 +14,9 @@
     <dc:description>Tests for accessible extended descriptions of images in EPUBs</dc:description>
     <dc:rights>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike (CC BY-NC-SA) license.</dc:rights>
     <dc:subject>extended-descriptions</dc:subject>
-    <dc:date>2022-03-29</dc:date>
-    <meta property="dcterms:modified">2022-03-29T12:00:00Z</meta>
-    <meta property="schema:version">1.2.8</meta>
+    <dc:date>2022-05-06</dc:date>
+    <meta property="dcterms:modified">2022-05-06T12:00:00Z</meta>
+    <meta property="schema:version">1.2.9</meta>
     <meta property="schema:accessibilityHazard">none</meta>
     <meta property="schema:accessibilityFeature">alternativeText</meta>
     <meta property="schema:accessibilityFeature">index</meta>
@@ -49,11 +49,18 @@
    <item id="i6" href="Text/testDetailsExpanding.xhtml" media-type="application/xhtml+xml" />
    <item id="i7" href="Text/testDetailsCollapsing.xhtml" media-type="application/xhtml+xml" />
    <item id="i8" href="Text/testDetailsEnhanced.xhtml" media-type="application/xhtml+xml" properties="scripted svg"/>
-    <item id="i9" href="Text/testDetailsEndOfBook.xhtml" media-type="application/xhtml+xml"  />
-     <item id="i10" href="Text/testDetailsEndOfBookSingle.xhtml" media-type="application/xhtml+xml"  />
-     <item id="i11" href="Text/endOfBookDescriptions.xhtml" media-type="application/xhtml+xml"  />
-   <item id="i12" href="Text/endOfBookDescriptionsSingle.xhtml" media-type="application/xhtml+xml"  />
-   <item id="i13" href="Text/testDetailsInsideFigure.xhtml" media-type="application/xhtml+xml"  />
+  
+   <item id="i9" href="Text/testDetailsEndOfBook.xhtml" media-type="application/xhtml+xml"  />
+   <item id="i10" href="Text/endOfBookDescriptions.xhtml" media-type="application/xhtml+xml"  />
+
+    <item id="i11" href="Text/testDetailsEndOfBookSingle.xhtml" media-type="application/xhtml+xml"  />
+    <item id="i12" href="Text/endOfBookDescriptionsSingle.xhtml" media-type="application/xhtml+xml"  />
+    
+    <item id="i13" href="Text/testDetailsInsideFigure.xhtml" media-type="application/xhtml+xml"  />
+  
+   <item id="i14" href="Text/testLinkEndOfBookInsideFigure.xhtml" media-type="application/xhtml+xml"  />
+    <item id="i15" href="Text/endOfBookDescriptionLinkInsideFigure.xhtml" media-type="application/xhtml+xml"  />
+
     <item id="img_more_info" href="Images/more_info.jpeg" media-type="image/jpeg"/>
     <item id="img_chart" href="Images/chart-ebcaadfb.png" media-type="image/png"/>
     <item id="img_peafowl" href="Images/peafowl-998cf337.jpg" media-type="image/jpeg"/>
@@ -71,9 +78,11 @@
     <itemref idref="i7"/>
     <itemref idref="i8"/>
     <itemref idref="i9"/>
-    <itemref idref="i10"/>
-    <itemref linear="no" idref="i11"/>
+    <itemref linear="no" idref="i10"/>
+    <itemref idref="i11"/>
     <itemref linear="no" idref="i12"/>
     <itemref idref="i13"/>
+    <itemref idref="i14"/>
+    <itemref linear="no" idref="i15"/>
     </spine>
 </package>
