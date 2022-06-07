@@ -28,11 +28,13 @@
           <li>Upon activation of the link you are taken to the image description directly instead of being placed at the top of the page and can read the extended description</li>
           <li>On activating the link "Navigate back to Bar Chart image" below the extended description, it takes the focus back to original position in this chapter.</li>
         </ul>
+          
+        <p>The image itself has "aria-details" pointing to the link which points to the extended description. Please add to the Notes field how this is handled with the assistive technology (AT) you are using. For example does your AT say anything (i.e. "Has Details"), does your AT allow you to directly activate the link from the image image itself?</p>
       </div>
     </section>
 
       <figure id="image3">
-        <img src="../Images/chart-ebcaadfb.png" alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"/>
+        <img src="../Images/chart-ebcaadfb.png" alt="Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3"  aria-details="image3-link"/>
         <p>
             <a id="image3-link" href="./endOfBookDescriptionLinkInsideFigure.xhtml#image3-extended-desc">Follow for extended description</a>       
           </p>

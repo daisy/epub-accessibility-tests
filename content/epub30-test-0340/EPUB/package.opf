@@ -14,9 +14,9 @@
     <dc:description>Tests for accessible extended descriptions of images in EPUBs</dc:description>
     <dc:rights>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike (CC BY-NC-SA) license.</dc:rights>
     <dc:subject>extended-descriptions</dc:subject>
-    <dc:date>2022-05-06</dc:date>
-    <meta property="dcterms:modified">2022-05-06T12:00:00Z</meta>
-    <meta property="schema:version">1.2.9</meta>
+    <dc:date>2022-06-07</dc:date>
+    <meta property="dcterms:modified">2022-06-07T12:00:00Z</meta>
+    <meta property="schema:version">1.2.10</meta>
     <meta property="schema:accessibilityHazard">none</meta>
     <meta property="schema:accessibilityFeature">alternativeText</meta>
     <meta property="schema:accessibilityFeature">index</meta>
