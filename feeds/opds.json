@@ -1,0 +1,224 @@
+{
+    "metadata": {
+        "title": "epubtest.org Test Suite"
+    },
+    "links": [
+        {
+            "href": "https://github.com/daisy/epub-accessibility-tests/blob/master/opds/opds.json",
+            "type": "application/opds+json",
+            "rel": "self"
+        }
+    ],
+    "publications": [
+        {
+            "metadata": {
+                "@type": "http://schema.org/Book",
+                "identifier": "epub30-test-0301 Basic Functionality - Fundamental-Accessibility-Tests-Basic-Functionality-v1.0.1                ",
+                "title": "Basic Functionality (Fundamental Accessibility Tests)",
+                "author": "DAISY Consortium Transition to EPUB 3",
+                "description": "These tests include starting the reading system and opening the titles, navigating the content, searching, and using bookmarks and notes.",
+                "collection": "basic-functionality",
+                "modified": "2019-03-31T11:00:00Z",
+                "publisher": "DAISY Consortium",
+                "subject": [
+                    "epubtest.org EN"
+                ]
+            },
+            "links": [
+                {
+                    "type": "application/epub+zip",
+                    "rel": "http://opds-spec.org/acquisition/open-access",
+                    "href": "https://github.com/daisy/epub-accessibility-tests/raw/master/build/Fundamental-Accessibility-Tests-Basic-Functionality-v1.0.1.epub"
+                }
+            ],
+            "images": [
+                {
+                    "href": "https://raw.githubusercontent.com/daisy/epub-accessibility-tests/master/content/epub30-test-0301/EPUB/images/cover.jpg",
+                    "type": "image/jpeg",
+                    "height": 600,
+                    "width": 400
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "@type": "http://schema.org/Book",
+                "identifier": "epub30-test-0302 - Non-Visual Reading - Fundamental-Accessibility-Tests-Non-Visual-Reading-v1.0.1",
+                "title": "Non-Visual Reading (Fundamental Accessibility Tests)",
+                "author": "DAISY Consortium Transition to EPUB 3",
+                "description": "These tests are for evaluating the reading experience with an assistive technology tool such as a screen reader or refreshable Braille display. Tests include continuous reading, pause and resume, reading order, alternative text, table and hyperlink navigation, copying text.",
+                "collection": "basic-functionality",
+                "modified": "2019-03-31T11:00:00Z",
+                "publisher": "DAISY Consortium",
+                "subject": [
+                    "epubtest.org EN"
+                ]
+            },
+            "links": [
+                {
+                    "type": "application/epub+zip",
+                    "rel": "http://opds-spec.org/acquisition/open-access",
+                    "href": "https://github.com/daisy/epub-accessibility-tests/raw/master/build/Fundamental-Accessibility-Tests-Non-Visual-Reading-v1.0.1.epub"
+                }
+            ],
+            "images": [
+                {
+                    "href": "https://raw.githubusercontent.com/daisy/epub-accessibility-tests/master/content/epub30-test-0302/EPUB/images/cover.jpg",
+                    "type": "image/jpeg",
+                    "height": 600,
+                    "width": 400
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "@type": "http://schema.org/Book",
+                "identifier": "epub30-test-0302 - Fundamental-Accessibility-Tests-Visual-Adjustments-v1.0.1",
+                "title": "Visual Adjustments (Fundamental Accessibility Tests)",
+                "author": "DAISY Consortium Transition to EPUB 3",
+                "description": "These tests include changing the font and text size, colors, brightness, compatibility with magnification utilities and support for high contrast and SVG images.",
+                "collection": "basic-functionality",
+                "modified": "2019-03-31T11:00:00Z",
+                "publisher": "DAISY Consortium",
+                "subject": [
+                    "epubtest.org EN"
+                ]
+            },
+            "links": [
+                {
+                    "type": "application/epub+zip",
+                    "rel": "http://opds-spec.org/acquisition/open-access",
+                    "href": "https://github.com/daisy/epub-accessibility-tests/raw/master/build/Fundamental-Accessibility-Tests-Visual-Adjustments-v1.0.1.epub"
+                }
+            ],
+            "images": [
+                {
+                    "href": "https://raw.githubusercontent.com/daisy/epub-accessibility-tests/master/content/epub30-test-0303/EPUB/images/cover.jpg",
+                    "type": "image/jpeg",
+                    "height": 600,
+                    "width": 400
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "@type": "http://schema.org/Book",
+                "identifier": "epub30-test-0304 - Fundamental-Accessibility-Tests-Read-Aloud-v1.0.0",
+                "title": "Read Aloud (Fundamental Accessibility Tests)",
+                "author": "DAISY Consortium Transition to EPUB 3",
+                "description": "These tests include start, pause and resume Read Aloud, reading order, punctuation support and visual emphasis of the spoken text.",
+                "collection": "basic-functionality",
+                "modified": "2019-03-31T11:00:00Z",
+                "publisher": "DAISY Consortium",
+                "subject": [
+                    "epubtest.org EN"
+                ]
+            },
+            "links": [
+                {
+                    "type": "application/epub+zip",
+                    "rel": "http://opds-spec.org/acquisition/open-access",
+                    "href": "https://github.com/daisy/epub-accessibility-tests/raw/master/build/Fundamental-Accessibility-Tests-Read-Aloud-v1.0.0.epub"
+                }
+            ],
+            "images": [
+                {
+                    "href": "https://raw.githubusercontent.com/daisy/epub-accessibility-tests/master/content/epub30-test-0304/EPUB/images/cover.jpg",
+                    "type": "image/jpeg",
+                    "height": 600,
+                    "width": 400
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "@type": "http://schema.org/Book",
+                "identifier": "epub30-test-0320 - Advanced-Accessibility-Tests-Media-Overlays-v1.0.1",
+                "title": "Media Overlays (Advanced Accessibility Tests)",
+                "author": "DAISY Consortium Transition to EPUB 3",
+                "description": "Accessibility tests for Media Overlays in a reflowable context",
+                "collection": "Advanced Accessibility Tests",
+                "modified": "2015-15-08T13:00:00Z",
+                "publisher": "DAISY Consortium",
+                "subject": [
+                    "epubtest.org EN"
+                ]
+            },
+            "links": [
+                {
+                    "type": "application/epub+zip",
+                    "rel": "http://opds-spec.org/acquisition/open-access",
+                    "href": "https://github.com/daisy/epub-accessibility-tests/raw/master/build/Advanced-Accessibility-Tests-Media-Overlays-v1.0.1.epub"
+                }
+            ],
+            "images": [
+                {
+                    "href": "https://raw.githubusercontent.com/daisy/epub-accessibility-tests/master/content/epub30-test-0320/EPUB/images/cover.jpg",
+                    "type": "image/jpeg",
+                    "height": 600,
+                    "width": 400
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "@type": "http://schema.org/Book",
+                "identifier": "epub30-test-0330 - Accessibility-Tests-Mathematics-v1.1.1.epub",
+                "title": "Mathematics (Advanced Accessibility Tests)",
+                "author": "DAISY Consortium Transition to EPUB 3 and DIAGRAM Standards WG",
+                "description": "Tests for accessibility strategies for MathML in EPUB",
+                "collection": "Advanced Accessibility Tests",
+                "modified": "2020-04-24T13:30:00Z",
+                "publisher": "DAISY Consortium",
+                "subject": [
+                    "epubtest.org EN"
+                ]
+            },
+            "links": [
+                {
+                    "type": "application/epub+zip",
+                    "rel": "http://opds-spec.org/acquisition/open-access",
+                    "href": "https://github.com/daisy/epub-accessibility-tests/raw/master/build/Accessibility-Tests-Mathematics-v1.1.1.epub"
+                }
+            ],
+            "images": [
+                {
+                    "href": "https://raw.githubusercontent.com/daisy/epub-accessibility-tests/master/content/epub30-test-0330/EPUB/Images/cover.jpg",
+                    "type": "image/jpeg",
+                    "height": 600,
+                    "width": 400
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "@type": "http://schema.org/Book",
+                "identifier": "epub30-test-0340 - Accessibility-Tests-Extended-Descriptions-v1.1.1",
+                "title": "Extended Descriptions",
+                "author": "DAISY Consortium Transition to EPUB 3 and DIAGRAM Standards WG",
+                "description": "Tests for accessible extended descriptions of images in EPUBs",
+                "collection": "Advanced Accessibility Tests",
+                "modified": "2020-09-23T07:00:00Z",
+                "publisher": "DAISY Consortium",
+                "subject": [
+                    "epubtest.org EN"
+                ]
+            },
+            "links": [
+                {
+                    "type": "application/epub+zip",
+                    "rel": "http://opds-spec.org/acquisition/open-access",
+                    "href": "https://github.com/daisy/epub-accessibility-tests/raw/master/build/Accessibility-Tests-Extended-Descriptions-v1.1.1.epub"
+                }
+            ],
+            "images": [
+                {
+                    "href": "https://raw.githubusercontent.com/daisy/epub-accessibility-tests/master/content/epub30-test-0340/EPUB/Images/cover.jpg",
+                    "type": "image/jpeg",
+                    "height": 600,
+                    "width": 400
+                }
+            ]
+        }
+    ]
+}
