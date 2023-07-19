@@ -10,8 +10,8 @@ epubdir=$1
 
 java -jar $EPUBCHECK --mode exp --save ${epubdir}
 wait
-version=`cat ${epubdir}/EPUB/package.opf | xpath '//meta[@property="schema:version"]/text()' 2>/dev/null`
-title=`cat ${epubdir}/EPUB/package.opf | xpath '//dc:title/text()' 2>/dev/null`
+version=`cat ${epubdir}/EPUB/package.opf | xpath -e '//meta[@property="schema:version"]/text()' 2>/dev/null`
+title=`cat ${epubdir}/EPUB/package.opf | xpath -e '//dc:title/text()' 2>/dev/null`
 title=${title// /-}
 title=${title//:/}
 cd ./content
