@@ -18,6 +18,8 @@ EPUB Content containing accessibility tests for reading systems
 
 ## Current status
 
+Some titles have updates in the repository that aren't yet live. No breaking changes are currently expected. 
+
 | title | repo version | epubtest.org version | notes |
 | ----- | ----------- | --------------------- | ----- |
 | Basic Functionality | 1.0.1 | 1.0.0 | [changes](https://github.com/daisy/epub-accessibility-tests/commit/cdea0e9362175418e2fad125c32fe682801c5b95)|
