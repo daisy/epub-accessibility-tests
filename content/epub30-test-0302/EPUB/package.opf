@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0302</dc:identifier>
+    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0308</dc:identifier>
     <dc:title>Fundamental Accessibility Tests: Non-Visual Reading</dc:title>
     <dc:description>These tests are for evaluating the reading experience with an assistive technology tool such as a screen reader or refreshable Braille display. Tests include continuous reading, pause and resume, reading order, alternative text, table and hyperlink navigation, reading MathML, footnote functionality, copying text.</dc:description>
     <!-- repeat creator element for all contributors -->
