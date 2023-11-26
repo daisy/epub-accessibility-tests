@@ -53,6 +53,7 @@
       several with harpoons hanging on him and their ship in the background."</p>
     <p class="eval">Indicate Pass or Fail.</p>
   </section>
+<!-- Removing the Reading speed test by commenting out the test
   <section id="reading-410" class="test">
     <h2><span class="test-id">reading-410</span> <span class="test-title">Change reading speed</span></h2>
     <p class="desc">It should be possible to adjust (increase/decrease) the speed of reading. This test should be performed using the Assistive Technology being used for accessibility evaluation.</p>
@@ -60,6 +61,8 @@
       Braille device. </p>
     <p class="eval">Indicate Pass or Fail.</p>
   </section>
+-->
+
   <section id="reading-510" class="test">
     <h2><span class="test-id">reading-510</span> <span class="test-title">TTS allows pause for indicating headings, paragraphs, list items, etc</span></h2>
     <p class="desc">The user should be able to identify the difference between content items such as headings, paragraphs or list items by sufficient pauses in the TTS reading or appropriate formatting in the Braille device.</p>
@@ -216,6 +219,150 @@
     <p>If the text can be accurately selected, copied and pasted into another application, then mark the test as passed. Explain the mechanism in a note to assist other users.</p>
     <p class="eval">Indicate Pass or Fail.</p>
   </section>
+<section id="reading-1410" class="test"></section>
+<h2><span class="test-id">reading-1410</span> <span class="test-title">MathML Reading</span></h2>
+
+<p class="desc">The block and inline math expressions   below are in the MathML format. Check if the assistive technology reports the presence of the MathML expressions both inline and as a block between the paragraphs. Check both of  the MathML expressions are read correctly, and the elements of the math expressions can be explored at different levels using the features of the assistive technology.
+Indicate Pass or Fail.</p>
+ 
+<h3>MathML Block Test</h3>
+    <p>Block Math Equation will appear between the following two lines.</p>
+    <hr/>
+        Text before block math.
+        <span id="exp4">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(MathML alttext): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math>
+        </span>
+        Text after block math.
+
+
+     <hr/>
+<h3>MathML Inline Test</h3>
+    <p>Inline Math Equation will appear between the following two lines.</p>
+    <hr/>
+        Text before inline math.
+        <span id="exp3">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(MathML alttext): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math>
+        </span>
+       Text after inline math.
+   <hr/>
+
+
 </body>
 
 </html>
