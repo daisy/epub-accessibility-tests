@@ -48,13 +48,16 @@
     <!-- bodymatter -->
     <!-- xhtml -->
     <item href="xhtml/introduction.xhtml" id="introduction" media-type="application/xhtml+xml"/>
-    <item href="xhtml/Non_Visual_Reading_Tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
+    <item href="xhtml/Non_Visual_Reading_Tests.xhtml" id="xhtml-001" properties="mathml" media-type="application/xhtml+xml"/>
     <item href="xhtml/supplement.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
+
+ 
+    
   </manifest>
   <spine>
     <itemref idref="cover"/>
     <itemref idref="front"/>
-    <itemref idref="nav" linear="no"/>
+    <!-- <itemref idref="nav" linear="no"/>-->
     <itemref idref="introduction"/>
     <itemref idref="xhtml-001"/>
     <itemref idref="xhtml-002"/>
