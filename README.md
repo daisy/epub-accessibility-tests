@@ -36,6 +36,8 @@ Set the location of your [EPUBCheck](https://github.com/w3c/epubcheck) jar, e.g.
 export EPUBCHECK=/Users/marisa/Downloads/epubcheck-4.2.0-rc/epubcheck.jar
 ```
 
+Or copy `example.env` as `.env` and set the environment variable there.
+
 Run `build-all.sh` to run epubcheck and build EPUB files. The output appears in the `build` directory, named after the EPUB title plus the version number.
 
 If you just need to build one book, run `build-one.sh foldername` where `foldername` is the directory containing the EPUB fileset for that book.
