@@ -37,6 +37,7 @@
   <manifest>
     <!-- css -->
     <item href="css/base.css" media-type="text/css" id="css"/>
+    <item href="css/footnote.css" media-type="text/css" id="css-2"/>
     <!-- cover -->
     <item id="cover_jpg" properties="cover-image" href="images/cover.jpg" media-type="image/jpeg"/>
     <item id="cover" href="xhtml/cover.xhtml" media-type="application/xhtml+xml"/>
