@@ -54,6 +54,7 @@
   <spine>
     <itemref idref="cover"/>
     <itemref idref="front"/>
+   <!-- <itemref idref="nav" linear="no"/> -->
     <itemref idref="introduction"/>
     <itemref idref="xhtml-001"/>
     <itemref idref="xhtml-002"/>
