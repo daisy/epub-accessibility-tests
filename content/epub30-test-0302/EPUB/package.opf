@@ -8,7 +8,7 @@
     <dc:description>These tests are for evaluating the reading experience with an assistive technology tool such as a screen reader or refreshable Braille display. Tests include continuous reading, pause and resume, reading order, alternative text, table and hyperlink navigation, reading MathML, footnote functionality, copying text.</dc:description>
     <!-- repeat creator element for all contributors -->
     <dc:creator>DAISY Consortium</dc:creator>
-    <dc:source>Page numbers added for test purposes.</dc:source>
+    <!-- <dc:source>Page numbers added for test purposes.</dc:source> -->
     <dc:language>en</dc:language>
     <dc:subject>non-visual-reading</dc:subject>
 	  <dc:publisher>DAISY Consortium</dc:publisher>
@@ -25,8 +25,8 @@
 	  <meta property="schema:accessibilityFeature">readingOrder</meta>
 	  <meta property="schema:accessibilityFeature">tableOfContents</meta>
 	  <meta property="schema:accessibilityFeature">unlocked</meta>
-	  <meta property="schema:accessibilityFeature">pageBreakMarkers</meta>
-	  <meta property="schema:accessibilityFeature">pageNavigation</meta>
+	  <!-- <meta property="schema:accessibilityFeature">pageBreakMarkers</meta> -->
+	  <!-- <meta property="schema:accessibilityFeature">pageNavigation</meta> -->
 	  <meta property="schema:accessibilityFeature">alternativeText</meta>
 	  <meta property="schema:accessibilityHazard">noFlashingHazard</meta>
 	  <meta property="schema:accessibilityHazard">noSoundHazard</meta>
