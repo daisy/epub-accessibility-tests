@@ -24,8 +24,6 @@
 	<meta property="schema:accessibilityFeature">alternativeText</meta>
     <meta property="schema:accessibilityFeature">tableOfContents</meta>
 	<meta property="schema:accessibilityFeature">unlocked</meta>
-	<meta property="schema:accessibilityFeature">pageBreakMarkers</meta>
-	<meta property="schema:accessibilityFeature">pageNavigation</meta>
 
 	<meta property="schema:accessibilityHazard">none</meta>
 
