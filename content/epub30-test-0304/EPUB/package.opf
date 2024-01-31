@@ -22,6 +22,8 @@
     <!-- cover -->
     <item id="cover_jpg" properties="cover-image" href="images/cover.jpg" media-type="image/jpeg"/>
     <item id="cover" href="xhtml/cover.xhtml" media-type="application/xhtml+xml"/>
+    <!-- images -->
+    <item href="images/mobydick.jpg" media-type="image/jpeg" id="moby"/>
     <!-- frontmatter -->
     <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
     <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
