@@ -1,0 +1,13 @@
+a[role=doc-noteref] {
+    text-decoration: none;
+}
+a[role=doc-noteref] sup {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+a[role=doc-noteref] sup:before {
+  content: '[';
+}
+a[role=doc-noteref] sup:after {
+  content: ']';
+} 
