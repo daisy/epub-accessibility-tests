@@ -1,10 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/#" xmlns:ssml="http://www.w3.org/2001/10/synthesis" ssml:alphabet="ipa" xml:lang="en-US" lang="en-US">
 
 <head>
   <title>Non-Visual Reading</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="../css/base.css" />
+  <link rel="stylesheet" type="text/css" href="../css/footnote.css" />
 </head>
 
 <body>
@@ -53,15 +54,38 @@
       several with harpoons hanging on him and their ship in the background."</p>
     <p class="eval">Indicate Pass or Fail.</p>
   </section>
-  <section id="reading-410" class="test">
-    <h2><span class="test-id">reading-410</span> <span class="test-title">Change reading speed</span></h2>
-    <p class="desc">It should be possible to adjust (increase/decrease) the speed of reading. This test should be performed using the Assistive Technology being used for accessibility evaluation.</p>
-    <p>If you are testing with refreshable Braille, you should have the option of continuous reading, i.e. to auto-advance the refreshable Braille device. The reading system should also support adjustment of reading speed (refresh rate) of the
-      Braille device. </p>
+
+  <section id="reading-420" class="test">
+    <h2><span class="test-id">reading-420</span> <span class="test-title">Footnote Reading</span></h2>
+    <p class="desc">This tests the useability and functionality of footnotes. The markup includes the semantics that the reference  is to   a note,which could be announced to the reader. The destination could be a footnote or an endnote  and announced to the reader. The link back to the original position has the semantics that it is a backlink and could also be announced to the reader.</p>
+
+<p>To pass this test:</p>
+<ul>
+<li>Assistive technology is able to detect the reference to the footnote and reach  the content of the footnote.</li>
+<li>Assistive technology is able to read the content of the footnote.</li>
+<li>The Reading System  provides a mechanism to move back to the original reading position from the footnote, or the backlink is used to return to the original position.</li>
+</ul>
+   
     <p class="eval">Indicate Pass or Fail.</p>
+
+<p>Please put into the notes if the link to the note was announced, and upon reaching the destination  that it was a footnote. Include if the Reading System included its own mechanism to return to the original location or if the backlink was announced and used to return to the exact location.</p>
+<h3>Sample Footnote testing   example</h3>
+<p>
+     Chief Joseph was a leader of the Nez Perce tribe, who resisted the U.S. government’s attempt to remove them from their ancestral lands in the Wallowa Valley of Oregon. In 1877, after a series of violent encounters with white settlers, Chief Joseph and his people decided to flee the U.S. and seek refuge in Canada, where they hoped to join the Lakota people under Sitting Bull. Along the way, they fought several battles with the U.S. Army, who pursued them relentlessly. Chief Joseph also drove a large herd of horses<a id="backlink-target" href="#ft2f" role="doc-noteref" epub:type="noteref"><sup>1</sup></a>, which he used for transportation and trade. He managed to lead his people across more than 1,000 miles of rugged terrain, reaching the border of Montana and Canada. However, he was surrounded by the army and forced to surrender, ending his remarkable journey of resistance and survival.
+   </p>
+<p>This is a filler paragraph to show there would be text between the note reference and the footnote.</p>
+<aside id="ft2f" role="doc-footnote" epub:type="footnote">
+   <p>
+     1 The Appaloosa is a spotted horse breed that originated from the selective breeding practices of the Nez Perce tribe in the northwestern U.S. The Nez Perce valued the Appaloosa for its speed, endurance, intelligence, and spiritual power. The name Appaloosa may have derived from the Palouse River or the Palouse tribe, which were associated with the Nez Perce. The Appaloosa is the official state horse of Idaho and a symbol of the region </p>
+   <p><a href="#backlink-target" role="doc-backlink">[return to note reference 1 about Chief Joseph]</a></p>
+</aside>
+
+<p>End of the footnote testing item.</p>
   </section>
+
+
   <section id="reading-510" class="test">
-    <h2><span class="test-id">reading-510</span> <span class="test-title">TTS allows pause for indicating headings, paragraphs, list items, etc</span></h2>
+    <h2><span class="test-id">reading-510</span> <span class="test-title">TTS allows pause for indicating headings, paragraphs, list items, etc</span></h2> 
     <p class="desc">The user should be able to identify the difference between content items such as headings, paragraphs or list items by sufficient pauses in the TTS reading or appropriate formatting in the Braille device.</p>
     <p>Read the text below using TTS and listen for the pauses.</p>
     <h3>Text for testing TTS</h3>
@@ -216,6 +240,172 @@
     <p>If the text can be accurately selected, copied and pasted into another application, then mark the test as passed. Explain the mechanism in a note to assist other users.</p>
     <p class="eval">Indicate Pass or Fail.</p>
   </section>
+<section id="reading-1410" class="test">
+<h2><span class="test-id">reading-1410</span> <span class="test-title">MathML Reading</span></h2>
+
+<p class="desc">The block and inline math expressions   below are in the MathML format.  We want to determine that the Assistive Technology (AT) identifies the math and enables the detailed exploration of the math with the chosen  AT.</p>
+
+
+<p class="eval">Check if the assistive technology reports the presence of the MathML expressions in both     samples. Check that both of  the MathML expressions are read correctly, and the elements of the math expressions can be explored at different levels using the features of the assistive technology.
+The test fails if you  cannot read/hear the equation containing an equals sign and the presence of a fraction contained within.
+Indicate Pass or Fail.</p>
+ 
+<h3>MathML Block Test</h3>
+    <p>Block Math Equation will appear between the following two lines.</p>
+    <hr/>
+        Text before block math.
+        <span id="exp4">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(MathML alttext): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math>
+        </span>
+        Text after block math.
+
+
+     <hr/>
+<h3>MathML Inline Test</h3>
+    <p>Inline Math Equation will appear between the following two lines.</p>
+    <hr/>
+        Text before inline math.
+        <span id="exp3">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(MathML alttext): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math>
+        </span>
+       Text after inline math.
+   <hr/>
+<p>Please describe your reading experience in the notes. If you are using refreshable braille, please also describe that experience.
+</p>
+</section>
+<section id="reading-1510" class="test">
+    <h2><span class="test-id">reading-1510</span> <span class="test-title">TTS Change Languages Automatically</span></h2>
+    <p class="desc">Screen readers and other Assistive Technology that use TTS should be able to detect language changes marked in XHTML content. A screen reader should be able to be configured to automatically change the TTS speaking language when it encounters a language change in the XHTML. This test contains English, German, French, and Italian.</p>
+
+<p> Configure your screen reader or other Assistive Technology to automatically change the TTS language. Read the phrases below line by line and continuously. The test passes if the TTS language changes as it encounters the language change.</p>
+
+    <p class="eval">Indicate Pass or Fail.</p>
+<h3>Language Change Test</h3>
+
+<p>In English, "Good morning my darling."<br />
+  In German, <span xml:lang="de" lang="de">"Guten Morgen, mein Liebling."</span><br />
+In french, <span xml:lang="fr" lang="fr">"Bonjour ma chérie."</span><br/>
+in Italian, <span xml:lang="it" lang="it">"Buongiorno amore mio."</span>
+</p>
+<p>End of language change testing.</p>
+</section>
+
 </body>
 
 </html>

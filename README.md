@@ -1,12 +1,11 @@
 epub-accessibility-tests
 ========================
-
 EPUB Content containing accessibility tests for reading systems
 
 ## Index of materials
 
 * `content/epub30-test-0301/`: Basic Functionality
-* `content/epub30-test-0302/`: Non-Visual Reading
+* `content/epub30-test-0302/`: Non-Visual Reading (ISBN 9781003410119) 
 * `content/epub30-test-0303/`: Visual Adjustments
 * `content/epub30-test-0304/`: Read Aloud
 * `content/epub30-test-0320/`: Media Overlays 
@@ -36,6 +35,8 @@ Set the location of your [EPUBCheck](https://github.com/w3c/epubcheck) jar, e.g.
 ```
 export EPUBCHECK=/Users/marisa/Downloads/epubcheck-4.2.0-rc/epubcheck.jar
 ```
+
+Or copy `example.env` as `.env` and set the environment variable there.
 
 Run `build-all.sh` to run epubcheck and build EPUB files. The output appears in the `build` directory, named after the EPUB title plus the version number.
 
