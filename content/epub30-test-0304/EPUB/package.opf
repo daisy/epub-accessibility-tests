@@ -14,6 +14,10 @@
     <meta property="schema:accessMode">visual</meta>
     <meta property="schema:accessModeSufficient">textual</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">alternativeText</meta>
+    <meta property="schema:accessibilityHazard">noFlashingHazard</meta>
+    <meta property="schema:accessibilityHazard">noSoundHazard</meta>
+    <meta property="schema:accessibilityHazard">noMotionSimulationHazard</meta>
     <meta property="schema:version">1.0.0</meta>
   </metadata>
   <manifest>
