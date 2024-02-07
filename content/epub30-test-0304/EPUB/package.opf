@@ -2,6 +2,8 @@
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0304</dc:identifier>
+    <dc:identifier id="isbn-id">9781003410140</dc:identifier>
+    <meta refines="#isbn-id" property="identifier-type" scheme="onix:codelist5">15</meta>
     <dc:title>Fundamental Accessibility Tests: Read Aloud</dc:title>
     <dc:description>These tests include start, pause and resume Read Aloud, reading order, punctuation support and visual emphasis of the spoken text.</dc:description>
     <!-- repeat creator element for all contributors -->

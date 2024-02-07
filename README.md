@@ -4,11 +4,11 @@ EPUB Content containing accessibility tests for reading systems
 
 ## Index of materials
 
-* `content/epub30-test-0301/`: Basic Functionality
+* `content/epub30-test-0301/`: Basic Functionality (ISBN 9781003410126)
 * `content/epub30-test-0302/`: Non-Visual Reading (ISBN 9781003410119) 
-* `content/epub30-test-0303/`: Visual Adjustments
-* `content/epub30-test-0304/`: Read Aloud
-* `content/epub30-test-0320/`: Media Overlays 
+* `content/epub30-test-0303/`: Visual Adjustments (ISBN 9781003410133)
+* `content/epub30-test-0304/`: Read Aloud (ISBN 9781003410140)
+* `content/epub30-test-0320/`: Media Overlays (ISBN 9781003410157)
 * `content/epub30-test-0330/`: Math (longer book, not on site)
 * `content/epub30-test-0340/`: Extended Descriptions (longer book, not on site)
 * `content/epub30-test-0350/`: Extended Descriptions (basic)
