@@ -32,7 +32,7 @@
  	<meta property="schema:accessibilityFeature">ARIA</meta>
 
     <meta property="schema:accessibilityHazard">none</meta>
-
+    <meta property="schema:version">2.0.0</meta>	
 </metadata>
   <manifest>
     <!-- css -->
