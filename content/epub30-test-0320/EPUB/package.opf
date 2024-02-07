@@ -46,7 +46,6 @@
 	</manifest>
 	<spine>
 		<itemref idref="tobi_spine_1"/>
-		<itemref idref="tobi_spine_2" linear="no"/>
 		<itemref idref="tobi_spine_3"/>
 		<itemref idref="tobi_spine_4"/>
 		<itemref idref="tobi_spine_5"/>
