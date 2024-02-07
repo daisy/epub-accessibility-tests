@@ -50,7 +50,7 @@
     <!-- bodymatter -->
     <!-- xhtml -->
     <item href="xhtml/introduction.xhtml" id="introduction" media-type="application/xhtml+xml"/>
-    <item href="xhtml/visual-adjustment-tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="xhtml/visual-adjustment-tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml" properties="mathml svg"/>
     <item href="xhtml/supplement.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
   </manifest>
   <spine>
