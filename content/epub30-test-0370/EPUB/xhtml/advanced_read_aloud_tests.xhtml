@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:epub="http://www.idpf.org/2007/ops">
+
+<head>
+  <meta charset="utf-8" />
+  <link href="../css/base.css" type="text/css" rel="stylesheet" />
+  <title>Advanced Read Aloud Tests</title>
+</head>
+
+<body>
+  <h1>Advanced Read Aloud Tests</h1>
+  <p>The tests given below are for evaluating the Read Aloud feature within the reading system. Do not perform these reading tests using a screen reader.</p>
+<section id="AdvancedReadAloud-200" class="test">
+    <h2><span class="test-id">AdvancedReadAloud-200</span> <span class="test-title">Text to Speech Changes Languages Automatically</span></h2>
+    <p class="desc">Read aloud should automatically change the TTS speaking language when it encounters a language change in the XHTML. This test contains English, German, French, and Italian.</p>
+	<p>Using the read aloud feature listen to the phrases below. The test passes if the TTS language changes as it encounters the phrases in the different languages. If this does not happen, check that you have the relevant voices available on your device before marking as a fail.</p>
+    <p class="eval">Indicate Pass or Fail.</p>
+    <h3>Language Change Test</h3>
+    <p>In English, "Good morning my darling."<br />In German, <span xml:lang="de" lang="de">"Guten Morgen, mein Liebling."</span><br />In French, <span xml:lang="fr" lang="fr">"Bonjour ma chérie."</span><br/>In Italian, <span xml:lang="it" lang="it">"Buongiorno amore mio."</span></p>
+    <p>End of language change testing.</p>
+  </section>
+  <section id="AdvancedReadAloud-400" class="test">
+    <h2><span class="test-id">AdvancedReadAloud-400</span> <span class="test-title">Image alternate text reading is optional</span></h2>
+    <p><img src="../images/mobydick.jpg" id="img267" alt="Moby Dick with a sailor in his mouth and several with harpoons hanging on him and their ship in the background" /></p>
+    <p class="desc">Ensure that the user can choose whether to hear the announcement of the alternate text for the image.</p>
+    <p class="eval">Configure the read aloud feature so alternate (alt) text of images is announced. Check with the image above, this should read as "Moby Dick with a sailor in his mouth and several with harpoons hanging on him and their ship in the background."</p>
+	<p>Next, configure the read aloud feature so that alternate text is not announced. Check that the alternate text for the image is ignored.</p>
+    <p class="eval">The test passes if the alternative text is announced with the feature enabled, and ignored if the feature is disabled. Indicate Pass or Fail.</p>
+  </section>
+  <section id="AdvancedReadAloud-600" class="test">
+    <h2><span class="test-id">AdvancedReadAloud-600</span> <span class="test-title">The read aloud emphasis or highlight colour can be changed</span></h2>
+    <p class="desc">Change the emphasis or visual highlight color of the text being read aloud using any feature available in the reading system or the operating system. The user should have a choice of different colours for text highlighting and/or the option to disable the visual highlighting.</p>
+    <p class="eval">Indicate Pass or Fail.</p>
+  </section>
+  <section id="AdvancedReadAloud-800" class="test">
+<h2><span class="test-id">AdvancedReadAloud-800</span> <span class="test-title">MathML Reading</span></h2>
+<p class="desc">The block and inline math expressions below are in the MathML format. This test is to determine that the read aloud feature announces the math expressions correctly.</p>
+<p class="eval">Check if the read aloud announces the math expressions correctly in both samples. The test fails if the math is ignored, or you cannot read/hear the equation containing an equals sign and the presence of a fraction contained within.
+Indicate Pass or Fail.</p>
+<h3>MathML Block Test</h3>
+    <p>Block Math Equation will appear between the following two lines.</p>
+    <hr/>
+        Text before block math.
+        <span id="exp4">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(MathML alttext): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math>
+        </span>
+        Text after block math.
+     <hr/>
+<h3>MathML Inline Test</h3>
+    <p>Inline Math Equation will appear between the following two lines.</p>
+    <hr/>
+        Text before inline math.
+        <span id="exp3">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(MathML alttext): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math>
+        </span>
+       Text after inline math.
+   <hr/>
+<p>Please describe your reading experience in the notes.
+</p>
+</section>
+</body>
+
+</html>
