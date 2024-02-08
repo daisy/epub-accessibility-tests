@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="uid">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0303</dc:identifier>
+    <dc:identifier id="isbn-id">9781003410133</dc:identifier>
+    <meta refines="#isbn-id" property="identifier-type" scheme="onix:codelist5">15</meta>
     <dc:title>Fundamental Accessibility Tests: Visual Adjustments</dc:title>
     <dc:description>These tests include changing the font and text size, colors, brightness, compatibility with magnification utilities and support for high contrast and SVG images.</dc:description>
     <!-- repeat creator element for all contributors -->
@@ -9,27 +11,29 @@
 	<dc:publisher>DAISY Consortium</dc:publisher>
     <dc:language>en</dc:language>
     <dc:subject>visual-adjustments</dc:subject>
-	<meta property="dcterms:conformsTo" id="conf">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
-	<meta id="certifier" property="a11y:certifiedBy" refines="#conf">epubtest working group</meta>
-	<meta property="dcterms:date" refines="#certifier">2024-01-15</meta>
-    <meta property="dcterms:modified">2024-01-15T11:00:00Z</meta>
-    
+
+    <meta property="dcterms:modified">2024-02-06T11:00:00Z</meta>
+        
+    <meta property="schema:accessibilitySummary">This publication strives to conform to WCAG 2.2 Level AA.</meta>
+
     <meta property="schema:accessMode">textual</meta>
     <meta property="schema:accessMode">visual</meta>
     <meta property="schema:accessModeSufficient">textual</meta>
-
+    <meta property="schema:accessModeSufficient">textual,visual</meta>
+    
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">displayTransformability</meta>
 	<meta property="schema:accessibilityFeature">readingOrder</meta>
 	<meta property="schema:accessibilityFeature">alternativeText</meta>
     <meta property="schema:accessibilityFeature">tableOfContents</meta>
 	<meta property="schema:accessibilityFeature">unlocked</meta>
+    <meta property="schema:accessibilityFeature">MathML</meta>
+    <meta property="schema:accessibilityFeature">describedMath</meta>
+ 	<meta property="schema:accessibilityFeature">ARIA</meta>
 
-	<meta property="schema:accessibilityHazard">none</meta>
-
-    <meta property="schema:accessibilitySummary">This publication strives to conform to WCAG 2.2 Level AA.</meta>
-
-  </metadata>
+    <meta property="schema:accessibilityHazard">none</meta>
+    <meta property="schema:version">2.0.0</meta>	
+</metadata>
   <manifest>
     <!-- css -->
     <item href="css/base.css" media-type="text/css" id="css"/>
@@ -46,7 +50,7 @@
     <!-- bodymatter -->
     <!-- xhtml -->
     <item href="xhtml/introduction.xhtml" id="introduction" media-type="application/xhtml+xml"/>
-    <item href="xhtml/visual-adjustment-tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="xhtml/visual-adjustment-tests.xhtml" id="xhtml-001" media-type="application/xhtml+xml" properties="mathml svg"/>
     <item href="xhtml/supplement.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
   </manifest>
   <spine>

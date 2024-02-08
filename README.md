@@ -4,30 +4,16 @@ EPUB Content containing accessibility tests for reading systems
 
 ## Index of materials
 
-* `content/epub30-test-0301/`: Basic Functionality
+* `content/epub30-test-0301/`: Basic Functionality (ISBN 9781003410126)
 * `content/epub30-test-0302/`: Non-Visual Reading (ISBN 9781003410119) 
-* `content/epub30-test-0303/`: Visual Adjustments
-* `content/epub30-test-0304/`: Read Aloud
-* `content/epub30-test-0320/`: Media Overlays 
+* `content/epub30-test-0303/`: Visual Adjustments (ISBN 9781003410133)
+* `content/epub30-test-0304/`: Read Aloud (ISBN 9781003410140)
+* `content/epub30-test-0320/`: Media Overlays (ISBN 9781003410157)
 * `content/epub30-test-0330/`: Math (longer book, not on site)
 * `content/epub30-test-0340/`: Extended Descriptions (longer book, not on site)
 * `content/epub30-test-0350/`: Extended Descriptions (basic)
 * `content/epub30-test-0360/`: Math (basic)
 
-
-## Current status
-
-Some titles have updates in the repository that aren't yet live. No breaking changes are currently expected. 
-
-| title | repo version | epubtest.org version | notes |
-| ----- | ----------- | --------------------- | ----- |
-| Basic Functionality | 1.0.1 | 1.0.0 | [changes](https://github.com/daisy/epub-accessibility-tests/commit/cdea0e9362175418e2fad125c32fe682801c5b95)|
-| Non-Visual Reading | 1.0.1 | 1.0.0 | [changes](https://github.com/daisy/epub-accessibility-tests/commit/)|
-| Visual Adjustments | 1.0.1 | 1.0.0 | [changes](https://github.com/daisy/epub-accessibility-tests/commit/)|
-| Read Aloud | 1.0.1 | 1.0.0 | [changes](https://github.com/daisy/epub-accessibility-tests/commit/)|
-| Media Overlays | 1.0.1 | 1.0.0 | changes [1](https://github.com/daisy/epub-accessibility-tests/commit/), [2](https://github.com/daisy/epub-accessibility-tests/commit/f79ace317caeb634263edefa05a0fc6fcaeb1c22)|
-| Math | 1.1.1 | 1.1.1 | |
-| Extended Descriptions | 1.1.1 | 1.1.1 | |
 
 ## To build EPUBs:
 
