@@ -13,28 +13,28 @@
 <section id="AdvancedReadAloud-200" class="test">
     <h2><span class="test-id">AdvancedReadAloud-200</span> <span class="test-title">Text to Speech Changes Languages Automatically</span></h2>
     <p class="desc">Read aloud should automatically change the TTS speaking language when it encounters a language change in the XHTML. This test contains English, German, French, and Italian.</p>
-	<p>Using the read aloud feature listed to the phrases below. The test passes if the TTS language changes as it encounters the phrases in the different languages. If this does not happen, check that you have the relevant voices available on your device before marking as a fail.</p>
+	<p>Using the read aloud feature listen to the phrases below. The test passes if the TTS language changes as it encounters the phrases in the different languages. If this does not happen, check that you have the relevant voices available on your device before marking as a fail.</p>
     <p class="eval">Indicate Pass or Fail.</p>
     <h3>Language Change Test</h3>
     <p>In English, "Good morning my darling."<br />In German, <span xml:lang="de" lang="de">"Guten Morgen, mein Liebling."</span><br />In French, <span xml:lang="fr" lang="fr">"Bonjour ma chérie."</span><br/>In Italian, <span xml:lang="it" lang="it">"Buongiorno amore mio."</span></p>
     <p>End of language change testing.</p>
   </section>
   <section id="AdvancedReadAloud-400" class="test">
-    <h2><span class="test-id">AdvancedReadAloud-400</span> <span class="test-title">Image alternate text reading</span></h2>
+    <h2><span class="test-id">AdvancedReadAloud-400</span> <span class="test-title">Image alternate text reading is optional</span></h2>
     <p><img src="../images/mobydick.jpg" id="img267" alt="Moby Dick with a sailor in his mouth and several with harpoons hanging on him and their ship in the background" /></p>
-    <p class="desc">Ensure that the alternate text for the image can be announced. </p>
-    <p class="eval">If the read aloud announces the alternate text of the image above then the test passes. The alternate text should read as "Moby Dick with a sailor in his mouth and
-      several with harpoons hanging on him and their ship in the background."</p>
-    <p class="eval">Indicate Pass or Fail.</p>
+    <p class="desc">Ensure that the user can choose whether to hear the announcement of the alternate text for the image.</p>
+    <p class="eval">Configure the read aloud feature so alternate (alt) text of images is announced. Check with the image above, this should read as "Moby Dick with a sailor in his mouth and several with harpoons hanging on him and their ship in the background."</p>
+	<p>Next, configure the read aloud feature so that alternate text is not announced. Check that the alternate text for the image is ignored.</p>
+    <p class="eval">The test passes if the alternative text is announced with the feature enabled, and ignored if the feature is disabled. Indicate Pass or Fail.</p>
   </section>
   <section id="AdvancedReadAloud-600" class="test">
     <h2><span class="test-id">AdvancedReadAloud-600</span> <span class="test-title">The read aloud emphasis or highlight colour can be changed</span></h2>
-    <p class="desc">Activate Read Aloud feature as described in the previous test. Change the colour of emphasis or visual highlight of the text being read aloud using any feature available in the reading system or the operating system. The user should have a choice of different colours for text highlighting and/or the option to disable the visual highlighting.</p>
+    <p class="desc">Change the emphasis or visual highlight color of the text being read aloud using any feature available in the reading system or the operating system. The user should have a choice of different colours for text highlighting and/or the option to disable the visual highlighting.</p>
     <p class="eval">Indicate Pass or Fail.</p>
   </section>
   <section id="AdvancedReadAloud-800" class="test">
 <h2><span class="test-id">AdvancedReadAloud-800</span> <span class="test-title">MathML Reading</span></h2>
-<p class="desc">The block and inline math expressions below are in the MathML format. We want to determine that the read aloud announces the math correctly.</p>
+<p class="desc">The block and inline math expressions below are in the MathML format. This test is to determine that the read aloud feature announces the math expressions correctly.</p>
 <p class="eval">Check if the read aloud announces the math expressions correctly in both samples. The test fails if the math is ignored, or you cannot read/hear the equation containing an equals sign and the presence of a fraction contained within.
 Indicate Pass or Fail.</p>
 <h3>MathML Block Test</h3>
@@ -42,7 +42,7 @@ Indicate Pass or Fail.</p>
     <hr/>
         Text before block math.
         <span id="exp4">
-            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(MathML alttext): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(MathML alttext): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
               <mrow>
                 <mstyle displaystyle="true">
                   <mi>y</mi>
