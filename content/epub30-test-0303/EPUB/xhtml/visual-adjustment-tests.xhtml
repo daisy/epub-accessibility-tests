@@ -40,6 +40,151 @@
 		<p class="desc">Choose from a selection of fonts, including sans-serif and serif options.</p>
         <p class="eval">Indicate Pass or Fail.</p>
     </section>
+    
+<section id="visual-550" class="test">
+<h2><span class="test-id">visual-550</span> <span class="test-title">Viewing MathML</span></h2>
+
+<p class="desc">The block and inline math expressions below are in the MathML format. Check if the math expressions inline and between the paragraphs are displayed correctly. Use the controls available in the application or else in the operating system to change (increase/decrease) the size of the font. Check if the math expressions also change size in proportion. Change background and foreground color (may be through reading system feature or through OS settings). Check if the math expressions reflect the changed color settings.</p>
+
+<p class="eval">Indicate Pass or Fail.</p>
+ 
+<h3>MathML Block Test</h3>
+    <p>Block Math Equation will appear between the following two lines.</p>
+    <hr/>
+        Text before block math.
+        <span id="exp4">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" alttext="(MathML alttext): y minus y 1 equals StartFraction y 2 minus y 1 Over x 2 minus x 1 EndFraction left-parenthesis x minus x 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math>
+        </span>
+        Text after block math.
+
+     <hr/>
+<h3>MathML Inline Test</h3>
+    <p>Inline Math Equation will appear between the following two lines.</p>
+    <hr/>
+        Text before inline math.
+        <span id="exp3">
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="(MathML alttext): y minus y sub 1 equals StartFraction y sub 2 minus y sub 1 Over x sub 2 minus x sub 1 EndFraction left-parenthesis x minus x sub 1 right-parenthesis">
+              <mrow>
+                <mstyle displaystyle="true">
+                  <mi>y</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo>−<!-- − --></mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mrow>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>−<!-- − --></mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mstyle>
+              </mrow>
+          </math>
+        </span>
+       Text after inline math.
+   <hr/>
+</section>    
+    
 	<section id="visual-610" class="test">
 		<h2><span class="test-id">visual-610</span> <span class="test-title">Support for SVG</span></h2>
 		<p class="desc">Check if a image is displayed below this paragraph. This image is in SVG format.</p>
