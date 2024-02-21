@@ -43,7 +43,7 @@
     <!-- images -->
     <item href="images/img01.jpg" media-type="image/jpeg" id="img01"/>
     <item href="images/img02.jpg" media-type="image/jpeg" id="img02"/>
-    <item href="images/circle.svg" media-type="image/svg+xml" id="img03"/>
+    <item href="images/Flower-Frame.svg" media-type="image/svg+xml" id="img03"/>
     <!-- frontmatter -->
     <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
     <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
