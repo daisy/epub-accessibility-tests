@@ -18,4 +18,5 @@ cd ./content
 NEWEPUBFILE=`ls *.epub`
 EPUBFILENAME=${title}-v${version}.epub
 mv ${NEWEPUBFILE} ../build/${EPUBFILENAME}
+echo Built $EPUBFILENAME
 cd ../
