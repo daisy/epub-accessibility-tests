@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="uid">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0303</dc:identifier>
+    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-03032.0.0</dc:identifier>
     <dc:identifier id="isbn-id">9781003410133</dc:identifier>
     <meta refines="#isbn-id" property="identifier-type" scheme="onix:codelist5">15</meta>
     <dc:title>Fundamental Accessibility Tests: Visual Adjustments</dc:title>

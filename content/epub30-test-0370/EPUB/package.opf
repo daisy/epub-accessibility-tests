@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0370</dc:identifier>
+    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0370-1.0.0</dc:identifier>
     <dc:title>Advanced Accessibility Tests: Read Aloud</dc:title>
     <dc:description>These tests are for read aloud features valued by people with print disabilities but withou wide support in reading apps.</dc:description>
     <!-- repeat creator element for all contributors -->

@@ -16,7 +16,7 @@
 		<dc:language>en</dc:language>
 		<dc:subject>media-overlays</dc:subject>
 		<dc:source>Page numbers added for test purposes.</dc:source>
-		<dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0320</dc:identifier>
+		<dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0320-1.0.1</dc:identifier>
 		<meta property="media:duration" refines="#tobi_spine_3_smil">00:01:09.8423130</meta>
 		<meta property="media:duration" refines="#tobi_spine_4_smil">00:05:15.2119953</meta>
 		<meta property="media:duration" refines="#tobi_spine_5_smil">00:13:27.4688662</meta>
