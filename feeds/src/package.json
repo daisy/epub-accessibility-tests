@@ -1,0 +1,24 @@
+{
+  "name": "generate-opds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate-opds.js",
+  "type": "module",
+  "scripts": {
+    "start": "node generate-opds.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/request": "^9.1.1",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "image-dimensions": "^2.3.0",
+    "semver": "^7.6.2",
+    "unzipper": "^0.11.6",
+    "xmldom": "^0.6.0",
+    "xpath": "^0.0.34"
+  }
+}
