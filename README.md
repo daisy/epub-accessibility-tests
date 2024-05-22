@@ -1,16 +1,26 @@
 epub-accessibility-tests
 ========================
-EPUB Content containing accessibility tests for reading systems
+EPUBs with accessibility tests for reading systems
+
+## Getting the books
+
+The latest versions of the books are available via this [ODPS feed](https://rawcdn.githack.com/daisy/epub-accessibility-tests/main/feeds/opds.json).
+
+They are also listed on [epubtest.org](https://epubtest.org/test-books), where they are fully incorporated into the testing methodology. 
+
+And, they are available on this repository's [releases page](https://github.com/daisy/epub-accessibility-tests/releases).
 
 ## Index of materials
+
+The EPUB sources are organized like this:
 
 * `content/epub30-test-0301/`: Basic Functionality (ISBN 9781003410126)
 * `content/epub30-test-0302/`: Non-Visual Reading (ISBN 9781003410119) 
 * `content/epub30-test-0303/`: Visual Adjustments (ISBN 9781003410133)
 * `content/epub30-test-0304/`: Read Aloud (ISBN 9781003410140)
 * `content/epub30-test-0320/`: Media Overlays (ISBN 9781003410157)
-* `content/epub30-test-0330/`: Math (longer book, not on site)
-* `content/epub30-test-0340/`: Extended Descriptions (longer book, not on site)
+* `content/epub30-test-0330/`: Math (longer book, not on epubtest.org)
+* `content/epub30-test-0340/`: Extended Descriptions (longer book, not on epubtest.org)
 * `content/epub30-test-0350/`: Extended Descriptions (basic)
 * `content/epub30-test-0360/`: Math (basic)
 
