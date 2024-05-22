@@ -145,7 +145,7 @@ async function main() {
         publications
     };
     fs.writeFileSync(tmp + '/' + 'opds.json', JSON.stringify(opds, null, '  '));
-    console.log("Done");
+    console.log("Wrote " + tmp + '/' + 'opds.json');
 }
 
 // based on some magic words, say which folder this book is in in the repo
