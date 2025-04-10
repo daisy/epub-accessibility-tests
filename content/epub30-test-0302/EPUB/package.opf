@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0302-2.0.0</dc:identifier>
+    <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-0302-2.0.1</dc:identifier>
     <dc:identifier id="isbn-id">9781000850512</dc:identifier>
     <meta refines="#isbn-id" property="identifier-type" scheme="onix:codelist5">15</meta>
     <dc:title>Fundamental Accessibility Tests: Non-Visual Reading</dc:title>
@@ -30,7 +30,7 @@
 	  <meta property="schema:accessibilityHazard">noSoundHazard</meta>
 	  <meta property="schema:accessibilityHazard">noMotionSimulationHazard</meta>
 	  <meta property="schema:accessibilitySummary">This publication strives to conform to WCAG 2.0 Level AA.</meta>
-    <meta property="schema:version">2.0.0</meta>	
+    <meta property="schema:version">2.0.1</meta>
   </metadata>
   <manifest>
     <!-- css -->
@@ -52,8 +52,8 @@
     <item href="xhtml/Non_Visual_Reading_Tests.xhtml" id="xhtml-001" properties="mathml" media-type="application/xhtml+xml"/>
     <item href="xhtml/supplement.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
 
- 
-    
+
+
   </manifest>
   <spine>
     <itemref idref="cover"/>
