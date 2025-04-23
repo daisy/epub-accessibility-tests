@@ -1,0 +1,139 @@
+/* with thanks to https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/ */
+
+@charset "utf-8";
+@import 'reset.css';
+@namespace epub "http://www.idpf.org/2007/ops";
+
+:root {
+    --color-dark: #252525;
+    --color-light: #efefef;
+    --color-primary: #005A9C;
+    --color-secondary: #9C4200;
+    --size-step-0: 1rem;
+    --size-step-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+    --size-step-1: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
+    --size-step-2: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
+    --size-step-3: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
+    --size-step-4: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
+}
+
+body {
+    background: var(--color-light);
+    color: var(--color-dark);
+    padding: 2em;
+    font-family: arial, helvetica, sans-serif;
+    font-size: var(--size-step-0);
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Inter, sans-serif;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+h1 {
+    color: var(--color-primary);
+}
+
+h1 {
+    font-size: var(--size-step-4);
+}
+
+h2 {
+    font-size: var(--size-step-3);
+}
+
+h3 {
+    font-size: var(--size-step-2);
+}
+
+
+ul,
+ol {
+    padding-inline-start: 1em;
+}
+
+blockquote {
+    padding-inline-start: 1em;
+    border-inline-start: 0.3em solid;
+    font-size: var(--size-step-1);
+    font-style: italic;
+}
+
+blockquote {
+    max-width: 50ch;
+}
+
+a {
+    color: currentColor;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 0.3ex;
+    text-underline-offset: 0.3ex;
+}
+
+.desc,
+.sample-text {
+    font-size: var(--size-step-1);
+    max-width: 50ch;
+}
+
+.desc {
+    font-style: italic;
+}
+
+.sample-text {
+    font-style: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.test-id {
+    color: var(--color-secondary);
+    font-size: var(--size-step-2);
+}
+
+.center {
+    max-width: 65ch;
+    margin-inline: auto;
+}
+
+.eval {
+    font-weight: bold;
+    font-size: var(--size-step-1);
+}
+
+.eval:before {
+    content: "➡";
+    color: var(--color-secondary);
+}
+
+.footnotes {
+    border-top: thin solid var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section.test {
+    border: thin var(--color-primary) solid;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+a[role=doc-noteref] {
+    font-size: smaller;
+}
+
+nav#toc ol {
+    list-style-type: none;
+}

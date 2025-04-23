@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="uid">com.github.epub-testsuite.epub30-test-exp-01</dc:identifier>
+        <dc:description>Tests for reading history navigation</dc:description>
+        <dc:title>Reading History Navigation (Experimental)</dc:title>
+        <!-- repeat creator element for all contributors -->
+        <dc:creator>DAISY Consortium</dc:creator>
+        <dc:language>en</dc:language>
+        <meta property="dcterms:modified">2025-04-23T09:22:29Z</meta>
+        <meta property="dcterms:conformsTo" id="conf">TODO</meta>
+        <meta property="schema:accessibilitySummary">TODO</meta>
+        <!-- repeat accessMode for all applicable -->
+        <meta property="schema:accessMode">TODO</meta>
+        <meta property="schema:accessModeSufficient">TODO</meta>
+        <meta property="schema:accessibilityFeature">TODO</meta>
+        <meta property="schema:accessibilityHazard">TODO</meta>
+        <meta property="schema:version">0.1.0</meta>
+    </metadata>
+    <manifest>
+        <!-- css -->
+        <item href="css/base.css" media-type="text/css" id="css-1"/>
+        <item href="css/reset.css" media-type="text/css" id="css-2"/>
+        <item id="cover_jpg" properties="cover-image" href="images/cover.jpg" media-type="image/jpeg"/>
+        <item id="cover" href="xhtml/cover.xhtml" media-type="application/xhtml+xml"/>
+        <item href="xhtml/bibliography.xhtml" id="bibliography" media-type="application/xhtml+xml"/>
+        <item href="xhtml/endnotes.xhtml" id="endnotes" media-type="application/xhtml+xml"/>
+        <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
+        <item href="xhtml/glossary.xhtml" id="glossary" media-type="application/xhtml+xml"/>
+        <item href="xhtml/index.xhtml" id="index" media-type="application/xhtml+xml"/>
+        <item href="xhtml/introduction.xhtml" id="introduction" media-type="application/xhtml+xml"/>
+        <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+        <item href="xhtml/reading-history-navigation-tests.xhtml" id="tests" media-type="application/xhtml+xml"/>
+        <item href="xhtml/sample-text.xhtml" id="sample-text" media-type="application/xhtml+xml"/>
+        <item href="xhtml/short-toc.xhtml" id="short-toc" media-type="application/xhtml+xml"/>
+    </manifest>
+    <spine>
+        <itemref idref="cover"/>
+        <itemref idref="front"/>
+        <itemref idref="introduction"/>
+        <itemref idref="short-toc"/>
+        <itemref idref="tests"/>
+        <itemref idref="sample-text"/>
+        <itemref idref="endnotes"/>
+        <itemref idref="glossary"/>
+        <itemref idref="bibliography"/>
+        <itemref idref="index"/>
+    </spine>
+</package>
