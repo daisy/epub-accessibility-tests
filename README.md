@@ -23,7 +23,7 @@ The EPUB sources are organized like this:
 * `content/epub30-test-0340/`: Extended Descriptions (longer book, not on epubtest.org)
 * `content/epub30-test-0350/`: Extended Descriptions (basic)
 * `content/epub30-test-0360/`: Math (basic)
-
+* `content/epub30-test-exp-01`: Reading History Navigation (experimental)
 
 ## To build EPUBs:
 
