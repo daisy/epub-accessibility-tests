@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<li?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:epub="http://www.idpf.org/2007/ops">
 
 <head>
@@ -11,18 +11,22 @@
     <h1>Reading History Navigation Tests</h1>
     <section id="history-010" class="test">
         <h2><span class="test-id">history-010</span> <span class="test-title">Four single follow link and return tests</span></h2>
-        <p class="desc">TODO (test description)</p>
+        <p class="desc">This test involves four parts. It tests going to  a footnote, and then returning, and the same process for an end note, a glossary entry, and a bibliographic reference.</p>
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>first, follow this link to the footnote. <a  href="#fn1" role="doc-noteref" epub:type="noteref"><sup>1</sup></a>. Return here using the go back function.</li>
-                <li>Second, follow this link to the end note. <a href="endnotes.xhtml#en1" role="doc-noteref" epub:type="noteref"><sup>2</sup></a>. Return using the go back function.</li>
+                <li>Follow the link to the footnote. <a  href="#fn1" role="doc-noteref" epub:type="noteref"><sup>1</sup></a>.</li>
+                <li> Return here using the go back function.</li>
+                <li>Follow the link to the end note. <a href="endnotes.xhtml#en1" role="doc-noteref" epub:type="noteref"><sup>2</sup></a>.</li>
+                <li> Return using the go back function.</li>
 
-                <li>third, follow the link to the glossary reference. <dfn><a href="glossary.xhtml#database" role="doc-glossref">database</a></dfn> Return to this location using the go back function.</li>
-                <li>fourth, follow the link to the bibliographic reference.  <a href="bibliography.xhtml#book6"><em>A Collection of Important Writings</em></a>. Return to this location using the go back function.</li>
-                <li>Then...</li>
-                <li>Is the condition xyz met?</li>
+                <li>Follow the link to the glossary reference. <dfn><a href="glossary.xhtml#database" role="doc-glossref">database</a></dfn>.</li>
+                <li> Return to this location using the go back function.</li>
+                <li>Follow the link to the bibliographic reference.  <a href="bibliography.xhtml#book6"><em>A Collection of Important Writings</em></a>.</li>
+                <li> Return to this location using the go back function.</li>
             </ol>
+
+            <p>If all four of the links through the book are traversed and the reading system's go back function returns to this location each time, the test passes. Not any issues encountered.</p>
         </div>
 
         <p class="eval">Indicate Pass or Fail.</p>
@@ -30,14 +34,16 @@
 
     <section id="history-020" class="test">
         <h2><span class="test-id">history-020</span> <span class="test-title">Return after a search</span></h2>
-        <p class="desc">TODO (test description)</p>
+        <p class="desc">This test determines if the reading system's search function supports the go back function. Ideally, the go back function avoids taking the user to the search box, i.e. you do the search and return directly to this location.</p>
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>First, search for "Apollo 13" and go to the chapter containing that information. Then using the go back function, return to this location. Note if the go back function took you directly back to this location or if it to you to the search dialogue first.</li>
-                <li>Then...</li>
-                <li>Is the condition xyz met?</li>
+                <li>Search for "Apollo 13" and go to the chapter containing that information.</li>
+                <li>Using the go back function, return to this location. Note if the go back function took you directly back to this location or if it to you to the search dialogue.</li>
+
             </ol>
+
+            <p>The test passes if you can go directly back to this location from the chapter containing Apollo 13.</p>
         </div>
 
         <p class="eval">Indicate Pass or Fail.</p>
@@ -46,42 +52,49 @@
     <section id="history-030" class="test">
     <div role="doc-pagebreak" aria-label="page 10" id="pg10">10</div>
 
-        <h2><span class="test-id">history-030</span> <span class="test-title">Return after go to page</span></h2>
-        <p class="desc">TODO (test description)</p>
+        <h2><span class="test-id">history-030</span> <span class="test-title">Return after go to page.</span></h2>
+        <p class="desc">This test determines if the Go to page function supports go back functionality. </p>
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>First, Use the go to page function in the reading system and navigate to page 20. After reading some text, use the go back function to return to this location. Note if the go back function took you to the go to page dialogue before returning to this location.</li>
-                <li>Then...</li>
-                <li>Is the condition xyz met?</li>
+                <li>Use the go to page function in the reading system and navigate to page 20.</li>
+                <li> After reading some text, use the go back function to return to this location. Note if the go back function took you to the go to page dialogue before returning to this location.</li>
+
             </ol>
+
+            <p>The test passes if you are returned to this location without going through the go to page function.</p>
         </div>
         <p class="eval">Indicate Pass or Fail.</p>
     </section>
 
     <section id="history-040" class="test">
         <h2><span class="test-id">history-040</span> <span class="test-title">Using nav TOC to move and return</span></h2>
-        <p class="desc">TODO (test description)</p>
+        <p class="desc">This test determines if the reading system built in TOC, i.e., using the nav doc is excluded from the history list.</p>
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>First...</li>
-                <li>Then...</li>
-                <li>Is the condition xyz met?</li>
+                <li>Use the reading systems utility to review the items in the nav doc. Note this is not the short TOC that is listed in the spine. Select the "sample Text" chapter and go there and read some content.</li>
+                <li> Use the go back function to return to this location. Note if the go back function takes you to the nav doc or if if it returns you directly to this location.</li>
+
             </ol>
+            <p>The test passes if the go back function avoids the nav doc display.</p>
         </div>
         <p class="eval">Indicate Pass or Fail.</p>
     </section>
     <section id="history-050" class="test">
         <h2><span class="test-id">history-050</span> <span class="test-title">Multiple items in the history</span></h2>
-        <p class="desc">TODO (test description)</p>
+        <p class="desc">This test identifies how many items can be stored in the history list.</p>
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>First...</li>
-                <li>Then...</li>
-                <li>Is the condition xyz met?</li>
-            </ol>
+                <li>Use the nav document to go to the short TOC.</li>
+                <li>Then scroll down to the index and go there.</li>
+                <li>Then select the link to front matter and activate the link.</li>
+                <li>Then  use the go back function to return to the index and activate the link to the introduction.</li>
+                <li>Finally, use the go back function to get back to this location. Note how many go back steps  the reading system supports.</li>
+                            </ol>
+
+                            <p>The test passes if you get back to this location. The history should keep track of all jumps to different locations. Only the TOC from the nav doc should be not included.</p>
         </div>
         <p class="eval">Indicate Pass or Fail.</p>
     </section>
