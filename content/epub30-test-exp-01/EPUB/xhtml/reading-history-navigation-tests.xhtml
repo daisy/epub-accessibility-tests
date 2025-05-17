@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<p?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:epub="http://www.idpf.org/2007/ops">
 
 <head>
@@ -9,6 +9,10 @@
 
 <body>
     <h1>Reading History Navigation Tests</h1>
+
+    <p>In this section we will be examining the go-back or history function in reading systems. It is the task of the reading system to keep track, as best it can, of your reading location. When the reader navigates to another location, the reading system should store the reading position to enable the user to return to that location.</p>
+
+    <p>When reporting your results in the notes field, please explain your experience. You may be in scrolling mode, which makes it mor difficult for the reading system to know your reading position. It may be that you are following a link, which means the reading system should be able to identify the exact location to return to. Other functions, like go to page or starting a search can be initiated anywhere in the content. In this case the reading system should track the last known position, probably the first element in the viewport. If using a screen reader with a virtual buffer, there may be mechanisms to tell the reading system where you are. These techniques should be tested and reported in the notes.</p>
     <section id="history-010" class="test">
         <h2><span class="test-id">history-010</span> <span class="test-title">Four single follow link and return tests</span></h2>
         <p class="desc">This test involves four parts. It tests going to  a footnote, and then returning, and the same process for an end note, a glossary entry, and a bibliographic reference.</p>
@@ -38,12 +42,12 @@
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>Search for "Apollo 13" and go to the chapter containing that information.</li>
+                <li>Search for "Apollo 13" and go to the second instance of this search term in the "sample text" chapter.</li>
                 <li>Using the go back function, return to this location. Note if the go back function took you directly back to this location or if it to you to the search dialogue.</li>
 
             </ol>
 
-            <p>The test passes if you can go directly back to this location from the chapter containing Apollo 13.</p>
+            <p>The test passes if you can go directly back to this approximate location from the chapter containing Apollo 13. Explain where it returned you to, e.g., the exact paragraph or somewhere on the page.</p>
         </div>
 
         <p class="eval">Indicate Pass or Fail.</p>
@@ -62,7 +66,7 @@
 
             </ol>
 
-            <p>The test passes if you are returned to this location without going through the go to page function.</p>
+            <p>The test passes if you are returned to this approximate location without going through the go to page function. Explain the location you returned to.</p>
         </div>
         <p class="eval">Indicate Pass or Fail.</p>
     </section>
@@ -73,11 +77,11 @@
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>Use the reading systems utility to review the items in the nav doc. Note this is not the short TOC that is listed in the spine. Select the "sample Text" chapter and go there and read some content.</li>
+                <li>Use the reading systems utility to review the items in the nav doc. Note this is not the "Contents"that is listed in the spine. Select the "sample Text" chapter and go there and read some content.</li>
                 <li> Use the go back function to return to this location. Note if the go back function takes you to the nav doc or if if it returns you directly to this location.</li>
 
             </ol>
-            <p>The test passes if the go back function avoids the nav doc display.</p>
+            <p>The test passes if the go back function avoids the nav doc display and returns you to this approximate location. Explain where you were returned to.</p>
         </div>
         <p class="eval">Indicate Pass or Fail.</p>
     </section>
@@ -87,14 +91,14 @@
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>Use the nav document to go to the short TOC.</li>
+                <li>Use the nav document to go to the "Contents". This is an in-spine TOC and it it explains clearly that it is not a nav doc control.</li>
                 <li>Then scroll down to the index and go there.</li>
                 <li>Then select the link to front matter and activate the link.</li>
                 <li>Then  use the go back function to return to the index and activate the link to the introduction.</li>
                 <li>Finally, use the go back function to get back to this location. Note how many go back steps  the reading system supports.</li>
                             </ol>
 
-                            <p>The test passes if you get back to this location. The history should keep track of all jumps to different locations. Only the TOC from the nav doc should be not included.</p>
+                            <p>The test passes if you get back to this approximate location. The history should keep track of all jumps to different locations. Only the TOC from the nav doc should not be included. Describe your experience.</p>
         </div>
         <p class="eval">Indicate Pass or Fail.</p>
     </section>
