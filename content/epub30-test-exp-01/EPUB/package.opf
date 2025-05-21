@@ -18,7 +18,7 @@
     <meta property="schema:accessibilityHazard">none</meta>
     <meta property="schema:version">2.0.0</meta>
     </metadata>
-    <!-- <manifest> -->
+    <manifest>
         <!-- css -->
         <item href="css/base.css" media-type="text/css" id="css-1"/>
         <item href="css/reset.css" media-type="text/css" id="css-2"/>
