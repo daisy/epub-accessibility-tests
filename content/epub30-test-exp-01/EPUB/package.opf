@@ -16,7 +16,7 @@
     <meta property="schema:accessModeSufficient">textual</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityHazard">none</meta>
-    <meta property="schema:version">2.0.0</meta>
+    <meta property="schema:version">1.0.0</meta>
     </metadata>
     <manifest>
         <!-- css -->
