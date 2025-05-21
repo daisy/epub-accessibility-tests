@@ -77,11 +77,10 @@ a {
 a:hover {
     text-decoration-thickness: 4px;
 }
-
-.desc,
 .sample-text {
     font-size: var(--size-step-1);
     max-width: 50ch;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .desc {
@@ -133,6 +132,11 @@ section.test {
 
 a[role=doc-noteref] {
     font-size: smaller;
+}
+aside[role=doc-footnote] {
+    background-color: oklch(from var(--color-secondary) l c h / 0.2);
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 nav#toc ol {
