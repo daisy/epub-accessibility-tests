@@ -6,7 +6,7 @@
         <dc:title>Reading History Navigation (Experimental)</dc:title>
         <!-- repeat creator element for all contributors -->
         <dc:creator>DAISY Consortium</dc:creator>
-        <dc:source>Page numbers added for test purposes.</dc:source>
+        <meta property="pageBreakSource">Page numbers added for test purposes.</meta>
         <dc:language>en</dc:language>
         <meta property="dcterms:modified">2025-04-23T09:22:29Z</meta>
          <meta property="dcterms:conformsTo" id="conf">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
