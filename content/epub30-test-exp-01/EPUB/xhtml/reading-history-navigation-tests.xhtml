@@ -8,57 +8,96 @@
 </head>
 
 <body>
-<div role="doc-pagebreak" aria-label="page 5" id="pg5">5</div>
+    <div role="doc-pagebreak" aria-label="page 5" id="pg5">5</div>
     <h1>Reading History Navigation Tests</h1>
 
-    <p>In this section we will be examining the go-back or history function in reading systems. It is the task of the reading system to keep track, as best it can, of your reading location. When the reader navigates to another location, the reading system should store the reading position to enable the user to return to that location.</p>
+    <p>In this section we will be examining the go-back or history function in reading systems. It is the task of the
+        reading system to keep track, as best it can, of your reading location. When the reader navigates to another
+        location, the reading system should store the reading position to enable the user to return to that location.
+    </p>
 
-    <p>When reporting your results in the notes field, please explain your experience. You may be in scrolling mode, which makes it mor difficult for the reading system to know your reading position. It may be that you are following a link, which means the reading system should be able to identify the exact location to return to. Other functions, like go to page or starting a search can be initiated anywhere in the content. In this case the reading system should track the last known position, probably the first element in the viewport. If using a screen reader with a virtual buffer, there may be mechanisms to tell the reading system where you are. These techniques should be tested and reported in the notes.</p>
+    <p>When reporting your results in the notes field, please explain your experience. You may be in scrolling mode,
+        which makes it mor difficult for the reading system to know your reading position. It may be that you are
+        following a link, which means the reading system should be able to identify the exact location to return to.
+        Other functions, like go to page or starting a search can be initiated anywhere in the content. In this case the
+        reading system should track the last known position, probably the first element in the viewport. If using a
+        screen reader with a virtual buffer, there may be mechanisms to tell the reading system where you are. These
+        techniques should be tested and reported in the notes.</p>
     <section id="history-010" class="test">
-        <h2><span class="test-id">history-010</span> <span class="test-title">Four single follow link and return tests</span></h2>
-        <p class="desc">This test involves four parts. It tests going to  a footnote, and then returning, and the same process for an end note, a glossary entry, and a bibliographic reference. A reading system may have a pop-up for footnotes and/or endnotes, and the way to return may be to escape or dismiss. Note if this behavior is used.</p>
+        <h2><span class="test-id">history-010</span> <span class="test-title">Four single follow link and return
+                tests</span></h2>
+        <p class="desc">This test involves four parts. It tests going to a footnote, and then returning, and the same
+            process for an end note, a glossary entry, and a bibliographic reference. A reading system may have a pop-up
+            for footnotes and/or endnotes, and the way to return may be to escape or dismiss. Note if this behavior is
+            used.</p>
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>Follow the link to the footnote. <a  href="#fn1" role="doc-noteref" epub:type="noteref"><sup>1</sup></a>.</li>
+                <li>Follow the link to the footnote. <a href="#fn1" role="doc-noteref"
+                        epub:type="noteref"><sup>1</sup></a>.</li>
                 <li> Return here using the go back function.</li>
-                <li>Follow the link to the end note. <a href="endnotes.xhtml#en1" role="doc-noteref" epub:type="noteref"><sup>2</sup></a>.</li>
+                <li>Follow the link to the end note. <a href="endnotes.xhtml#en1" role="doc-noteref"
+                        epub:type="noteref"><sup>2</sup></a>.</li>
                 <li> Return using the go back function.</li>
 
-                <li>Follow the link to the glossary reference. <dfn><a href="glossary.xhtml#database" role="doc-glossref">database</a></dfn>.</li>
+                <li>Follow the link to the glossary reference. <dfn><a href="glossary.xhtml#database"
+                            role="doc-glossref">database</a></dfn>.</li>
                 <li> Return to this location using the go back function.</li>
-                <li>Follow the link to the bibliographic reference.  <a href="bibliography.xhtml#book6"><em>A Collection of Important Writings</em></a>.</li>
+                <li>Follow the link to the bibliographic reference. <a href="bibliography.xhtml#book6"><em>A Collection
+                            of Important Writings</em></a>.</li>
                 <li> Return to this location using the go back function.</li>
             </ol>
 
-            <p>If all four of the links through the book are traversed and the reading system's go back function or dismiss pop-up returns to this location each time, the test passes. Note any issues encountered.</p>
+            <p>If all four of the links through the book are traversed and the reading system's go back function or
+                dismiss pop-up returns to this location each time, the test passes. Note any issues encountered.</p>
         </div>
 
         <p class="eval">Indicate Pass or Fail.</p>
-        <p>Filler paragraph. The history of whaling in Maui is a significant chapter in the island's past, primarily centered around the town of Lahaina. During the 19th century, particularly between the 1820s and 1860s, Lahaina became one of the busiest and most important whaling ports in the Pacific. Hundreds of whaling ships would anchor in its waters, seeking to replenish supplies and offload their valuable cargo of whale oil and baleen. This lucrative industry brought both prosperity and profound cultural shifts to Maui. While it provided economic opportunities, it also led to clashes between the rough-and-tumble whalers and the more conservative Hawaiian missionaries and chiefs. The decline of whaling in the latter half of the 19th century was due to several factors, including the discovery of petroleum, the decimation of whale populations, and the American Civil War, ultimately leading to the industry's demise in Maui and marking a transition for the island's economy.</p>
+        <p>Filler paragraph. The history of whaling in Maui is a significant chapter in the island's past, primarily
+            centered around the town of Lahaina. During the 19th century, particularly between the 1820s and 1860s,
+            Lahaina became one of the busiest and most important whaling ports in the Pacific. Hundreds of whaling ships
+            would anchor in its waters, seeking to replenish supplies and offload their valuable cargo of whale oil and
+            baleen. This lucrative industry brought both prosperity and profound cultural shifts to Maui. While it
+            provided economic opportunities, it also led to clashes between the rough-and-tumble whalers and the more
+            conservative Hawaiian missionaries and chiefs. The decline of whaling in the latter half of the 19th century
+            was due to several factors, including the discovery of petroleum, the decimation of whale populations, and
+            the American Civil War, ultimately leading to the industry's demise in Maui and marking a transition for the
+            island's economy.</p>
     </section>
 
     <section id="history-020" class="test">
         <h2><span class="test-id">history-020</span> <span class="test-title">Return after a search</span></h2>
-        <p class="desc">This test determines if the reading system's search function supports the go back function. Ideally, the go back function avoids taking the user to the search box, i.e. you do the search and return directly to this location.</p>
+        <p class="desc">This test determines if the reading system's search function supports the go back function.
+            Ideally, the go back function avoids taking the user to the search box, i.e. you do the search and return
+            directly to this location.</p>
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>Search for "Apollo 13" and go to the second instance of this search term in the "sample text" chapter.</li>
-                <li>Using the go back function, return to this location. Note if the go back function took you directly back to this location or if it to you to the search dialogue.</li>
+                <li>Search for "Apollo 13" and go to the second instance of this search term in the "sample text"
+                    chapter.</li>
+                <li>Using the go back function, return to this location. Note if the go back function took you directly
+                    back to this location or if it to you to the search dialogue.</li>
 
             </ol>
 
-            <p>The test passes if you can go directly back to this approximate location from the chapter containing the search term you entered. Explain where it returned you to, e.g., the exact paragraph or somewhere on the page.</p>
+            <p>The test passes if you can go directly back to this approximate location from the chapter containing the
+                search term you entered. Explain where it returned you to, e.g., the exact paragraph or somewhere on the
+                page.</p>
         </div>
 
         <p class="eval">Indicate Pass or Fail.</p>
-        <p> Filler paragraph. Flathead Lake, located in beautiful Northwest Montana, is a true gem of the American West. Fed by the Flathead River, it proudly holds the title of the largest natural freshwater lake west of the Great Lakes. Its pristine waters stretch for nearly 30 miles, offering breathtaking views of the surrounding mountains and providing endless opportunities for recreation, from boating and fishing to swimming and paddleboarding. Beyond its stunning natural beauty, the lake's shores are renowned for their orchards, particularly the famous Flathead cherries, which ripen in mid-summer and are a highly anticipated local delicacy.</p>
+        <p> Filler paragraph. Flathead Lake, located in beautiful Northwest Montana, is a true gem of the American West.
+            Fed by the Flathead River, it proudly holds the title of the largest natural freshwater lake west of the
+            Great Lakes. Its pristine waters stretch for nearly 30 miles, offering breathtaking views of the surrounding
+            mountains and providing endless opportunities for recreation, from boating and fishing to swimming and
+            paddleboarding. Beyond its stunning natural beauty, the lake's shores are renowned for their orchards,
+            particularly the famous Flathead cherries, which ripen in mid-summer and are a highly anticipated local
+            delicacy.</p>
 
     </section>
 
     <section id="history-030" class="test">
-    <div role="doc-pagebreak" aria-label="page 10" id="pg10">10</div>
+        <div role="doc-pagebreak" aria-label="page 10" id="pg10">10</div>
 
         <h2><span class="test-id">history-030</span> <span class="test-title">Return after go to page</span></h2>
         <p class="desc">This test determines if the Go to page function supports go back functionality. </p>
@@ -66,30 +105,52 @@
             <h3>Steps</h3>
             <ol>
                 <li>Use the go to page function in the reading system and navigate to page 20.</li>
-                <li> After reading some text, use the go back function to return to this location. Note if the go back function took you to the go to page dialogue before returning to this location.</li>
+                <li> After reading some text, use the go back function to return to this location. Note if the go back
+                    function took you to the go to page dialogue before returning to this location.</li>
 
             </ol>
 
-            <p>The test passes if you are returned to this approximate location without going through the go to page function. Explain the location you returned to.</p>
+            <p>The test passes if you are returned to this approximate location without going through the go to page
+                function. Explain the location you returned to.</p>
         </div>
         <p class="eval">Indicate Pass or Fail.</p>
-        <p> Filler Paragraph. Nestled in the heart of Montana's Swan Valley, Seeley Lake offers a picturesque escape, its clear waters reflecting the surrounding peaks. The lake is a gateway to outdoor adventure, from kayaking and fishing to hiking and wildlife viewing. A significant tributary to Seeley Lake is the Clearwater River, a beautiful and winding waterway that eventually flows into the legendary Blackfoot River. The Blackfoot, in turn, gained widespread fame from Norman Maclean's novella "A River Runs Through It," later adapted into an acclaimed film starring Robert Redford, further cementing the river's iconic status in fly-fishing lore and Montana's natural heritage.</p>
+        <p> Filler Paragraph. Nestled in the heart of Montana's Swan Valley, Seeley Lake offers a picturesque escape,
+            its clear waters reflecting the surrounding peaks. The lake is a gateway to outdoor adventure, from kayaking
+            and fishing to hiking and wildlife viewing. A significant tributary to Seeley Lake is the Clearwater River,
+            a beautiful and winding waterway that eventually flows into the legendary Blackfoot River. The Blackfoot, in
+            turn, gained widespread fame from Norman Maclean's novella "A River Runs Through It," later adapted into an
+            acclaimed film starring Robert Redford, further cementing the river's iconic status in fly-fishing lore and
+            Montana's natural heritage.</p>
     </section>
 
     <section id="history-040" class="test">
-        <h2><span class="test-id">history-040</span> <span class="test-title">Using nav TOC to move and return</span></h2>
-        <p class="desc">This test determines if the reading system built in TOC, i.e., using the nav doc is excluded from the history list.</p>
+        <h2><span class="test-id">history-040</span> <span class="test-title">Using nav TOC to move and return</span>
+        </h2>
+        <p class="desc">This test determines if the reading system built in TOC, i.e., using the nav doc is excluded
+            from the history list.</p>
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>Use the reading systems utility to review the items in the nav doc. Note this is not the "Contents"that is listed in the spine. Select the "sample Text" chapter and go there and read some content.</li>
-                <li> Use the go back function to return to this location. Note if the go back function takes you to the nav doc or if if it returns you directly to this location.</li>
+                <li>Use the reading systems utility to review the items in the nav doc. Note this is not the
+                    "Contents"that is listed in the spine. Select the "sample Text" chapter and go there and read some
+                    content.</li>
+                <li> Use the go back function to return to this location. Note if the go back function takes you to the
+                    nav doc or if if it returns you directly to this location.</li>
 
             </ol>
-            <p>The test passes if the go back function avoids the nav doc display and returns you to this approximate location. Explain where you were returned to.</p>
+            <p>The test passes if the go back function avoids the nav doc display and returns you to this approximate
+                location. Explain where you were returned to.</p>
         </div>
         <p class="eval">Indicate Pass or Fail.</p>
-        <p>Filler paragraph. John Muir, a name synonymous with American conservation, experienced a life-altering event early in his career. While working in a machine shop, a tragic accident involving a tool slipping and piercing his eye left him completely blind. During this period of darkness and uncertainty, Muir made a solemn vow: if he ever regained his sight, he would dedicate his life to exploring and appreciating the natural world, rather than pursuing industrial endeavors. Miraculously, his vision did return, and true to his promise, Muir embarked on extensive explorations throughout the American West. He journeyed through California's Sierra Nevada mountains, walked across vast stretches of wilderness, and became a tireless advocate for the preservation of natural landscapes, ultimately playing a pivotal role in the establishment of national parks like Yosemite.</p>
+        <p>Filler paragraph. John Muir, a name synonymous with American conservation, experienced a life-altering event
+            early in his career. While working in a machine shop, a tragic accident involving a tool slipping and
+            piercing his eye left him completely blind. During this period of darkness and uncertainty, Muir made a
+            solemn vow: if he ever regained his sight, he would dedicate his life to exploring and appreciating the
+            natural world, rather than pursuing industrial endeavors. Miraculously, his vision did return, and true to
+            his promise, Muir embarked on extensive explorations throughout the American West. He journeyed through
+            California's Sierra Nevada mountains, walked across vast stretches of wilderness, and became a tireless
+            advocate for the preservation of natural landscapes, ultimately playing a pivotal role in the establishment
+            of national parks like Yosemite.</p>
     </section>
     <section id="history-050" class="test">
         <h2><span class="test-id">history-050</span> <span class="test-title">Multiple items in the history</span></h2>
@@ -97,21 +158,35 @@
         <div class="steps">
             <h3>Steps</h3>
             <ol>
-                <li>Use the nav document to go to the "Contents". This is an in-spine TOC and it it explains clearly that it is not a nav doc control.</li>
+                <li>Use the nav document to go to the "Contents". This is an in-spine TOC and it it explains clearly
+                    that it is not a nav doc control.</li>
                 <li>Then scroll down to the index and go there.</li>
                 <li>Then select the link to front matter and activate the link.</li>
-                <li>Then  use the go back function to return to the index and activate the link to the introduction.</li>
-                <li>Finally, use the go back function to get back to this location. Note how many go back steps  the reading system supports.</li>
-                            </ol>
+                <li>Then use the go back function to return to the index and activate the link to the introduction.</li>
+                <li>Finally, use the go back function to get back to this location. Note how many go back steps the
+                    reading system supports.</li>
+            </ol>
 
-                            <p>The test passes if you get back to this approximate location. The history should keep track of all jumps to different locations. Only the TOC from the nav doc should not be included. Describe your experience.</p>
+            <p>The test passes if you get back to this approximate location. The history should keep track of all jumps
+                to different locations. Only the TOC from the nav doc should not be included. Describe your experience.
+            </p>
         </div>
         <p class="eval">Indicate Pass or Fail.</p>
-        <p>filler paragraph. John Wesley Powell, a prominent figure in American exploration, served as a Union artillery officer during the Civil War, where he notably lost his right arm at the Battle of Shiloh. Despite this profound injury, Powell embarked on a daring expedition to explore the uncharted Colorado River in 1869, leading a team in small, specially constructed wooden boats. This perilous journey presented immense challenges, as his crew battled treacherous rapids, endured the loss of a boat and vital supplies at a place they aptly named "Disaster Falls," and faced dwindling provisions and internal strife. Three of his men, fearing they would not survive the river's dangers, ultimately abandoned the expedition and were never seen again. Nevertheless, Powell and the remaining members persevered, ultimately completing the first recorded passage of white men through the entirety of the Grand Canyon, providing invaluable scientific data and the first detailed descriptions of this previously unexplored region.</p>
+        <p>filler paragraph. John Wesley Powell, a prominent figure in American exploration, served as a Union artillery
+            officer during the Civil War, where he notably lost his right arm at the Battle of Shiloh. Despite this
+            profound injury, Powell embarked on a daring expedition to explore the uncharted Colorado River in 1869,
+            leading a team in small, specially constructed wooden boats. This perilous journey presented immense
+            challenges, as his crew battled treacherous rapids, endured the loss of a boat and vital supplies at a place
+            they aptly named "Disaster Falls," and faced dwindling provisions and internal strife. Three of his men,
+            fearing they would not survive the river's dangers, ultimately abandoned the expedition and were never seen
+            again. Nevertheless, Powell and the remaining members persevered, ultimately completing the first recorded
+            passage of white men through the entirety of the Grand Canyon, providing invaluable scientific data and the
+            first detailed descriptions of this previously unexplored region.</p>
     </section>
     <aside id="fn1" role="doc-footnote">
-   <p>1. this is the footnote you should get to. Use the go back function in your reading system to return to the exact location.</p>
-</aside>
+        <p>1. this is the footnote you should get to. Use the go back function in your reading system to return to the
+            exact location.</p>
+    </aside>
 
 </body>
 
