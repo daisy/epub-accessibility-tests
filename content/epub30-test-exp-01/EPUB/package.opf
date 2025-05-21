@@ -6,18 +6,19 @@
         <dc:title>Reading History Navigation (Experimental)</dc:title>
         <!-- repeat creator element for all contributors -->
         <dc:creator>DAISY Consortium</dc:creator>
+        <dc:source>Page numbers added for test purposes.</dc:source>
         <dc:language>en</dc:language>
         <meta property="dcterms:modified">2025-04-23T09:22:29Z</meta>
-        <meta property="dcterms:conformsTo" id="conf">TODO</meta>
-        <meta property="schema:accessibilitySummary">TODO</meta>
-        <!-- repeat accessMode for all applicable -->
-        <meta property="schema:accessMode">TODO</meta>
-        <meta property="schema:accessModeSufficient">TODO</meta>
-        <meta property="schema:accessibilityFeature">TODO</meta>
-        <meta property="schema:accessibilityHazard">TODO</meta>
-        <meta property="schema:version">0.1.0</meta>
+         <meta property="dcterms:conformsTo" id="conf">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
+    <meta property="schema:accessibilitySummary">The publication contains structural and page navigation. The publication meets WCAG 2.0 Level AA.</meta>
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityHazard">none</meta>
+    <meta property="schema:version">2.0.0</meta>
     </metadata>
-    <manifest>
+    <!-- <manifest> -->
         <!-- css -->
         <item href="css/base.css" media-type="text/css" id="css-1"/>
         <item href="css/reset.css" media-type="text/css" id="css-2"/>
