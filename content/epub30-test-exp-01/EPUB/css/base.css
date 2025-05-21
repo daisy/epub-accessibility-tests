@@ -71,10 +71,11 @@ blockquote {
 }
 
 a {
-    color: currentColor;
-    text-decoration-color: var(--color-primary);
-    text-decoration-thickness: 0.3ex;
-    text-underline-offset: 0.3ex;
+    color: var(--color-primary);
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration-thickness: 4px;
 }
 
 .desc,
